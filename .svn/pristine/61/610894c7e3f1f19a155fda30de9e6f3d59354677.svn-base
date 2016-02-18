@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta charset="utf-8" />
+	<title>海尔商城</title>
+	<meta content="" name="keywords" />
+	<meta content="" name="description" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta content="telephone=no" name="format-detection" />
+	<meta content="false" id="twcClient" name="twcClient" />
+	<script src="zepto.js"></script>
+	<link rel="stylesheet" type="text/css" href="public.css">	
+	<link rel="stylesheet" type="text/css" href="../slide/slide.css" />
+	<script type="text/javascript" src="../slide/SliderAside.js"></script>
+	<link rel="stylesheet" type="text/css" href="address.css">
+	<script type="text/javascript" src="address.js"></script>
+	<style>
+		html,body{width: 100%;height: 100%;}
+	</style>
+</head>
+<body>
+<button id="open" style="left:100px;top:200px; position:absolute;">打开</button>
+<div class="menu_slidebar" id="puller">
+	<div class="list_content_mask"></div>
+	<div class="slidebar-content">
+		<div class="slidebar-header">
+            <span class="slidebar-title-back"><i></i></span>
+            <span class="slidebar-title-name">配送至</span>
+        </div>
+        <div class="slidebar-items-container">
+        	<div class="slidebar_space"></div>
+        	<div class="slidebar_detail">
+        		<div class="regionContainer">
+	        		<ul class="region-list cur">
+	        			<li><span>北京</span></li>
+	        			<li class="cur"><span>北京北京北京啊北京北京北京啊</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        			<li><span>北京</span></li>
+	        		</ul>
+	        		<ul class="region-list">
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀区啊海淀区啊海淀区啊海淀区</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        			<li><span>海淀</span></li>
+	        		</ul>
+        		</div>
+        	</div>
+        </div>
+	</div>
+</div>
+</body>
+</html>
+<script>
+
+	var region = new TabRegion({
+		container:'.slidebar_detail',
+		url:'data.json',
+		ajaxFun:$.ajax,
+		complateCallback:function(provinceObj,cityObj,areaObj){
+			slider.hide(true);
+			//下面写页面代码
+		}
+	});
+
+	var slider = new SliderAside({
+		showBtn:'#open',
+		showCallback:function(){
+			//alert('show');
+		},
+		hideCallback:function(){
+			//alert('hide');
+		},
+		preHideCallback:function(){
+			return region.back();
+		},
+		preShowCallback:function(){
+			region.reset();
+		}
+	});
+
+
+
+</script>

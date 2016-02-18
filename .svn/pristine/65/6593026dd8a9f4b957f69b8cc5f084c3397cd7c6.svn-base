@@ -1,0 +1,157 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.orderTrack-page {
+  padding-bottom: 48px;
+  background-color: #fff;
+}
+
+.orderTrack-page
+.nav::after {
+  display: none;
+}
+
+.orderTrack-page .item {
+  margin-bottom: -1px;
+  background-color: #fff;
+}
+
+.orderTrack-page
+.item-head {
+  color: #000;
+  font-size: 15px;
+}
+
+.orderTrack-page
+.item-body {
+  padding: 10px 10px 10px 12px;;
+}
+
+
+.orderTrack-page
+.item-body__aside {
+  border: 1px solid #efefef;
+}
+
+.orderTrack-page
+.item-body__aside img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.orderTrack-page
+.item-body__main {
+  color: #000;
+  font-size: 15px;
+}
+
+.orderTrack-page
+.item-body__top {
+  overflow: hidden;
+  max-height: 30px;
+  line-height: 15px;
+  color: #000;
+  font-size: 13px;
+  text-overflow: ellipsis;
+}
+
+.orderTrack-page
+.item-body__bottom { 
+  overflow: hidden; 
+  height: 30px;
+  line-height: 30px;
+}
+
+.orderTrack-page
+.item-body__bottom
+.pull-right {
+  color: #6d6e71;
+}
+
+.orderTrack-page
+.tracklist 
+.item-body {
+  padding: 10px 10px 10px 17px;
+}
+
+.orderTrack-page
+.tracklist::before,
+.orderTrack-page
+.tracklist::after,
+.orderTrack-page
+.tracklist 
+.item-head::after,
+.orderTrack-page
+.tracklist 
+.item-head__inner::after,
+.orderTrack-page
+.tracklist 
+.item-body::after { display: none;}
+
+.orderTrack-page
+.tracklist ul{
+  color: #6d6e71;
+  font-size: 15px;
+}
+
+
+.orderTrack-page
+.tracklist li {
+  position: relative;
+  height: 40px;
+  line-height: 0;
+  padding-left: 15px;
+  border-left: 1px solid #efefef;
+}
+
+.orderTrack-page
+.tracklist li::before {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+}
+
+
+.orderTrack-page
+.tracklist .cur {
+  color: #32beff;
+}
+
+.orderTrack-page
+.tracklist .cur::before {
+  position: absolute;
+  left: -5px;
+  top: -5px;
+  display: inline-block;
+  content: '';
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px #32beff;
+  box-shadow: 0 0  5px #32beff;
+  background-color: #32beff;
+}
+
+.orderTrack-page
+.tracklist li:last-child {
+  border: none;
+}
+
+
+

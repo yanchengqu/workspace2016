@@ -1,0 +1,118 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.wdUserCenter-page {
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+.wdUserCenter-page
+.list [class^="icon-"] {
+  background-image: url(http://static.tongshuai.com/wd/img/pages/wdUserCenter/icons.png);
+  -webkit-background-size: 25px auto;
+  background-size: 25px auto;
+}
+
+.wdUserCenter-page .nav__back::before {
+    background-position: -50px -50px;
+}
+
+.icon-safe {
+  background-position: 0 -25px;
+}
+
+.icon-skin {
+  background-position: 0 -50px;
+}
+
+.icon-great {
+  background-position: 0 -75px;
+}
+
+.icon-friend {
+  background-position: 0 -100px;
+}
+
+.icon-modify {
+  background-position: 0 -125px;
+}
+
+.icon-i {
+  background-position: 0 -125px;
+}
+
+.wdUserCenter-page
+.nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #fff;
+}
+
+.wdUserCenter-page .menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.wdUserCenter-page
+.user {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.user-bg {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.user-info {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 84px;
+  text-align: center;
+}
+
+.user-info__img {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 3px #fff;
+          box-shadow: 0 0 0 3px #fff;
+}
+
+.user-info__name {
+  color: #fff;
+  font-size: 16px;
+}
+
+.wdUserCenter-page .list [class*="icon-"] {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.wdUserCenter-page
+.fixed .btn {
+    display: block;
+    margin: 9px;
+    background-color: #32beff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

@@ -1,0 +1,117 @@
+/**
+ * @author: yangmingfang@ehaier.com
+ * @date: 2015-03-011
+ * @description: TS-PC myOrderPage
+ * @require: public.css
+ */
+
+.mark-red {
+	color: #ed1b23;
+}
+
+.my__order a {
+	text-decoration: none;
+}
+
+.leader-wrapper__side {
+	display: none;
+	width: 192px;
+	float: left;
+}
+
+.leader-wrapper_main {
+	width: 100%;
+	background: #fff;
+}
+
+.my__order .list__item--head {
+	line-height: 30px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	margin: 0;
+	font-size: 18px;
+	font-weight: normal;
+}
+.my__order .list__item--modify {
+	margin: 0 5px;
+	color: #005ea7;
+	font-size: 14px;
+}
+.my__order .list__item--modify:hover {
+	color: #ed1b23;
+}
+/* .my__order .list__item--body {
+	padding-bottom: 35px;
+	border-bottom: 1px solid #ddd;
+} */
+
+.my__order .list__item--body {
+
+}
+
+.my__order .order-consignee {
+	padding-bottom: 0;
+}
+
+.my__order .order-goods {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.my__order .order-goods a,
+.my__order .order-goods em {
+	color: #000;
+	font-weight: bold;
+}
+.my__order .order-goods table {
+	width: 100%;
+	color: #666;
+	table-layout: fixed;
+}
+.my__order .order-goods thead ,.order-thead{
+	height: 42px;
+	line-height: 42px;
+	background-color: #f3f3f3;
+}
+
+.my__order .order-goods td {
+	vertical-align: middle;
+}
+
+.my__order .order-goods tbody td{
+	padding: 35px 0;
+	/* border-bottom: 1px solid #ddd; */
+
+}
+.my__order .order-goods__img {
+
+	vertical-align: middle;
+	
+}
+
+.my__order .order-goods .list__item--operate a {
+	font-weight: normal;
+	color:#015da8;
+}
+
+.my__order .order-goods a:hover{
+	text-decoration:underline;
+}
+
+/* .my__order .order-goods td.text-center {
+	width: 10%;
+} */
+.text-right {
+	text-align: right;
+}
+
+.my__order .order-list__num {
+	width: 85%;
+	float: left;
+}
+
+.my__order .order-list__state {
+	width: 15%;
+	float: right;
+	text-align: center;
+}
+

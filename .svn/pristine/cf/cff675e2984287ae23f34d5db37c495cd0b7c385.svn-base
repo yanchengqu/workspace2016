@@ -1,0 +1,464 @@
+/**
+ * @author: chenxiaoyong@ehaier.com
+ * @date: 2015-02-05
+ * @description: TS-PC orderSubmitPage
+ * @require: public.css
+ */
+
+.flow {
+	line-height: 45px;
+	border-bottom: 2px solid #8c8c8c;
+}
+.flow {
+	margin-top: 92px;
+}
+.flow__caption {
+	width: 270px;
+	border-bottom: 2px solid #ed1b23;
+	margin-bottom: -2px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.flow__step {
+
+}
+.flow__step .steps{
+	padding-top: 7px;
+	vertical-align: top;
+}
+
+.controls-group {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: middle;
+}
+
+/* radiobox 控件 */
+
+.controls-group .radiobox {
+	float: left;
+	margin-right: 14px;
+}
+.radiobox {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 150px;
+	height: 65px;
+	line-height: 65px;
+	padding-left: 35px;
+	border: 1px solid #dfdfdf;
+	background-color: #f3f3f3;
+	color: #000;
+	font-size: 14px;
+	cursor: pointer;
+}
+.radiobox.checked {
+	border: 1px solid #ed1b23;
+	background-color: #fff;
+	cursor: default;
+}
+.radiobox input {
+	visibility: hidden;
+}
+
+/* selectbox 控件 */
+
+.controls-group .selectbox {
+	float: left;
+	margin-right: 14px;
+	z-index: 10;
+}
+.selectbox {
+	position: relative;
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 185px;
+	height: 65px;
+	line-height: 65px;
+	border: 1px solid #dfdfdf;
+	background-color: #f3f3f3;
+	color: #000;
+	font-size: 14px;
+	cursor: pointer;
+}
+.selectbox__title {
+	height: 65px;
+	line-height: 65px;
+	padding-left: 35px;
+}
+.selectbox__inner {
+	position: absolute;
+	left: -1px;
+	top: 65px;
+	z-index: 5;
+	display: none;
+	overflow: hidden;
+	width: 370px;
+	border: 1px solid #dfdfdf;
+	background-color: #fff;
+}
+.selectbox__option {
+	float:left;
+	width: 150px;
+	height: 65px;
+	line-height: 65px;
+	padding-left: 35px;
+	border-right: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+.selectbox__option:hover,
+.selectbox__option.selected {
+	background-color: #ed1b23;
+	color: #fff;
+}
+.selectbox .triangle-down {
+	position: absolute;
+	right: 10px;
+	top: 27.5px;
+	border-top-color: #b3b3b3;
+}
+
+.controls {}
+.control-label,
+.help-inline {
+	 display: inline-block;
+    *display: inline;
+    *zoom:1;-webkit-box-sizing: content-box;
+    height: 20px;
+    line-height: 20px;
+    padding: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #555;
+    vertical-align: top;
+}
+
+.order-submit-page {
+	color: #000;
+}
+.order-submit-page a {
+	text-decoration: none;
+}
+.order-submit-page a:hover {
+	text-decoration: underline;
+}
+.order-submit-page .order {}
+.order-submit-page .order__head {
+	line-height: 30px;
+	color: #666;
+	font-size: 14px;
+}
+.order-submit-page .order__head .text-important {
+	font-weight: bold;
+	vertical-align: sub;
+}
+.order-submit-page .order__warn {
+	padding-top: 10px;
+	font-size: 12px;
+}
+.order-submit-page .list {}
+.order-submit-page .list__item {}
+.order-submit-page .list__item--head {
+	line-height: 30px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	margin: 0;
+	font-size: 18px;
+	font-weight: normal;
+}
+.order-submit-page .list__item--modify {
+	margin: 0 5px;
+	color: #005ea7;
+	font-size: 14px;
+}
+.order-submit-page .list__item--modify:hover {
+	color: #ed1b23;
+}
+.order-submit-page .list__item--body {
+	padding-bottom: 35px;
+	border-bottom: 1px solid #ddd;
+}
+
+.order-submit-page .order-consignee {
+	padding-bottom: 0;
+}
+.order-submit-page .order-consignee__inner {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	padding: 25px;
+	border: 1px solid #ddd;
+	margin-bottom: 35px;
+	font-size: 0;
+}
+.order-consignee--name,
+.order-consignee--tel,
+.order-consignee--email,
+.order-consignee--province,
+.order-consignee--city,
+.order-consignee--region,
+.order-consignee--address {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin-right: 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+.order-submit-page .order-deliveryTime {
+	color: #666;
+}
+.order-submit-page .order-deliveryTime .order__head {
+	overflow: hidden;
+}
+.order-submit-page .order-deliveryTime .order__head span {
+	float: left;
+	width: 187px;
+	margin-right: 14px;
+}
+.order-submit-page .order-deliveryTime .selectbox__title,
+.order-submit-page .order-deliveryTime .selectbox__option {
+	position: relative;
+	line-height: 20px;
+}
+.order-submit-page .order-deliveryTime--date,
+.order-submit-page .order-deliveryTime--time {
+	margin-top: 12.5px;
+}
+
+.order-submit-page .order-invoice {}
+
+.order-submit-page 
+.order-invoice .tab-head {
+	border: none;
+	background-color: #fff;
+}
+.order-submit-page 
+.order-invoice .tab-head__item {
+	width: auto;
+	height: auto;
+	border: none;
+	margin: 0 14px 0 0;
+}
+
+.order-submit-page 
+.order-invoice .tab-body {
+	padding: 0;
+}
+
+.order-submit-page 
+.order-invoice 
+.control-label {
+	width: 100px;
+	text-align: right;
+}
+
+.order-submit-page .order-invoice--law {
+	border: 1px solid #ddd;
+	padding: 10px;
+	margin: 20px 0;
+	color: #666;
+	font-size: 12px;
+}
+.order-submit-page 
+.order-invoice .help-inline {
+	color: #b94a48;
+}
+.order-submit-page .order-invoice--name,
+.order-submit-page .order-remark--msg {
+	overflow: auto;
+	width: 385px;
+	height: 65px;
+	padding: 2px;
+	border: 1px solid #dfdfdf;
+	background-color: #f3f3f3;
+	resize: none;
+	color: #000;
+	vertical-align: middle;
+}
+
+.order-submit-page 
+.order-invoice .invoice-consignee {
+
+}
+
+.order-submit-page 
+.order-invoice .invoice-consignee__head {
+	color: #666;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.order-submit-page 
+.order-invoice .invoice-consignee__head em {
+	color: #333;
+	font-weight: bold;
+}
+
+.order-submit-page .order-goods {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.order-submit-page .order-goods a,
+.order-submit-page .order-goods em {
+	color: #000;
+	font-weight: bold;
+}
+.order-submit-page .order-goods table {
+	width: 100%;
+	color: #666;
+	table-layout: fixed;
+}
+.order-submit-page .order-goods thead {
+	height: 42px;
+	line-height: 42px;
+	background-color: #f3f3f3;
+}
+
+.order-submit-page .order-goods td {
+	vertical-align: middle;
+}
+.order-submit-page .order-goods tbody td{
+	padding: 35px 0;
+	border-bottom: 1px solid #ddd;
+
+}
+.order-submit-page .order-goods__img {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.order-submit-page .order-goods--price {}
+.order-submit-page .order-goods--count {}
+.order-submit-page .order-goods--total {}
+
+.order-submit-page .tcode {
+	padding: 20px 0 10px;
+	border: none;
+}
+
+.order-submit-page .order-submit {
+	padding: 0 0 60px;
+	text-align: right;
+}
+.order-submit-page .btn-large {
+	padding: 8px 20px;
+	border-radius: 4px;
+	font-family: "Microsoft YaHei";
+
+}
+.order-submit-page .order--amount {
+	margin-right: 50px;
+	font-size: 18px;
+}
+.order-submit-page .order--amount em {
+	color: #ed1b23;
+}
+
+
+.consignee-manage {
+	display: none;
+	border: 2px solid #ed1b23;
+}
+.consignee-manage .consignee-list {}
+.consignee-manage .consignee-list__item {
+	position: relative;
+	overflow: hidden;
+	line-height: 20px;
+	padding: 10px 20px;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+}
+.consignee-manage .consignee{
+	float: left;
+}
+.consignee-manage .consignee__inner {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: middle;
+}
+.consignee-manage .consignee--name,
+.consignee-manage .consignee--tel,
+.consignee-manage .consignee--email,
+.consignee-manage .consignee--province,
+.consignee-manage .consignee--city ,
+.consignee-manage .consignee--region,
+.consignee-manage .consignee--address {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	margin-right: 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.consignee-manage .consignee-list__item--action {
+	display: none;
+	float: right;
+	margin-top: 10px;
+}
+.consignee-manage .consignee-list__item--action a {
+	margin-left: 20px;
+	color: #015da8;
+	text-decoration: none;
+}
+.consignee-manage .consignee-list__item--action a:hover {
+	color: #ed1b23;
+	text-decoration: underline;
+}
+.consignee-manage 
+.consignee-list__item:hover,
+.consignee-manage 
+.consignee-list__item--active {
+	background-color: #eee;
+}
+
+.consignee-manage 
+.consignee-list__item:hover 
+.consignee-list__item--action,
+.consignee-list__item--active
+.consignee-list__item--action
+ {
+	display: block;
+}
+.consignee-manage 
+.consignee-manage__new {
+}
+.consignee-manage 
+.consignee-manage__new--head {
+	padding: 10px 20px;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.consignee-manage__new form {
+	display: none;
+	padding-left: 45px;
+}
+
+
+.consignee-manage  .control-label {
+	width: 80px;
+	text-align: right;
+
+}
+
+.consignee-manage  .help-inline {
+	color: #ed1b23;
+}
+
+.consignee-manage__action {
+	padding: 30px; 
+	/* text-align: center; */
+}
+.consignee-manage__action .btn { 
+	width: 150px;
+	padding: 5px 0 5px;
+	margin-right: 30px;
+	font-family: "Microsoft YaHei";
+}

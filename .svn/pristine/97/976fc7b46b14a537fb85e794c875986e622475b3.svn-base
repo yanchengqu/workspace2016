@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/dev/ts_h5/v1/css/pages/detail.css">
+	<script src="http://static.tongshuai.com/r/assets/zepto.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<a href="" class="pull-left">
+				<i class="fes-chevron-left"></i>
+			</a>
+			<a href="" class="pull-right">
+				<i class="fes-chevron-right"></i>
+			</a>
+			<div class="text-center">
+				<a href=""><i class="icon-logo"></i></a>
+			</div>
+		</header>
+		<div class="container listContainer">
+			<div class="details-box" id="details-box">
+				<h2>
+					<label>统帅冰箱</label>
+					<div class="mark-down"></div>
+					<a href="" class="buyBtn btn btn-important">我要购买</a>
+				</h2>
+				<ul>
+					<li>
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg1.jpg" width="110" />
+						<p>概述</p>
+					</li>
+					<li>
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg2.jpg" width="110" />
+						<p>参数</p>
+					</li>
+					<li>
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg3.jpg" width="110" />
+						<p>评论(1009)</p>
+					</li>
+					<li>
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg4.jpg" width="110" />
+						<p>服务</p>
+					</li>
+				
+				</ul>
+			</div>
+			<article class="rule-box">
+				<section>
+					<h3>外观</h3>
+					<figure>
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/ruleImg.jpg" width="165" />
+					</figure>
+				</section>
+				<section>
+					<h3>尺寸重量</h3>
+					<figure>
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/ruleImg.jpg" width="165" />
+					</figure>
+				</section>
+				<section>
+					<h3>外观颜色</h3>
+					<ul>
+						<li>
+							<span>上盖颜色:</span>
+							<p>银灰</p>
+						</li>
+						<li>
+							<span>箱体颜色:</span>
+							<p>瓷白</p>
+						</li>
+						<li>
+							<span>面板颜色:</span>
+							<p>生褐色</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>材质</h3>
+					<ul>
+						<li>
+							<span>箱体材质:</span>
+							<p>塑料</p>
+						</li>
+						<li>
+							<span>上盖材质:</span>
+							<p>塑料</p>
+						</li>
+						<li>
+							<span>内筒材质:</span>
+							<p>进口工程塑料PP</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>基本规格</h3>
+					<ul>
+						<li>
+							<span>显示方式:</span>
+							<p>LED</p>
+						</li>
+						<li>
+							<span>控制方式:</span>
+							<p>机械控制</p>
+						</li>
+						<li>
+							<span>排水方式:</span>
+							<p>下排水</p>
+						</li>
+						<li>
+							<span>洗净比:</span>
+							<p>0.8</p>
+						</li>
+						<li>
+							<span>水位选择:</span>
+							<p>1段-3段</p>
+						</li>
+						<li>
+							<span>噪音:</span>
+							<p>56/66DB</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>性能</h3>
+					<ul>
+						<li>
+							<span>容量:</span>
+							<p>2.0-4.5KG</p>
+						</li>
+						<li>
+							<span>功率:</span>
+							<p>200-300W</p>
+						</li>
+						<li>
+							<span>转速:</span>
+							<p>白色</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>程序按键</h3>
+					<ul>
+						<li>
+							<span>程序:</span>
+							<p>洗涤、漂洗、脱水、桶干燥、 常用、浸泡洗、轻柔、快速</p>
+						</li>
+						<li>
+							<span>按键:</span>
+							<p>水量、预约、程序、启动/暂 停、电源</p>
+						</li>
+					</ul>
+				</section>
+				<section>
+					<h3>特色功能</h3>
+					<ul>
+						<li>
+							<span>特色功能:</span>
+							<p>白色</p>
+						</li>
+						
+					</ul>
+				</section>
+
+			</article>
+		</div>
+		<footer class="footer">
+			<div class="footer_service">客服电话：4006-999 999</div>
+			<div class="footer_slogan">
+				<span class="icon-slogan"></span>
+			</div>
+			<div class="footer_copyright">Copyright &copy; 2014 Haier Group Leader.All rights reserved 鲁ICP 09096283</div>
+		</footer>
+	</div>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/detail.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/position.js"></script>
+</body>
+</html>

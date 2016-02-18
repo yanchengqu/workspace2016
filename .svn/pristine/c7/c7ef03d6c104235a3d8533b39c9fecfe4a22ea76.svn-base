@@ -1,0 +1,645 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+/* 
+    在body元素上加layout-bp实现大图布局；加layout-colum2实现两栏布局
+ */
+
+.wdHostHome-page {
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+.wdHostHome-page.layout-colum2 {
+  background-color: #fff;
+}
+
+.wdHostHome-page
+.nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  color: #fff;
+  background-color: transparent;
+}
+
+.wdHostHome-page
+.nav__back::before {
+	background-position: -50px -50px;
+}
+
+
+.wdHostHome-page.layout-colum2
+.nav__back::before {
+	background-position: -50px -25px;
+}
+
+.wdHostHome-page
+.nav .icon-home {
+  position: relative;
+  top: 9px;
+  vertical-align: top;
+}
+
+.wdHostHome-page
+.nav .icon-home {
+	display: none;
+	background-position: -50px -75px;
+}
+
+.wdHostHome-page.layout-colum2
+.nav .icon-home {
+	background-position: 0px 0px;
+}
+
+.wdHostHome-page
+.nav::after {
+  display: none;
+}
+
+.wdHostHome-page.layout-colum2
+.nav {
+  position: static;
+  color: #000;
+  background-color: #fff;
+}
+
+.wdHostHome-page .menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.wdHostHome-page
+.user {
+  position: relative;
+}
+
+.wdHostHome-page
+.user-bg {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.wdHostHome-page
+.user-info {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 84px;
+  padding-left: 24px;
+}
+
+.wdHostHome-page.layout-bp
+.user-info {
+  padding-left: 0;
+  padding-bottom: 44px;
+  text-align: center;
+}
+
+.wdHostHome-page.layout-colum2
+.user-info {
+  bottom: inherit;
+  height: 42px;
+  line-height: 42px;
+  padding-left: 18px;
+  background-color: rgba(0,0,0,.2);
+}
+
+.wdHostHome-page
+.user-info__img {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 3px #fff;
+          box-shadow: 0 0 0 3px #fff;
+}
+
+.wdHostHome-page.layout-colum2
+.user-info__img {
+  width: 28px;
+  height: 28px;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 0 0 1px #fff;
+          box-shadow: 0 0 0 1px #fff;
+}
+
+.wdHostHome-page
+.user-info-inner {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  margin-left: 14px;
+}
+
+.wdHostHome-page.layout-bp
+.user-info-inner {
+  display: block;
+  margin-left: 0;
+}
+
+.wdHostHome-page
+.user-info__name {
+  line-height: 20px;
+  font-size: 17px;
+}
+
+.wdHostHome-page.layout-colum2
+.user-info__name {
+  display: inline-block;
+}
+
+.wdHostHome-page
+.user-info__name
+small {
+  font-size: 13px;
+  vertical-align: baseline;;
+}
+
+.wdHostHome-page
+.user-info__authentication {
+  line-height: 16px;
+  font-size: 13px;
+}
+
+.wdHostHome-page.layout-colum2
+.user-info__authentication {
+  display: inline-block;
+}
+
+.wdHostHome-page
+.user-info__authentication::after {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  content: '';
+  width: 13px;
+  height: 13px;
+  margin-left: 8px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA35pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplMzMwM2Y1Yi03Y2I1LTQxN2EtODZjZS00Y2RmYjRlOTg1ZjMiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MjBCODE4NDEzRTc4MTFFNUFCQzVDRjY3QzgyMUQyMTAiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MjBCODE4NDAzRTc4MTFFNUFCQzVDRjY3QzgyMUQyMTAiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjhGMzkwMjEwMEYyMDY4MTE4MjJBOUJERTU1MTI3MkRDIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZDllMWEwNTEtN2FlNS0xMTc4LTlmYjctZGY0Nzg3NjZhYjE0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+qjebWAAAAd1JREFUeNqslj1LA0EQhu8ETZFCEbTQJqhYqIUaQUERIRbGIoWoEcRSLOz1HwSs1J9gJQGR2MVCISjYCFpJwI9CIX5UCcHCGHK+ixNZN3u7t8kNPGxubnbfzN7s3NmO41iGFqcxaTSLCRmwBD6JRZO5XgOHwLHz3yogCQa8rGFLtq4VdIJBEAZRGqu2A2ywxfmuQZrGO/ABCqqtU9kzWOZi4+BFM8c1o+rFF8iDHLgBJ+CU/LwFwByIgRHQBdrIb1Hmvz9chGyrMatZp8nyx0LgSBXgh1CEiuDM5BzVPEQNK+Ab7OrWaURoDZTBJWj2Q6hFIhIjkQIISe4bC22ALOjhfOPUgpitu2RrLHRA169gGHSDd/JdANsvIbZt5+Rj23TL9bkxxfOr6xl1gHuhtRxqCkUrVKGAPsHPrvN0j5Vzr0Kkncv6zy8e2CcatwX/A1gAJZACj4qjuSqsJT2wCe7fyF5srMpmFNn0c5knVFvH0s5RYIkOpdcuMQreaG6O1lK+YSe5c8Iy2wcBhQAr8U1uDhunvL7KZ0GRqx52aCOSuGlwxcUVXeIs3XdCVijrNGU8AVLCvSzNqevjJAj2qK+5WZlign58BYVBRiKS0XQIY6Eq89TjGFGTuT8CDAAWu3jD9jADZgAAAABJRU5ErkJggg==);
+  -webkit-background-size: 13px auto;
+  background-size: 13px auto;
+  vertical-align: top;
+}
+
+.wdHostHome-page
+.user-qrcode {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  width: 40px;
+  height: 40px;
+}
+
+.wdHostHome-page
+.user-qrcode img {
+  width: 100%;
+  vertical-align: top;
+}
+
+.wdHostHome-page.layout-bp
+.user-qrcode img {
+  webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.wdHostHome-page
+.user-loginbar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 12px;
+  color: #fff;
+  font-size: 13px;
+  /* background-color: rgba(0,0,0,.2); */
+}
+
+.wdHostHome-page
+.user-loginbar
+.btn {
+  padding: 2px 12px;
+  color: #fff;
+  font-size: 13px;
+  border-color: #fff;
+}
+
+.wdHostHome-page.layout-bp
+.wrapper {
+  padding: 10px;
+}
+
+.wdHostHome-page.layout-colum2
+.wrapper::before {
+  clear: both;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+}
+
+.wdHostHome-page
+.item {
+	display: block;
+  margin-bottom: -1px;
+  text-decoration: none;
+}
+
+.wdHostHome-page
+.item-head .btn-info {
+  padding: 2px 12px ;
+}
+
+.wdHostHome-page.layout-colum2
+.wrapper .item {
+  margin-bottom: 0;
+}
+
+.wdHostHome-page
+.item-head {
+  color: #000;
+  font-size: 15px;
+}
+
+.wdHostHome-page
+.item-head::after {
+  display: none;
+}
+
+.wdHostHome-page.layout-colum2
+.wrapper {
+  overflow: hidden;
+}
+
+.wdHostHome-page.layout-colum2
+.wrapper .item {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 260px;
+}
+
+.wdHostHome-page.layout-colum2
+.wrapper .item::before {
+  display: none;
+}
+
+.wdHostHome-page.layout-colum2
+.wrapper .item:nth-child(odd)::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 100%;
+}
+.wdHostHome-page.layout-colum2
+.wrapper .item::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .wdHostHome-page.layout-colum2
+  .wrapper .item:nth-child(odd)::before {
+      -webkit-transform: scaleY(1);
+      transform: scaleY(1);
+  }
+
+  .wdHostHome-page.layout-colum2
+  .wrapper::before {
+    -webkit-transform: scaleY(.5);
+      transform: scaleY(.5);
+  }
+
+  .wdHostHome-page.layout-colum2
+  .wrapper .item:nth-child(odd)::before {
+    -webkit-transform: scaleX(.5);
+    transform: scaleX(.5);
+  }
+}
+
+.wdHostHome-page
+.item-body {
+  position: relative;
+  padding: 12px;
+}
+
+.wdHostHome-page.layout-bp
+.item-body {
+  padding: 12px 0;
+}
+
+.wdHostHome-page
+.item-body__aside {
+  width: 104px;
+  height: 104px;
+  line-height: 104px;
+  text-align: center;
+}
+
+.wdHostHome-page.layout-bp
+.item-body__aside {
+  float: none;
+  width: 276px;
+  height: 276px;
+  line-height: 276px;
+  margin: 0 auto;
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__aside {
+  float: none;
+  width: 136px;
+  height: 136px;
+  line-height: 136px;
+  margin: 0 auto;
+}
+
+.wdHostHome-page
+.item-body__aside
+img {
+  width: 80%;
+  vertical-align: middle;
+}
+
+.wdHostHome-page
+.item-body__main {
+  margin-left: 120px;
+}
+
+.wdHostHome-page.layout-bp
+.item-body__main {
+  margin-left: 0;
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__main {
+  margin-left: 0;
+}
+
+.wdHostHome-page.layout-bp
+.item-body__main::before {
+  display: block;
+  content: '';
+  width: 100%;
+  height: 1px;
+  margin-bottom: 12px;
+  background-color: #efefef;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  .wdHostHome-page.layout-bp
+  .item-body__main::before {
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+  }
+}
+
+.wdHostHome-page
+.item-body__main
+.s {
+  line-height: 20px;
+  white-space: nowrap;
+  word-wrap: normal;
+  vertical-align: top;
+}
+
+.wdHostHome-page
+.item-body__top .s {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}
+
+.wdHostHome-page.layout-bp
+.item-body__top {
+  padding: 0 12px;
+}
+
+.wdHostHome-page
+.item-body__top 
+.s1 {
+  color: #000;
+  font-size: 16px;
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__top 
+.s1 {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.wdHostHome-page
+.item-body__top 
+.s2 {
+  color: #000;
+  font-size: 16px;
+}
+
+.wdHostHome-page.layout-bp
+.item-body__top 
+.s2 {
+  display: inline-block;
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__top 
+.s2 {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.wdHostHome-page
+.item-body__top 
+.s3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  color: #6e6e6e;
+  font-size: 14px;
+}
+
+.wdHostHome-page.layout-bp
+.item-body__top 
+.s3 {
+  display: inline-block;
+  /* display: none; */
+  color: #000;
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__top 
+.s3 {
+  display: inline-block;
+  font-size: 14px;
+  display: none;
+}
+
+.wdHostHome-page
+.item-body__bottom {}
+
+.wdHostHome-page.layout-bp
+.item-body__bottom {
+  padding: 0 12px;
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__bottom {
+  overflow: hidden;
+}
+
+.wdHostHome-page
+.item-body__bottom 
+.s4 {
+  display: inline-block;
+  color: #6e6e6e;
+  font-size: 13px;
+  vertical-align: top;
+}
+
+.wdHostHome-page.layout-bp
+.item-body__bottom 
+.s4 {
+  display: inline-block;
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__bottom 
+.s4 {
+  display: inline-block;
+  /* float: left; */ 
+  /* display: block; */
+}
+
+.wdHostHome-page
+.item-body__bottom 
+.s5 {
+  color: #6e6e6e;
+  font-size: 13px;
+}
+
+.wdHostHome-page
+.item-body__bottom
+.s5 span {
+  color: #f02864;
+  font-size: 17px;
+}
+
+.wdHostHome-page.layout-bp
+.item-body__bottom 
+.s5 {
+  /* display: inline-block; */
+}
+
+.wdHostHome-page.layout-bp
+.item-body__bottom 
+.s5 span {
+  /* font-size: 13px; */
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__bottom 
+.s5 {
+ /*  clear: both;
+ float: left;
+ display: inline-block; */
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__bottom 
+.s5 span {
+  font-size: 13px;
+}
+
+.wdHostHome-page
+.item .label {
+  color: #fff;
+  font-size: 12px;
+  webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-shadow: none;
+}
+
+.wdHostHome-page
+.item .label-important,
+.item .label-warning {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  padding: 2px 8px;
+  background-color: #f02864;
+}
+
+.wdHostHome-page
+.item .label-warning {
+  background-color: #32beff;
+}
+
+.wdHostHome-page
+.item-body__bottom 
+.label-info {
+  display: none;
+  padding: 2px 3px;
+  background-color: #32beff;
+   webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.wdHostHome-page.layout-bp
+.item-body__bottom 
+.label-info {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.wdHostHome-page.layout-colum2
+.item-body__bottom 
+.label-info {
+  margin-left: 3px;
+  float: left;
+  display: inline-block;
+  vertical-align: top;
+}
+
+#qrcode .dialog-body {
+	padding: 50px 0;
+	text-align: center;
+}
+#qrcode .dialog-body img {
+	width: 220px;
+	height: 220px;
+	vertical-align: middle;
+}
+
+.typeList li{
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.typeList .checkbox{
+    margin: 0 24px;
+}

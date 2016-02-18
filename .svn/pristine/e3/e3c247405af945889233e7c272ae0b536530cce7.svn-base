@@ -1,0 +1,57 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.rp-page {
+	padding-bottom: 20px;
+	background-color: #fff;
+}
+
+.rp-page
+.item {
+	line-height: 20px;
+	margin-bottom: 0;
+	font-size: 14px;
+	color: #000;
+}
+
+.rp-page
+.item-head__inner {
+	padding: 0 20px;
+	text-indent: 2em;
+}
+
+.rp-page
+.item-body {
+	padding: 0 20px;
+	text-indent: 2em;
+
+}
+
+.rp-page
+.item.head {
+	font-weight: bold;
+}
+
+.rp-page
+.item.head 
+.item-head__inner {
+	font-size: 17px;
+	text-indent: 0;
+}
+
+.rp-page
+.item.head 
+.item-body {
+
+}
+
+.item::before,
+.item::after,
+.item-head:after { 
+	display: none;
+}

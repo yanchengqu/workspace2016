@@ -1,0 +1,60 @@
+
+.doCommentContainer figure{ margin: 0 3.5%;line-height: 2.9rem;border-bottom: 1px solid #ccc;}
+.doCommentContainer figure img{ border-radius: 1.25rem;vertical-align:middle;}
+.doCommentContainer figure span{ margin-left: 0.1rem; font-size: 0.85rem;color:#38454f;}
+.doCommentContainer textarea{
+	-webkit-appearance: none;
+	outline: none;
+	margin: 0.5rem 3.5% ;
+	padding: 0 0.5rem;
+	width: 86%;
+	min-height: 15rem;
+	border:none;
+	border-radius: 10px;
+	font-size: 0.75rem;
+	overflow: scroll;
+	-webkit-tap-highlight-color: transparent;
+	-moz-tap-highlight-color: transparent;
+	-ms-tap-highlight-color: transparent;
+	-o-tap-highlight-color: transparent;
+}
+
+.doCommentContainer ::-webkit-input-placeholder,
+.doCommentContainer :-moz-placeholder,
+.doCommentContainer ::-moz-placeholder,
+.doCommentContainer :-ms-input-placeholder { 
+	color: #b3bec5;
+	font-size: 0.75rem;
+}
+
+.doCommentContainer ::-webkit-scrollbar-track-piece{
+	background-color:#fff;/*滚动条的背景颜色*/
+	-webkit-border-radius:4px;/*滚动条的圆角宽度*/
+}
+
+.doCommentContainer ::-webkit-scrollbar{
+	margin-left:10px;
+	width:8px;/*滚动条的宽度*/
+	height:8px;/*滚动条的高度*/
+}
+
+.doCommentContainer ::-webkit-scrollbar-thumb:vertical{/*垂直滚动条的样式*/
+	height:20px;
+	background-color:#999;
+	-webkit-border-radius:4px;
+	outline:2px solid #fff;
+	outline-offset:-2px;
+	border: 2px solid #fff;
+}
+
+.doCommentContainer ::-webkit-scrollbar-thumb:hover{/*滚动条的hover样式*/
+	height:20px;
+	background-color:#afafaf;
+	-webkit-border-radius:4px;
+}
+
+.doCommentContainer ::-webkit-scrollbar-thumb:horizontal{/*水平滚动条的样式*/
+    width: 5px;
+    background-color: #CCCCCC;
+    -webkit-border-radius: 6px;
+}

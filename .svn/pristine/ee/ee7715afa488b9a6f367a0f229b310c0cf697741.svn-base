@@ -1,0 +1,285 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.wdOrderList-page {
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+  -webkit-user-select:none;
+}
+
+.wdOrderList-page
+.nav {
+  position: relative;
+  z-index: 10;
+}
+
+.wdOrderList-page
+.nav__title .clearfix {
+	width: 196px;
+	height: 28px;
+	line-height: 28px;
+	margin: 0 auto;
+	margin-top: 8px;
+	border: 1px solid #00baf5;
+	color: #00baf5;
+	font-size: 14px;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+        border-radius: 3px;
+}
+
+.wdOrderList-page
+.nav__title .pull-left {
+	width: 50%;
+	text-align: center;
+}
+
+.wdOrderList-page
+.nav__title .pull-left.cur {
+	background-color: #00baf5;
+	color: #fff;
+}
+
+.wdOrderList-page .menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.wdOrderList-page
+.order-total {
+  padding: 14px 0;
+  background-color: #fff;
+}
+
+.wdOrderList-page
+.order-total
+.pull-left {
+  position: relative;
+  width: 50%;
+  height: 50px;
+  color: #000;
+  text-align: center;
+}
+
+.wdOrderList-page
+.order-total
+.pull-left:first-child::after {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: '';
+  width: 1px;
+  height: 100%;
+  background-color: #efefef;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+.wdOrderList-page
+.order-total
+.pull-left:first-child::after {
+      -webkit-transform: scaleX(.5);
+      transform: scaleX(.5);
+  }
+
+}
+
+.wdOrderList-page
+.order-total
+.pull-left span {
+  display: inline-block;
+  line-height: 20px;
+  padding: 7px 0;
+  font-size: 20px;
+}
+
+.wdOrderList-page
+.order-total
+.pull-left div {
+  color: #6e6e6e;
+  font-size: 12px;
+}
+
+.wdOrderList-page
+.list {
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+.wdOrderList-page
+.list__item {
+  padding-left: 12px;
+}
+
+.wdOrderList-page
+.statusbar {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 12px;
+  color: #6e6e6e;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.wdOrderList-page
+.statusbar li {
+  float: left;
+  width: 20%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wdOrderList-page
+.statusbar span {
+  color: #6e6e6e;
+  text-decoration: none;
+}
+
+.wdOrderList-page
+.statusbar .cur span{
+  display: inline-block;
+  position: relative;
+  color: #32beff;
+}
+
+.wdOrderList-page
+.statusbar .cur 
+span::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #32beff;
+}
+
+.wdOrderList-page 
+.item:last-of-type {
+  margin-bottom: 0;
+}
+
+.wdOrderList-page 
+.item-head {
+  line-height: 43px;
+  color: #000;
+  font-size: 15px;
+}
+
+.wdOrderList-page
+.item-head__inner {
+  overflow: hidden;
+}
+
+.wdOrderList-page
+.item-head__inner
+.pull-left {
+  font-size: 14px;
+}
+
+.wdOrderList-page
+.item-head__inner
+.pull-right {
+  color: #00baf5;
+}
+
+
+.wdOrderList-page
+.item-body {
+  padding: 10px 12px;
+  background-color: #fff;
+}
+
+.wdOrderList-page
+.item-body__aside img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.wdOrderList-page
+.item-body__main {
+  font-size: 13px;
+  margin-left: 82px;
+}
+
+.wdOrderList-page
+.item-body__top {
+  overflow: hidden;
+  max-height: 30px;
+  line-height: 15px;
+  color: #000;
+  font-size: 15px;
+  text-overflow: ellipsis;
+}
+
+.wdOrderList-page
+.item-body__top span { color: #f63;}
+
+.wdOrderList-page
+.item-body__bottom { 
+  overflow: hidden; 
+  height: 30px;
+  line-height: 15px;
+  padding-top: 5px;
+  color: #6e6e6e;
+  font-size: 13px;
+}
+
+.wdOrderList-page
+.item .total {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 12px;
+  color: #6e6e6e;
+  font-size: 13px;
+  text-align: right;
+}
+
+.wdOrderList-page
+.item .total em {
+  color: #000;
+}
+
+.wdOrderList-page
+.item-foot {
+  line-height: 50px;
+  font-size: 0;
+  text-align: right;
+}
+
+.wdOrderList-page
+.item-foot .btn {
+  margin-left: 10px;
+  border-color: #d9d9d9;
+}
+
+.wdOrderList-page
+.item-foot .btn--color {
+  border-color: #f02864;
+  color: #f02864;
+}
+
+.wdOrderList-page
+.wrapper{
+  display: none;
+}
+
+.wdOrderList-page
+.wrapper.cur{
+  display: block;
+}
+
+.wdOrderList-page
+.item .order_empty{
+  text-align: center;
+  color: rgba(233,23,32,1);
+}

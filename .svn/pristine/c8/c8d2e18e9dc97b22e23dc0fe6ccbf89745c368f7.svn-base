@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>微店主首页</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/wdHostHome.css">
+	<link rel="stylesheet" href="/js/plugins/slide/slide.css">	
+	<script src="http://static.tongshuai.com/wd/js/hdk-0.1.0.js"></script>	
+</head>
+<!-- 支持3种布局：1、默认布局；2、大图布局（layout-bp）；3、两栏布局（layout-colum2） -->
+<body class="wdHostHome-page layout-bp">
+	<!-- 头部导航 -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<div class="nav__action">
+				<a href="#" class="icon-home"></a>
+			</div>
+			<div class="nav__title">海尔集团授权创客云微店</div>
+		</div>
+	</div>
+	<!-- 用户头部  -->
+	<div class="user">
+		<img class="user-bg" src="/img/pages/wdHome/bg.png" alt="">
+		<div class="user-info">
+			<!-- <img class="user-info__img" src="/img/pages/wdHome/userPortrait.jpg" alt=""> -->
+			<div class="user-info-inner">
+				<div class="user-info__name">李老师<small>的微店</small></div>
+				<div class="user-info__authentication">已认证</div>
+			</div>
+		</div>
+		<div class="user-loginbar">
+			<a href="#" class="btn btn-line">分享</a>
+		</div>
+		<a class="user-qrcode" href="#">
+			<img src="/img/pages/wdHome/qrcode.png" alt="">
+		</a>
+	</div>
+
+	<!-- 商品列表 -->
+	<div class="item">
+		<div class="item-head">
+			<div class="item-head__inner">
+				<div class="pull-right">
+					<a href="#" class="btn btn-info">选品</a>
+				</div>
+				<div class="nav__action" id="lmType" data-id="2736">分类</div>
+				精彩推荐
+			</div>
+		</div>
+	</div>
+	<div class="wrapper">
+		<div class="item">
+			<div class="item-body">
+				<div class="item-body__aside">
+					<img data-original="/img/pages/wdHome/pic.png" alt="">
+				</div>
+				<div class="item-body__main">
+					<div class="item-body__top">
+						<div class="s s1">海尔洗衣机</div>
+						<div class="s s2">TQS75-ZJ1588</div>
+						<div class="s s3">洗涤不移位  一件也能用</div>
+					</div>
+					<div class="item-body__bottom">
+						<div class="s s4">原价：<span>&yen;4,200</span></div>
+						<div class="s s4">微价：<span>&yen;4,200</span></div>
+						<div class="s s5">佣金：<span>&yen;3,689</span></div>
+						<!-- <div class="label label-info">有</div> -->
+					</div>
+				</div>
+				<div class="label label-important">推荐</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-body">
+				<div class="item-body__aside">
+					<img data-original="/img/pages/wdHome/pic.png" alt="">
+				</div>
+				<div class="item-body__main">
+					<div class="item-body__top">
+						<div class="s s1">海尔洗衣机</div>
+						<div class="s s2">TQS75-ZJ1588</div>
+						<div class="s s3">洗涤不移位  一件也能用</div>
+					</div>
+					<div class="item-body__bottom">
+						<div class="s s4">原价：<span>&yen;4,200</span></div>
+						<div class="s s4">微价：<span>&yen;4,200</span></div>
+						<div class="s s5">佣金：<span>&yen;3,689</span></div>
+						<!-- <div class="label label-info">有</div> -->
+					</div>
+				</div>
+				<div class="label label-warning">精品</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-body">
+				<div class="item-body__aside">
+					<img data-original="/img/pages/wdHome/pic.png" alt="">
+				</div>
+				<div class="item-body__main">
+					<div class="item-body__top">
+						<div class="s s1">海尔洗衣机</div>
+						<div class="s s2">TQS75-ZJ1588</div>
+						<div class="s s3">洗涤不移位  一件也能用</div>
+					</div>
+					<div class="item-body__bottom">
+						<div class="s s4">原价：<span>&yen;4,200</span></div>
+						<div class="s s4">微价：<span>&yen;4,200</span></div>
+						<div class="s s5">佣金：<span>&yen;3,689</span></div>
+						<!-- <div class="label label-info">有</div> -->
+					</div>
+				</div>
+				<div class="label label-important">推荐</div>
+			</div>
+		</div>
+		<div class="item">
+			<div class="item-body">
+				<div class="item-body__aside">
+					<img data-original="/img/pages/wdHome/pic.png" alt="">
+				</div>
+				<div class="item-body__main">
+					<div class="item-body__top">
+						<div class="s s1">海尔洗衣机</div>
+						<div class="s s2">TQS75-ZJ1588</div>
+						<div class="s s3">洗涤不移位  一件也能用</div>
+					</div>
+					<div class="item-body__bottom">
+						<div class="s s4">原价：<span>&yen;4,200</span></div>
+						<div class="s s4">微价：<span>&yen;4,200</span></div>
+						<div class="s s5">佣金：<span>&yen;3,689</span></div>
+						<!-- <div class="label label-info">有</div> -->
+					</div>
+				</div>
+				<div class="label label-important">推荐</div>
+			</div>
+		</div>
+	</div>
+
+	<!--分类-->
+	<div class="menu_slidebar lm_slidebar">
+		<div class="list_content_mask"></div>
+		<div class="slidebar-content">
+			<div class="slidebar-header">
+	            <span class="slidebar-title-back"><i></i></span>
+	            <span class="slidebar-title-name">分类</span>
+	        </div>
+	        <div class="slidebar-items-container">
+	        	<div class="slidebar_space"></div>
+	        	<div class="slidebar_detail">
+	        		<div class="lmContainer">
+	        			<ul class="typeList list" id="typeList"></ul>
+	        		</div>
+	        	</div>
+	        </div>
+		</div>
+	</div>
+
+	<!-- 底部菜单 -->
+	<div class="menu">
+		<a class="menu__item menu__item--active" href="#">
+			<i class="icon-wd"></i>
+			<div class="menu__title">微店</div>
+		</a>
+		<a class="menu__item" href="#">
+			<i class="icon-traffic"></i>
+			<div class="menu__title">流量</div>
+		</a>
+		<a class="menu__item" href="">
+			<i class="icon-money"></i>
+			<div class="menu__title">营收</div>
+		</a>
+		<a class="menu__item" href="#">
+			<i class="icon-file"></i>
+			<div class="menu__title">订单</div>
+		</a>
+		<a class="menu__item" href="#">
+			<i class="icon-setting"></i>
+			<div class="menu__title">设置</div>
+		</a>
+	</div>
+	<script src="/js/zepto.min.js"></script>
+	<script src="/js/zepto.lazyload.js"></script>
+	<script src="/js/h/dist/h.js"></script>	
+	<script src="/js/plugins/slide/sliderAside.js"></script>	
+	<script src="/js/pages/wdHostHome.js"></script>	
+	<script>
+		$(function(){
+				$('.wrapper img').lazyload({
+
+			effect : "fadeIn"
+		});
+
+		});
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.orderList-page {
+  background-color: #f4f4f4;
+}
+
+.orderList-page
+.nav {
+  position: relative;
+  z-index: 10;
+}
+
+.orderList-page
+.statusbar {
+  height: 45px;
+  line-height: 45px;
+  padding: 0 12px;
+  color: #6e6e6e;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.orderList-page
+.statusbar li {
+  float: left;
+  width: 20%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.orderList-page
+.statusbar a {
+  color: #6e6e6e;
+  text-decoration: none;
+}
+
+.orderList-page
+.statusbar .cur a {
+  display: inline-block;
+  position: relative;
+  color: #32beff;
+}
+
+.orderList-page
+.statusbar .cur 
+a::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #32beff;
+}
+
+.orderList-page 
+.item:last-of-type {
+  margin-bottom: 0;
+}
+
+.orderList-page 
+.item-head {
+  line-height: 43px;
+  color: #000;
+  font-size: 15px;
+}
+
+.orderList-page
+.item-head__inner {
+  overflow: hidden;
+}
+
+.orderList-page
+.item-head__inner
+.pull-left {
+  font-size: 14px;
+}
+
+.orderList-page
+.item-head__inner
+.pull-right {
+  color: #00baf5;
+}
+
+
+.orderList-page
+.item-body {
+  padding: 10px 12px;
+  background-color: #fff;
+}
+
+.orderList-page
+.item-body__aside img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.orderList-page
+.item-body__main {
+  font-size: 13px;
+  margin-left: 82px;
+}
+
+.orderList-page
+.item-body__top {
+  overflow: hidden;
+  max-height: 30px;
+  line-height: 15px;
+  color: #000;
+  font-size: 15px;
+  text-overflow: ellipsis;
+}
+
+.orderList-page
+.item-body__top span { color: #f63;}
+
+.orderList-page
+.item-body__bottom { 
+  overflow: hidden; 
+  height: 30px;
+  line-height: 15px;
+  padding-top: 5px;
+  color: #6e6e6e;
+  font-size: 13px;
+}
+
+.orderList-page
+.item .total {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 12px;
+  color: #6e6e6e;
+  font-size: 13px;
+  text-align: right;
+}
+
+.orderList-page
+.item .total em {
+  color: #000;
+}
+
+.orderList-page
+.item-foot {
+  line-height: 50px;
+  font-size: 0;
+  text-align: right;
+}
+
+.orderList-page
+.item-foot .btn {
+  margin-left: 10px;
+  border-color: #d9d9d9;
+}
+
+.orderList-page
+.item-foot .btn--color {
+  border-color: #f02864;
+  color: #f02864;
+}

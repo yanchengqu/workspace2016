@@ -1,0 +1,29 @@
+{
+  "name": "fed",
+  "version": "1.0.0",
+  "description": "FED means front-end documents.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/u9648u6653u52c7/FED.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "docs"
+  ],
+  "author": "9648",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/u9648u6653u52c7/FED/issues"
+  },
+  "homepage": "https://github.com/u9648u6653u52c7/FED#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0"
+  }
+}

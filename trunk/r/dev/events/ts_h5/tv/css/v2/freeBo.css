@@ -1,0 +1,36 @@
+@charset "utf-8";
+html,body,address,blockquote,div,dl,form,h1,h2,h3,h4,h5,h6,ol,p,pre,table,ul,dd,dt,li,tbody,td,tfoot,th,thead,tr,button,del,ins,map,object,a,abbr,acronym,b,bdo,big,br,cite,code,dfn,em,i,img,kbd,q,samp,small,span,strong,sub,sup,tt,var,legend,fieldset,textarea
+{
+	margin: 0;
+	padding: 0;
+}
+
+img,fieldset {
+	border: 0;
+}
+
+
+/* set html5 elements to block */
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video title{ 
+	display: block; 
+	-webkit-user-select:none;
+}
+mark, rp, rt, ruby, summary, time{ display: inline }
+ul,li,p,h3,h2,h1,samp,label,dl,dt,dd,sup,sub{ list-style:none outside none;-webkit-text-size-adjust:none;}
+html{width:100%;}
+body{
+	margin:0 auto;
+	width:100%;
+	font-size: 12px;
+	font-family:'microsoft yahei',Verdana,Arial,Helvetica,sans-serif;
+}
+/*自由播*/
+.FreeBox{width: 100%;overflow: hidden;}
+.FreeBox figure{overflow: hidden;margin:0;padding: 0;width: 100%;}
+.FreeBox figure a{display: block;}
+.FreeBox figure img{width: 100%;float: left;}
+.FreeBox .activeBox{background-color: #00e3bf;padding: 18px 5px 16px;clear:both;overflow: hidden;font-size: 14px;}
+.FreeBox .activeBox h2{overflow: hidden;}
+.FreeBox .activeBox h2 span{display: inline-block;color: #fff;background-color: #000000;font-size: 14px;padding: 2px 5px;}
+.FreeBox .activeBox p{line-height: 22px;padding-top: 10px;}
+.FreeBox .activeBox .weixinMark{text-align: center;overflow: hidden;padding-top: 25px;}

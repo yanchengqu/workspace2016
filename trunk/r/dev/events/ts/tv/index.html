@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>统帅自由播电视</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="chenxiaoyong@ehaier.com">
+<meta name="application-name" content="TS APP">
+<link rel="shortcut icon" href="">
+<!--[if lt IE 9]>
+<script src="http://static.tongshuai.com/r/assets/html5shiv.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts/v1/css/public.css">
+<link rel="stylesheet" href="./css/tv.css" />
+<script src="http://static.tongshuai.com/r/assets/jquery-1.7.2.min.js"></script>	
+</head>
+<body>
+	<div class="wrap comments-page">		
+		<div class="header">
+			<div class="container">
+				<div class="pull-left">
+					<a href="http://www.tongshuai.com" class="icon icon-logo">&nbsp;</a>
+				</div>
+				<div id="J_switchCity" class="area">
+					<span class="split-line"></span>
+					<i class="icon icon-location"></i>
+					<span id="J_currentCity" class="nav__top--city">北京</span>
+				</div>
+				<div class="loginbar">
+					<i class="icon icon-user"></i>
+					<div class="loginIcon login" style="display: inline;"><a href="javascript:forward(0);">登录</a><span class="split-line">|</span><a href="javascript:forward(1);">注册</a></div>
+					<div class="loginIcon exit" style="display: none;"><a href="javascript:forward(2);">退出</a><span class="split-line">|</span><a href="/pc/order/orderList.html">我的订单</a></div>
+				</div>
+				<div class="nav">
+					<a class="nav__item" href="http://shop.tongshuai.com/">网上商城</a>
+					<a class="nav__item" href="http://www.tongshuai.com/DIY/">家电定制</a>
+					<!--
+					<a class="nav__item" href="">产品中心</a>
+					-->
+					<a class="nav__item" href="http://bbs.tongshuai.com/portal.php"><i class="icon icon-csad"></i>社区</a>
+					<a class="nav__item" href="http://www.tongshuai.com/campaign/">活动部落</a>
+					<a class="nav__item" href="http://www.tongshuai.com/service/">安心服务</a>
+					<a class="nav__item" href="http://www.tongshuai.com/about_leader/leader/brand/">关于统帅</a>
+				</div>
+			</div>
+			<div class="header__opacity"></div>
+		</div>
+		<script type="text/javascript">
+			function getcookie(name) {
+				var cookie_start = document.cookie.indexOf(name);
+				var cookie_end = document.cookie.indexOf(";", cookie_start);
+				return cookie_start == -1 ? '' : unescape(document.cookie.substring(cookie_start + name.length + 1, (cookie_end > cookie_start ? cookie_end : document.cookie.length)));
+			}
+			
+			function istrsidssdssotoken(){
+				return !!getcookie("trsidssdssotoken");
+			}
+			
+			function redirectToPage(page,href){
+				var url = href || window.location.href,
+					code = page.indexOf('?')==-1 ? '?':'&';
+				
+				url = url.charAt(url.length-1)=='/' ? url:url+'/';
+					
+				window.location.href = page+code+"returnUrl="+encodeURIComponent(url);
+			}
+			
+			function isToLogin(){ 
+				var islogin = istrsidssdssotoken();
+				!islogin && forward(0);
+				return islogin;
+			}
+			
+			$(function(){
+				var islogin = istrsidssdssotoken();
+				$('.exit').css('display',islogin?'inline':'none').siblings('.loginIcon').css('display',islogin?'none':'inline');
+			});
+			
+			function forward(n) {
+				var page = '';
+				var url = '';
+				switch(n){ 
+					case 0:
+						page = "http://user.tongshuai.com/ids/ts/login.jsp";
+						url = "http://shop.tongshuai.com/pc/login.html?redirect="+window.location.href;
+						break;
+					case 1:
+						page = "http://user.tongshuai.com/ids/ts/regUser.jsp";
+						break;
+					case 2:
+						page ="http://user.tongshuai.com/ids/ts/logout.jsp";
+						url = "http://shop.tongshuai.com/pc/logout.html";
+						break;
+				}
+				page && redirectToPage(page,url);
+			}
+
+		</script>
+		<div class='tstv'>
+			<div class="tsb-1 tsball"></div>
+			<div class="tsb-1b tsball"></div>
+			<div class="tsb-2 tsball">
+				<div class='tsbinfo'>
+					<span class='infotitle'>活动须知</span>
+					<p class='infocontent'>4月15日11:00-4月29日23:59，用户微信扫描二维码进入活动页面并分享到朋友圈，即可获得一次抽奖机会（需填写姓名和手机号码），将有机会获得价值149元、299元、598元代金券返现首发购机，优惠券及2000元返现（四种面额随机获取一种），并于次日上午10:00统一发送相同面额的T码到用户的手机上。购机时同时填写T码，即可获得对应面额的现金减免。（代金券使用时效：4.15-4.30日）</p>
+				
+					<img class='codeimg' src="./image/codeimg_03.png" alt="微信扫一扫" width="222" height="253">
+				</div>
+				
+			</div>
+			<div class="tsb-3 tsball"></div>
+			<a href="http://shop.tongshuai.com/pc/product/R00425291.html"><div class="tsb-4 tsball"></div></a>
+			<a href="http://shop.tongshuai.com/pc/product/R00420236.html"><div class="tsb-5 tsball"></div></a>
+			<a href="http://shop.tongshuai.com/pc/product/R00432506.html"><div class="tsb-6 tsball"></div></a>
+			<a href="http://shop.tongshuai.com/pc/product_buy/R00374545.html" class="tsb-7 tsball">
+				<div class="tsbbottom">
+					<span class='btn-buy'></span>
+				</div>
+			</a>
+			
+		</div>
+		<div class="footer">
+			<div class="container">
+				<ul class="footer-list">
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">统帅产品</h5>
+						<div class="footer-list__item--body">
+							<a href="http://www.tongshuai.com/about_leader/leader/">了解统帅</a><br>
+							<a href="http://www.tongshuai.com/about_leader/haier_profile/">统帅与海尔</a><br>
+							<a href="http://www.tongshuai.com/about_leader/newsroom/">统帅新闻</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">产品中心</h5>
+						<div class="footer-list__item--body">
+							<a href="http://www.tongshuai.com/products/tv/">电视</a><span>\</span><a href="http://www.tongshuai.com/products/bg/">冷柜</a><span>\</span><a href="http://www.tongshuai.com/products/bx/">冰箱</a><br>
+							<a href="http://www.tongshuai.com/products/kt/">空调</a><span>\</span><a href="http://www.tongshuai.com/products/xyj/">洗衣机</a><span>\</span><a href="http://www.tongshuai.com/products/ts_drsq/">热水器</a><br>
+							<a href="http://www.tongshuai.com/products/rqz/">燃气灶</a><span>\</span><a href="http://www.tongshuai.com/products/xyyj/">吸油烟机</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">服务与支持</h5>
+						<div class="footer-list__item--body">
+							<a href="http://www.tongshuai.com/service/questions/">常见问题</a><span>\</span><a href="http://www.tongshuai.com/service/product_registration/">产品注册</a><br>
+							<a href="http://www.tongshuai.com/service/gurantees/fwjs/">延保服务</a><span>\</span><a href="http://www.tongshuai.com/service/installation_and_maintenance/">维修与安装</a><br>
+							<a href="http://www.tongshuai.com/service/warranty_exension/">收费标准</a><span>\</span><a href="http://www.tongshuai.com/service/showQuestions.shtml">在线咨询</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">关注我们</h5>
+						<div class="footer-list__item--body">
+							<a href="javascript:;" target="_blank" class="icon icon-weixin">
+								<span class="qrcode"></span>
+							</a>
+							<a href="http://e.weibo.com/2003689247/profile" target="_blank" class="icon icon-weibo"></a>
+							<a href="http://site.douban.com/tongshuai/ " target="_blank" class="icon icon-douban"></a>
+							<a href="http://page.renren.com/601311553?id=601311553" target="_blank" class="icon icon-renren"></a>
+							<a href="http://www.haier.net/cn/">海尔集团</a><span>\</span><a href="http://bbs.tongshuai.com/">社区</a>
+						</div>
+					</li>
+				</ul>  
+				<div class="footer-copyright">
+					<a href="http://www.tongshuai.com/about_leader/leader/brand/">联系我们</a>
+					<span class="split-line"></span>
+					<a href="http://www.tongshuai.com/terms_conditions/">法律声明</a>
+					<span class="split-line"></span>
+					<a href="http://www.tongshuai.com/sitemap/">网站地图</a>
+					©2014 Haier Group Leader. All rights reserved 鲁ICP备09096283  
+				</div>
+			</div>
+		</div>
+	</div>
+<script>
+	function autoW(){
+		var screenW = $(window).width();
+		if(screenW<1100){
+			$('.tsball').css('width','1200px');
+		}else{
+			$('.tsball').css('width','100%');
+		}
+	}
+	autoW();
+	$(window).resize(function () {
+		autoW();
+	});
+	
+</script>
+</body>

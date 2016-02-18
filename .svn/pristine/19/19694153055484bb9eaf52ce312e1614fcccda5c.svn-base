@@ -1,0 +1,362 @@
+.container{
+	width:100%;
+}
+.comments-page .header .container,
+.comments-page .footer .container {
+	width: 1000px;
+}
+.comments-container{
+	width:1000px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.commentsType {
+	background: #FFF;
+	overflow: hidden;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	height: 140px;
+}
+.commentTypeItemNar {
+	width: 140px;
+	border-right:1px solid #CCC;
+}
+.commentTypeItem {
+	float: left;
+	display: inline;
+	height: 83px;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+.commentTypeItem strong {
+	font-size: 60px;
+	color: #ed1c22;
+	margin-left:-29px;
+}
+.commentTypeItem strong em{
+	font-size:30px;
+	color: #ed1c22;
+}
+.commentTypeItem > em {
+	margin-bottom:23px;
+}
+.comments-head{
+	display:block;
+}
+.commentTypeItemWid {
+	width: 315px;
+	margin-left: 40px;
+	border-right:none;
+}
+.commentTypeItem {
+	float: left;
+	display: inline;
+	height: 83px;
+	margin-top: 30px;
+	margin-left: 60px;
+}
+/*stars comments rate*/
+.commentTypeItem .star{
+	height:16px;
+	line-height:16px;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+/* barbox */
+.ratebox{clear:both;}
+.barbox{overflow:hidden;}
+.barbox dt{float:left;width:80px;text-align: left;}
+.barbox dd{float:left;}
+.barbox dd.last{color:#999;}
+.barbox dd.barline{
+	width: 199px;
+	background: #E3E3E3;
+	height: 9px;
+	overflow: hidden;
+	margin: 6px 5px 0;
+	display: inline;
+	border-bottom: solid 1px #F4F4F4;
+	border-right: solid 1px #F4F4F4;
+}
+.barbox dd.barline div.charts{
+	height:12px;overflow:hidden;
+}
+.barbox dd.barline div.charts.bargood,.barbox dd.barline div.charts.barsoso,.barbox dd.barline div.charts.barbad{
+	background:#ed1c22;
+}
+/*comments tab分类*/
+.comments-tab{
+	float: left;
+	cursor:pointer;
+	width:240px;
+	text-align:center;
+}
+.comments-list{
+	width: 84px;
+	height: 62px;
+	line-height: 62px;	
+	display:inline-block;
+}
+.comments-tab-sel{
+	color:#ed1b23;
+	font-weight:bold;
+	border-bottom:#ed1b23 3px solid;
+	text-align:center;
+}
+.comments-num{
+	color:#808080;
+	font-weight:lighter;
+	text-overflow:hidden;
+
+}
+
+.comments-classify:first-child{
+	margin-left:40px;
+}
+
+/*主要评论部分*/
+.comments-mainbody{
+	border-top:1px solid #CCC;
+}
+.media__body{
+	padding-bottom:27px;
+}
+/*晒晒*/
+.ul-sharebox .comments-pix{
+	float :left;
+	width:58px; 
+	height:58px;
+	text-align: center;
+	margin-right: 8px; 
+	background: #fff;
+	display: table-cell;
+	vertical-align: middle;
+	
+}
+.ul-sharebox li:hover{
+	cursor:pointer;
+}
+#thumbox-dock *, #thumbox-overlay, #thumbox-image, #thumbox-border, #thumbox-loader, #thumbox-close, #thumbox-buttonNext, #thumbox-buttonPrev, #thumbox-label{
+	margin:0;
+	padding:0;
+	border:0;
+}
+#thumbox-dock{
+	position:absolute;
+	z-index:9996;
+	background:#000;
+	top:-5000px;
+	left:-5000px;
+}
+#thumbox-dock .thumbox-scrollerpages{
+	overflow:hidden;
+	float:left;
+	position: relative;
+}
+#thumbox-dock .thumbox-pages{
+	position:relative;
+	width:100%;
+	left:0;
+}
+#thumbox-dock .thumbox-page{
+	text-align:center;
+	float:left;
+}
+#thumbox-dock .thumbox-page img{
+	margin:10px;
+	cursor:pointer;
+	border:5px #333 solid;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+}
+#thumbox-dock .thumbox-arrowdock{
+	width:20px;
+	cursor:pointer;
+	float:left;
+	background:#333 no-repeat center center;
+}
+#thumbox-dock .thumbox-leftarrow{
+	background-image:url(http://static.tongshuai.com/r/build/ts/v1/img/pages/productcomment/thumbox-prev.png);
+}
+#thumbox-dock .thumbox-rightarrow{
+	background-image:url(http://static.tongshuai.com/r/build/ts/v1/img/pages/productcomment/thumbox-next.png);
+}
+#thumbox-overlay{
+	position:absolute;
+	z-index:9995;
+	top:0;
+	left:0;
+  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  	filter: alpha(opacity=0);
+  	-moz-opacity: 0.0;
+  	-khtml-opacity: 0.0;
+  	opacity: 0.0;
+}
+.thumbox-hoverImage, .thumbox-currentImage{
+	border-color:#DDD !important;
+}
+#thumbox-image{
+	position:absolute;
+	z-index:9998;
+}
+#thumbox-border{
+	/*position:absolute;*/
+	z-index:9997;
+	background:#FFF;
+        -moz-border-radius: 8px;
+        border-radius: 8px;
+}
+#thumbox-loader{
+	position:absolute;
+	z-index:9999;
+	width:128px;
+	height:15px;
+	background:url(http://static.tongshuai.com/r/build/ts/v1/img/pages/productcomment/thumbox-loader.gif);
+}
+#thumbox-close{
+	position:absolute;
+	z-index:9999;
+	width:30px;
+	height:30px;
+	background:url(http://static.tongshuai.com/r/build/ts/v1/img/pages/productcomment/thumbox-close.png);
+	cursor:pointer;
+}
+#thumbox-buttonNext, #thumbox-buttonPrev{
+	width:41px;
+	height:66px;
+	position:absolute;
+	z-index:9999;
+	cursor:pointer;
+}
+#thumbox-buttonNext{
+	background:url(http://static.tongshuai.com/r/build/ts/v1/img/pages/productcomment/thumbox-nextImg.png);
+}
+#thumbox-buttonPrev{
+	background:url(http://static.tongshuai.com/r/build/ts/v1/img/pages/productcomment/thumbox-prevImg.png);
+}
+#thumbox-label{
+	background:url(http://static.tongshuai.com/r/build/ts/v1/img/pages/productcomment/thumbox-bgLabel.png);
+	position:absolute;
+	z-index:9999;
+	color:#FFF;
+	font-size:15px;
+	font-family:"Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+	padding:5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+}
+
+.media__heading{
+	color:#808080;
+	font-size:16px;
+	font-weight:lighter;
+}
+.comment-content{
+	margin-top:23px;
+}
+.media .pull-left,.submedia .pull-left{
+	margin-right:32px;
+}
+
+.otherfuncs{
+	clear:both;
+	text-align:right;
+	color:#8b9ca8;
+	font-size:12px;
+	margin-top:15px;
+	border-bottom:1px solid #CCC;
+}
+.btn-reply{	
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	display: inline-block;
+	vertical-align: top;
+}
+.otherfuncs .comments-time{
+	float:left;
+}
+.media__object{
+	border-radius:50px;
+}
+.sub-reply{
+	color:#8b9ca8;
+	font-size:15px;
+	margin-bottom:13px;
+}
+/*翻页*/
+.pagination__inner .disabled a{
+	border:none;
+	color:#CCC;
+}
+.pagination__inner .disabled a:hover{
+	border:none;
+	color:#ccc;
+}
+.pagination__inner .pagination__turn{
+	font-size:12px;
+	border:none;
+	color:#999;
+	margin:0 20px;
+}
+.pagination__item a, .pagination__item span{
+	margin:0 7.5px;
+}
+.pagination{
+	margin:40px 0 96px;
+}
+
+/*replybox*/
+.form-control:last-child{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+.replybox{
+	margin-bottom:27px;
+	position:relative;
+	padding:0 0 15px 0px;
+	background:#fafafa;
+	clear:both;
+	display:none;
+}
+.form-control{
+	resize:none;
+	height: 40px;
+	width:680px;
+	z-index: 2;
+	float: left;
+	font-size: 14px;
+	color: #555;
+	padding:6px 6px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	word-wrap: break-word;
+	border:#ccc 1px solid;
+	margin-left:25px;
+}
+.img-arup {
+	position: absolute;
+	right: 150px;
+	top: -9px;
+}
+.btn-important{
+	margin:0 30px 0 0;
+}
+.shadow {
+height: 1px;
+overflow: hidden;
+border-top: 1px solid #c8c8c8;
+border-bottom: 1px solid #f1f1f1;
+background: #e1e1e1;
+margin-bottom:20px;
+}
+.reply-btns{
+	float:right;
+	width:60px;
+	cursor:pointer;
+}
+
+.submedia {
+	margin-top: 15px;
+}

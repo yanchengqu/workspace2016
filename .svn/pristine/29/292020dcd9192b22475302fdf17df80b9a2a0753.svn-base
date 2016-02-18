@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>登录页面</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/login.css">
+</head>
+<body class="login-page">
+	<!-- 头部当行  -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<div class="nav__action">注册</div>
+			<div class="nav__title">会员登录</div>
+		</div>
+	</div>
+	<!-- 登录表单  -->
+
+	<div class="portrait">
+		<img src="/img/pages/login/default.png" alt=""> 
+		<!-- <img src="/img/pages/login/userPortrait.jpg" alt="">-->
+
+	</div>
+	
+	<div class="wrapper">
+		<form action="">
+			<div class="list">
+				<div class="list__item">
+					<div class="pull-left">
+						<i class="icon-person"></i>
+					</div>
+					<div class="input-wrapper">
+						<input type="text" name="" id="">
+					</div>
+				</div>
+				<div class="list__item">
+					<div class="pull-left">
+						<i class="icon-lock"></i>
+					</div>
+					<div class="input-wrapper">
+						<input type="password" name="" id="">
+					</div>
+				</div>
+			</div>
+			<a class="btn btn-info btn-large" href="#">登录</a>
+		</form>
+		<div class="text-right">
+			<a href="#">忘记密码？</a>
+		</div>
+	</div>
+	
+	<div class="fixed">
+	<!-- 第三方登录 -->
+		<div class="otherLogin">
+			<div><span>第三方账号快速登录</span></div>
+			<ul>
+				<li><a href=""><img src="/img/pages/login/weixin.png" alt=""></a></li>
+				<li><a href=""><img src="/img/pages/login/qq.png" alt=""></a></li>
+				<li><a href=""><img src="/img/pages/login/weibo.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

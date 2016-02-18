@@ -1,0 +1,132 @@
+/**
+ * @author: yanchengqu
+ * @date: 2015-09-18
+ * @description:
+ * @site:
+ * @require: 
+ */
+.customer-service{
+  padding: 22px 0 16px;
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+  background-color:#f4f4f4;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9; 
+}
+.customer-service > a{
+  text-decoration: none;
+  padding-top: 10px;
+  display: inline-block;
+  color: #3fc2fe;
+}
+.feedback-form{
+  margin-top: 12px;
+  font-size: 16px;
+  color: #000;
+}
+.feedback-form > p{
+  margin: 0 3.2% 0;
+}
+.feedback-form ul{
+  margin: 26px 0 0 3.2%;
+  overflow: hidden;
+  font-size: 16px;
+  color: #000;
+}
+.feedback-form ul li{
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+.feedback-form ul li label{
+  width: 26%;
+  height: 36px;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: left;
+  float: left;
+}
+.feedback-form ul li input,.feedback-form ul li select,.feedback-form ul li textarea{
+  border: 1px solid #d9d9d9;
+  padding: 0 0.5em;
+  color: #3fc2fe;
+  font-size: 16px;
+  float: left;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  background-color: #fff;
+}
+.feedback-form ul li input,.feedback-form ul li select{
+  height: 36px;
+}
+.feedback-form ul li .select-box{
+  float: left;
+  width: 42.6%;
+  height: auto;
+  position: relative;
+  display: inline-block;
+}
+.feedback-form ul li .select-box:after{
+  content: '';
+  right: 9px;
+  top: 13px;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  border-bottom: 1px solid #6e6e6e;
+  border-left: 1px solid #6e6e6e;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+.feedback-form ul li .select-box select{
+  width: 100%;
+}
+.feedback-form ul li textarea{
+  height: 100px;
+}
+.feedback-form ul li textarea,.feedback-form ul li input[type=number]{
+  width: 70%;
+}
+.feedback-form ul li input[type=number]::inner-spin-button {/* 去掉右边三角形 */
+  appearance: none;
+}
+.feedback-form ul li input[type=number]::outer-spin-button {
+  appearance: none;
+}
+.feedback-form ul li input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.feedback-form ul li input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.feedback-form ul li input[type=number]::-ms-inner-spin-button {
+  -ms-appearance: none;
+}
+.feedback-form ul li input[type=number]::-ms-outer-spin-button {
+  -ms-appearance: none; 
+}
+.feedbackBtn{
+  display: block;
+  background-color: #32beff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  margin:20px 1.4%;
+  color: #fff;
+}
+
+
+
+
+
+

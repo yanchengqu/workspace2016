@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<title>Template PC</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<link rel="shortcut icon" href="">
+	<!--[if lt IE 9]>
+	<script src="http://static.tongshuai.com/r/assets/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts/v1/css/pages/product_item.css">
+	<script src="http://static.tongshuai.com/r/assets/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div class="wrap product-item">
+		<div class="header">
+			<div class="container">
+				<div class="pull-left">
+					<a href="#" class="icon icon-logo">&nbsp;</a>
+				</div>
+				<div id="J_switchCity" class="area">
+					<span class="split-line"></span>
+					<i class="icon icon-location"></i>
+					<span id="J_currentCity">北京</span>
+				</div>
+				<div class="loginbar">
+					<i class="icon icon-user"></i><a href="#">登录</a><span class="split-line">|</span><a href="#">注册</a>
+				</div>
+				<div class="nav">
+					<a class="nav__item" href="#">网上商城</a>
+					<a class="nav__item" href="#">家电定制</a>
+					<a class="nav__item" href="#">产品中心</a>
+					<a class="nav__item" href="#"><i class="icon icon-csad"></i>社区</a>
+					<a class="nav__item" href="#">活动部落</a>
+					<a class="nav__item" href="#">安心服务</a>
+					<a class="nav__item" href="#">关于统帅</a>
+				</div>
+			</div>
+			<div class="header__opacity"></div>
+		</div>
+		<div class="container">
+			<div class="layout__promos--holder"></div>
+			<div class="layout__promos--head ">
+				<!-- promos--fixed -->
+				<div class="promos-data-wrap">
+					<div class="promos-data clearfix">
+						<div class="product-name">
+							<a class="font-middle" href="">Air-Plus洗护一体机 TQG100-HBF1400</a><span class="split-line"></span><a href="http://" class="mark-gray">查看所有彩电产品</a>
+						</div>
+						<div class="product-operate">
+							<span class="price font-base">原价：&yen;3999.00</span>
+							<button class="btn btn-important">我要购买</button>
+							<div class="operate--handle icon-chevron-up"></div>
+						</div>
+					</div>
+				</div>
+					<div class="promos-nav">
+						<a href="http://"><img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/title_describe.png" width="125" /><span>概述</span></a>
+						<a href="http://"><img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/title_specs.png" width="125" /><span>参数</span></a>
+						<a href="http://"><img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/title_comment.png" width="125" /><span>评论(1200)</span></a>
+						<a href="http://"><img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/title_service.png" width="125" /><span>服务</span></a>
+					</div>
+			</div>
+			<ul class="promos">
+				<li>
+					<img class="promos__img" src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/itemproduct2/air-plus-1.jpg" alt="">
+				</li>
+				<li>
+					
+					<img class="promos__img" src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/itemproduct2/air-plus-2.jpg" alt="">
+				</li>
+				<li>
+					
+					<img class="promos__img" src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/itemproduct2/air-plus-3.jpg" alt="">
+				</li>
+				<li>
+					
+					<img class="promos__img" src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/itemproduct2/air-plus-4.jpg" alt="">
+				</li>
+				<li>
+					
+					<img class="promos__img" src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/itemproduct2/air-plus-5.jpg" alt="">
+				</li>
+				
+			</ul>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<ul class="footer-list">
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">统帅产品</h5>
+						<div class="footer-list__item--body">
+							<a href="#">了解统帅</a><br>
+							<a href="">统帅与海尔</a><br>
+							<a href="#">统帅新闻</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">产品中心</h5>
+						<div class="footer-list__item--body">
+							<a href="#">电视</a><span>\</span><a href="#">冷柜</a><span>\</span><a href="#">冰箱</a><br>
+							<a href="#">空调</a><span>\</span><a href="#">洗衣机</a><span>\</span><a href="#">热水器</a><br>
+							<a href="#">燃气灶</a><span>\</span><a href="#">吸油烟机</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">服务与支持</h5>
+						<div class="footer-list__item--body">
+							<a href="#">常见问题</a><span>\</span><a href="#">产品注册</a><br>
+							<a href="#">延保服务</a><span>\</span><a href="#">维修与安装</a><span>\</span><a href="#">收费标准</a><br>
+							<a href="#">燃气灶</a><span>\</span><a href="#">吸油烟机</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">关注我们</h5>
+						<div class="footer-list__item--body">
+							<i class="icon icon-weixin"></i>
+							<i class="icon icon-weibo"></i>
+							<i class="icon icon-douban"></i>
+							<i class="icon icon-renren"></i>
+							<a href="#">海尔集团</a><span>\</span><a href="#">社区</a>
+						</div>
+					</li>
+				</ul>  
+				<div class="footer-copyright">
+					<a href="#">联系我们</a>
+					<span class="split-line"></span>
+					<a href="#">法律声明</a>
+					<span class="split-line"></span>
+					<a href="#">网站地图</a>
+					&copy;2014 Haier Group Leader. All rights reserved 鲁ICP备09096283  
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://static.tongshuai.com/r/build/ts/v1/js/pages/holder.js"></script>
+	 
+</body>
+</html>

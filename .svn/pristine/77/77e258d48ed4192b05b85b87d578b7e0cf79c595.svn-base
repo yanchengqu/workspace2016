@@ -1,0 +1,38 @@
+html,body{background-color: #f4f4f4;}
+.wdHostName-page .nav__action{
+	color: #32BEFF;
+	opacity: .5;
+}
+
+.wdHostName-page .nav__action.active{
+	opacity: 1;		
+}
+
+.wdHostName-page .item{
+	color: #6F6F6F;
+	background-color: #fff;
+}
+.wdHostName-page .item input{
+	width: 50%;
+    height: 30px;
+    margin-bottom: 0;
+    border: none;
+    color: #000;
+    font-size: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+    margin-right: 5px;
+}
+.wdHostName-page .closeBtn{
+	display: inline-block;
+	background-image: url(http://static.tongshuai.com/wd/img/pages/wdHostName/close.png);
+	background-size: 25px 25px;
+	vertical-align: middle;
+	width: 25px;
+	height: 25px;
+	float: right;
+	margin-right: 10px;
+}

@@ -1,0 +1,58 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.userProfile-page {
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+.userProfile-page 
+.nav::after {
+  display: none;
+}
+
+.userProfile-page 
+.list__item {
+  overflow: hidden;
+  padding-left: 13px;
+}
+
+.userProfile-page
+.list__itme--lh {
+  line-height: 66px;
+}
+
+.userProfile-page
+.list__item::after {
+  clear: both;
+}
+
+.user-info {
+  float: left;
+  width: 100%;
+  margin-right: -25px;
+}
+
+.user-info__key {
+  float: left;
+}
+
+.user-info__value {
+  float: right;
+  margin-right: 25px;
+  color: #6e6e6e;
+}
+
+.user-info__portrait {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+         border-radius: 50%;
+}

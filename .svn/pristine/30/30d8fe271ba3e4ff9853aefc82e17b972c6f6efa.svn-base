@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<title>Template PC</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<link rel="shortcut icon" href="">
+	<!--[if lt IE 9]>
+	<script src="http://static.tongshuai.com/r/assets/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/dev/ts/v1/css/pages/buy.css">
+	<script src="http://static.tongshuai.com/r/assets/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div class="wrap buypage">
+		<div class="header">
+			<div class="container">
+				<div class="pull-left">
+					<a href="#" class="icon icon-logo">&nbsp;</a>
+				</div>
+				<div id="J_switchCity" class="area">
+					<span class="split-line"></span>
+					<i class="icon icon-location"></i>
+					<span id="J_currentCity">北京</span>
+				</div>
+				<div class="loginbar">
+					<i class="icon icon-user"></i><a href="#">登录</a><span class="split-line">|</span><a href="#">注册</a>
+				</div>
+				<div class="nav">
+					<a class="nav__item" href="#">网上商城</a>
+					<a class="nav__item" href="#">家电定制</a>
+					<a class="nav__item" href="#">产品中心</a>
+					<a class="nav__item" href="#"><i class="icon icon-csad"></i>社区</a>
+					<a class="nav__item" href="#">活动部落</a>
+					<a class="nav__item" href="#">安心服务</a>
+					<a class="nav__item" href="#">关于统帅</a>
+				</div>
+			</div>
+			<div class="header__opacity"></div>
+		</div>
+		<div class="container">
+            <div class="topbar__crumbs">
+                <a href="###">统帅智能立体风冷冰箱</a> <span class="split-line"></span> <a href="http://" class="mark-gray">查看所有彩电产品</a>
+            </div>
+			<div class="clearfix region"> 
+				<div class="region__detail--gallery">
+					<div class="device">
+                        <a class="arrow-left" href="#">&lt;</a> 
+                        <a class="arrow-right" href="#">&gt;</a>
+                        <div class="swiper-container">
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide"> <img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/left-pic.jpg"> </div>
+                            <div class="swiper-slide"> <img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/left-pic.jpg"> </div>
+                            <div class="swiper-slide"> <img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/left-pic.jpg"> </div>                           
+                          </div>
+                        </div>
+                        <div class="pagination"></div>
+                     </div>
+				</div>
+				<div class="region__detail--property">
+					<div class="detail-head">
+						<span class="font-large">统帅智能立体风冷冰箱</span>
+						<p class="mark-gray">BCD-305WLV</p>
+						<!-- <em class="mark-red">￥<i class="detail-price">16000.00</i></em> -->
+                        <div class="detail-price">
+                            <em>￥<i class="detail-price">16000.00</i></em>
+                            <span class="prepay-price"><i class="mark-gray font-small">预付定金</i><em class="mark-red">￥<i class="detail-price">999.00</i></em></span>
+                        </div>
+					</div>
+					<div class="detail-attributes">
+						<p class="font-small"><span class="label label-line">满减</span>购买至少一类商品，满<span class="mark-red">1000</span>减<span class="mark-red">100</span></p>
+						<p class="font-base">305升统帅四门冰箱，智能立体风冷，无霜保鲜；独有柚活保鲜，健康营养更新鲜；显隐式LED显示屏设计，操作便捷；触摸式按键，反应灵敏；隐藏式门把手，外观整洁美观。</p>
+						
+					</div>
+					<div class="detail-operate">
+						<dl class="detail-operate-wrap">
+							<dt class="operate-text">数量</dt>
+							<dd class="operate-descript">
+								<div class="amount-wrap">
+									<a href="javascript:;" class="amount-down">-</a>
+									<input type="" class="amount-input" id="number" />
+                                    
+									<a href="javascript:;" class="amount-up">+</a>
+								</div>
+							</dd>
+						</dl>
+						<dl class="detail-operate-wrap">
+							<dt class="operate-text">库存</dt>
+							<dd class="operate-descript">
+								
+								<div class="ctrl-address input input-large">
+									<div class="ctrl-address__title">
+										<span class="ctrl-address__title--placeholder">请选择省市区</span>
+									</div>
+									<span class="triangle triangle-small triangle-down"></span>
+								</div>
+								<span class="inven-status mark-red">有货</span>
+							</dd>
+						</dl>
+						<dl class="detail-operate-wrap">
+							<dt class="operate-text">总计</dt>
+							<dd class="operate-descript">
+								<span class="mark-red">￥<em class="total-price"></em></span>
+							</dd>
+						</dl>
+					</div>
+					<div class="buy-btn">
+						
+						<button class="btn btn-important btn-large mark-disabled" id="buyBtn">立即购买</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<ul class="footer-list">
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">统帅产品</h5>
+						<div class="footer-list__item--body">
+							<a href="#">了解统帅</a><br>
+							<a href="">统帅与海尔</a><br>
+							<a href="#">统帅新闻</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">产品中心</h5>
+						<div class="footer-list__item--body">
+							<a href="#">电视</a><span>\</span><a href="#">冷柜</a><span>\</span><a href="#">冰箱</a><br>
+							<a href="#">空调</a><span>\</span><a href="#">洗衣机</a><span>\</span><a href="#">热水器</a><br>
+							<a href="#">燃气灶</a><span>\</span><a href="#">吸油烟机</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">服务与支持</h5>
+						<div class="footer-list__item--body">
+							<a href="#">常见问题</a><span>\</span><a href="#">产品注册</a><br>
+							<a href="#">延保服务</a><span>\</span><a href="#">维修与安装</a><span>\</span><a href="#">收费标准</a><br>
+							<a href="#">燃气灶</a><span>\</span><a href="#">吸油烟机</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">关注我们</h5>
+						<div class="footer-list__item--body">
+							<i class="icon icon-weixin"></i>
+							<i class="icon icon-weibo"></i>
+							<i class="icon icon-douban"></i>
+							<i class="icon icon-renren"></i>
+							<a href="#">海尔集团</a><span>\</span><a href="#">社区</a>
+						</div>
+					</li>
+				</ul>  
+				<div class="footer-copyright">
+					<a href="#">联系我们</a>
+					<span class="split-line"></span>
+					<a href="#">法律声明</a>
+					<span class="split-line"></span>
+					<a href="#">网站地图</a>
+					&copy;2014 Haier Group Leader. All rights reserved 鲁ICP备09096283  
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <input type="hidden" id="productId" value="BH006408V" />
+    <input type="hidden" id="avaibleQty" value="0">
+    <input type="hidden" id="perPrice" value=""/>
+    <script src="http://static.tongshuai.com/r/assets/swiper.min.js"></script>
+    <script src="http://static.tongshuai.com/r/build/ts/v1/js/plugins/jquery.tab.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts/v1/js/plugins/jquery.addressCtrl.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts/v1/js/pages/buy.js"></script>
+
+
+</body>
+</html>

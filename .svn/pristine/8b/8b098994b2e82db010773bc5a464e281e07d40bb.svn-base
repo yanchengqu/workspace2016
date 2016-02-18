@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>管理收货地址</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/addNewAddress.css">
+	<link rel="stylesheet" type="text/css" href="/js/plugins/address/address.css">
+	<link rel="stylesheet" type="text/css" href="/js/plugins/slide/slide.css">
+	<script src="/js/zepto.min.js"></script>	
+	<script src="/js/h/src/h.js"></script>	
+	<script src="/js/h/src/h.event.js"></script>
+	<script src="/js/h/src/h.common.js"></script>
+	<script src="/js/plugins/address/address.js"></script>
+	<script src="/js/plugins/slide/sliderAside.js"></script>
+</head>
+<body class="addAddress-page">
+
+	<!-- 头部导航  -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<div id="submitBtn" class="nav__action">完成</div>
+			<div class="nav__title">新建收货地址</div>
+		</div>
+	</div>
+
+	<!-- 新建地址表单 -->
+	<form id="form" method="post" action="http://www.baidu.com">
+		<p id="errorTip" class="errorTip"></p>
+		<input type="hidden" name="addrId" id="addrId" />
+		<ul class="list">
+			<li class="list__item">
+				<input type="text" class="validate_input" emptyMsg="收货人为必填" errorMsg="收货人为2~10字符" name="memberRealName" id="memberRealName" placeholder="收货人">
+			</li>
+			<li class="list__item">
+				<input type="text" class="validate_input" emptyMsg="手机号码不能为空" errorMsg="手机号码为11位数字" name="memberRealTel" id="memberRealTel" placeholder="手机号码">
+			</li>
+			<li class="list__item">
+				<input type="text" class="validate_input" emptyMsg="邮政编码不能为空" errorMsg="邮政编码为6位数字" name="memberRealCode" id="memberRealCode" placeholder="邮政编码">
+			</li>
+			<li class="list__item"  id="openAddressBtn">
+				<input type="hidden" name="provinceId" id="provinceId" value="26" />
+				<input type="hidden" name="cityId" id="cityId" value="314" />
+				<input type="hidden" name="areaId" id="areaId" value="1180" />
+				<input type="text" class="validate_input" emptyMsg="请选择所有区域" name="memberRealRegiion" readonly="readonly" id="addresstb" placeholder="所在地区"></span>
+				<i class="fes-chevron-right"></i></li>
+			<li class="list__item">
+				<input type="text" class="validate_input" emptyMsg="请填写详细地址" errorMsg="详细地址为2~100个字符" name="memberRealAddress" id="memberRealAddress" placeholder="详细地址">
+			</li>
+		</ul>
+	</form>
+
+	<!--地址选择-->
+	<div class="menu_slidebar" id="puller">
+		<div class="list_content_mask"></div>
+		<div class="slidebar-content">
+			<div class="slidebar-header">
+	            <span class="slidebar-title-back"><i></i></span>
+	            <span class="slidebar-title-name">配送至</span>
+	        </div>
+	        <div class="slidebar-items-container">
+	        	<div class="slidebar_space"></div>
+	        	<div class="slidebar_detail">
+	        		<div class="regionContainer"></div>
+	        	</div>
+	        </div>
+		</div>
+	</div>
+
+	<div class="fixed">
+		<a id="setDefaultBtn" class="btn btn-info btn-large" href="javascript:void(0)">设为默认收货地址</a>
+	</div>
+</body>
+</html>
+<script src="/js/pages/addNewAddress.js"></script>

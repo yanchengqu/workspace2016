@@ -1,0 +1,41 @@
+/**
+ * @author: chenxiaoyong@ehaier.com
+ * @date: 2015-01-20
+ * @description: TS orderComplete page
+ * @require: public.css
+ */
+
+
+.order-complete-page {}
+.order-complete-page .order {
+	line-height: 1rem;
+	padding: 2rem 1.25rem 0;
+	color: #38454f;
+	font-size: .7rem;
+	text-align: center;
+}
+
+.order-complete-page .order__msg {
+	line-height: 2rem;
+	color: #1a1a1a;
+	font-size: .8rem;
+	/* font-weight: bold; */
+}
+.order-complete-page .order__msg .circle {
+	position: relative;
+	top: -.1rem;
+}
+.order-complete-page .order__description {
+	padding-bottom: 1.5rem;
+}
+.order-complete-page .order__order--number {
+}
+.order-complete-page .order__amount {}
+.order-complete-page .link-home,
+.order-complete-page .link-alipay{
+	width: 50%;
+	margin: 1.75rem 0;
+}
+.order-complete-page .link-alipay .icon-alipay {
+	margin-right: 5px;
+}

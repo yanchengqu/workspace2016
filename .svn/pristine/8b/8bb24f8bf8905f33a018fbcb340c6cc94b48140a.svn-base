@@ -1,0 +1,168 @@
+/* ===============================================================
+Your custom styles, here you need to specify container's and slide's
+sizes, pagination, etc.
+================================================================*/
+
+.buypage .swiper-container.slide { 
+	overflow: hidden;
+	/* width: 320px;
+	height: 175px; */
+	width: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+/* @media only screen and (min-width: 360px) { 
+	.swiper-container.slide { 
+		width: 360px;
+		height: 405px;
+	}
+} 
+
+@media only screen and (min-width: 375px) { 
+	.swiper-container.slide { 
+		width: 375px;
+		height: 422px;
+	}
+} 
+@media only screen and (min-width: 480px) { 
+	.swiper-container.slide { width: 480px;}
+} 
+
+@media only screen and (min-width: 1024px) { 
+	.swiper-container.slide { 
+		width: 1024px;
+		height: 1152px;
+	}
+}  */
+
+.buypage .swiper-slide {
+	position: relative;
+}
+.buypage .swiper-slide img {
+	width: 100%;
+	vertical-align: middle;
+}
+.buypage .pagination {
+   position: absolute;
+   left: 0;
+   bottom: 5px;
+   width: 100%;
+   text-align: center;
+}
+.buypage .swiper-pagination-switch {
+  display: inline-block;
+  overflow: hidden;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #a6a6a6;
+  box-shadow: 0px 1px 2px #555 inset;
+  margin: 0 3px;
+  cursor: pointer;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+}
+.buypage .swiper-active-switch{background:#eee;}
+
+/*结算页*/
+.buypage .title{
+	padding: 0.7rem .75rem;
+}
+.buypage .title .money{float: right;width: 3.3rem;color: #ed1b23;font-weight: bold;font-size: 0.8rem;text-align: right;line-height: 1.4rem;}
+.buypage .title dl{margin-right: 3.25rem;overflow: hidden;list-style: none;}
+.buypage .title dl dt{color: #38454f;font-size: 0.8rem;font-weight:bold;line-height: 1.4rem;}
+.buypage .title dl dd{color: #38454f;font-size: 0.65rem;line-height: 0.8rem;}
+.buypage .slider-box{border-top: 0.05rem solid #cccccc;border-bottom: 0.05rem solid #cccccc;overflow: hidden;margin-top: 0.05rem;text-align: center;}
+.buypage .slider-box img{max-width: 100%;}
+.buypage .explain-box{margin: 0.5rem 3% 0;overflow: hidden;}
+.buypage .explain-box > h2{color: #38454f;font-size: 0.65rem;padding: 0.15rem 0;}
+.buypage .explain-box > h2 > label{color: #ed1b23;}
+.buypage .explain-box > h2 > span{display: inline-block;color: #ed1b23;font-size: 0.65rem;padding: 0.1rem 0.15rem;border:0.05rem solid #ed1b23;
+border-radius: 0.2rem;
+-webkit-border-radius: 0.2rem;
+-ms-border-radius: 0.2rem;
+margin-right: 0.35rem;
+}
+.buypage .explain-box > p{font-size: 0.7rem;color: #556a78;line-height: 0.9rem;margin-top: 0.6rem;}
+.buypage .product-numBox{margin: 1.2rem 3% 0;overflow: hidden;}
+.buypage .product-numBox .name{font-size: 0.75rem;color: #38454f;display: inline-block;margin-right: 0.3rem;float: left;line-height: 1.5rem;}
+.buypage .product-numBox .control{border:1px solid #cccccc;line-height: 1.4rem;height:1.4rem;overflow: hidden;float: left;}
+.buypage .product-numBox .control > span{display: inline-block;height: 1.4rem;line-height: 1.4rem;float: left;}
+.buypage .product-numBox .control span:first-child{padding: 0 0.4rem;color: #b3bec5;font-size: 1.15rem;border-right:1px solid #cccccc;cursor: pointer;}
+.buypage .product-numBox .control .num{color: #556a78;font-size: 0.75rem;min-width: 2rem;text-align: center;font-weight: bold;float: left;
+height: 100%;border:0 none;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+-webkit-appearance: none;
+appearance: none;
+outline: none;
+}
+.buypage .product-numBox .control .num::inner-spin-button {/* 去掉右边三角形 */
+	appearance: none;
+}
+.buypage .product-numBox .control .num::outer-spin-button {
+	appearance: none;
+}
+.buypage .product-numBox .control .num::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+.buypage .product-numBox .control .num::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+.buypage .product-numBox .control .num::-ms-inner-spin-button {
+	-ms-appearance: none;
+}
+.buypage .product-numBox .control .num::-ms-outer-spin-button {
+	-ms-appearance: none;	
+}
+.buypage .product-numBox .control span:last-child{padding: 0 0.4rem;color: #b3bec5;font-size: 1.15rem;border-left:1px solid #cccccc;cursor:pointer;}
+.buypage .product-addr{margin: 0.75rem 3% 1.9rem;overflow: hidden;}
+.buypage .product-addr .name{font-size: 0.75rem;color: #38454f;display: inline-block;margin-right: 0.3rem;float: left;line-height: 1.5rem;}
+.buypage .product-addr .selectBox{position: relative;overflow: hidden;float: left;display: inline-block;border:1px solid #cccccc;
+margin-right: 0.2rem;
+}
+.buypage .product-addr .selectBox select{
+	float:left;
+	overflow: hidden;
+	width: 70px;
+	line-height: 1.4rem;
+	padding: 0 0.6rem 0 0.1rem;
+	height:1.4rem;
+	outline: none;
+	background-color: #fff;
+	color: #556a78;
+	font-size: 0.75rem;
+	text-align: center;
+	appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	outline: none;
+	border:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+}
+.buypage .product-addr .selectBox:after{position: absolute;right:5px;top:8px;content: '';display: inline-block;width: 7px;height: 7px;border-bottom: 1px solid #b3bec5;border-left: 1px solid #b3bec5;
+transform:rotate(-45deg);
+-webkit-transform:rotate(-45deg);
+-ms-transform:rotate(-45deg);
+}
+.buypage .product-addr label{height: 1.4rem;line-height: 1.4rem;color: #ed1b23;font-size: 0.65rem;display: inline-block;}
+.buypage .tMoney-box{border-top: 0.05rem solid #cccccc;overflow: hidden;padding: 0.75rem 3% 0 3%;margin: 0.75rem 0;}
+.buypage .tMoney-box .money{height: 1.5rem;line-height: 1.5rem;font-size: 0.8rem;color: #38454f;}
+.buypage .tMoney-box .money > label{color: #ed1b23;font-size: 0.95rem;font-family: 'Helvetica,sans-serif';font-weight: bold;}
+.buypage .tMoney-box > button{color: #fff;background-color: #ed1b23;outline: none;border:0 none;height: 1.4rem;line-height: 1.4rem;display: inline-block;text-decoration:none;vertical-align: middle;
+padding: 0 0.8rem;font-size: 0.7rem;float: right;
+border-radius: 0.2rem;
+-webkit-border-radius: 0.2rem;
+-ms-border-radius: 0.2rem;
+ }
+ .buypage .tMoney-box > button.Disabled{background-color: #c0c7da;}
+ .buypage .bdRadius{ 
+border-radius:0.2rem;
+-webkit-border-radius:0.2rem;
+-ms-border-radius:0.2rem;
+ }

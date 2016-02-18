@@ -1,0 +1,18 @@
+CACHE MANIFEST
+# version 1.0.1
+http://static.tongshuai.com/r/assets/zepto.min.js
+http://static.tongshuai.com/r/build/ts_h5/v1/css/public.css
+http://static.tongshuai.com/r/build/ts_h5/v1/css/pages/order.css
+http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/event.js
+http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/region.js
+http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/order.js
+http://static.tongshuai.com/r/build/ts_h5/v1/js/plugins/dialog/layer.m.js
+http://static.tongshuai.com/r/build/ts_h5/v1/js/plugins/dialog/layer.css 
+/mobile/region/regionTree.html
+
+NETWORK:
+/mobile/order/getPayAndDate.html
+/mobile/order/submit.html
+/mobile/order/success.html
+
+FALLBACK:

@@ -1,0 +1,101 @@
+/**
+ * @author: chenxiaoyong@ehaier.com
+ * @date: 2015-02-05
+ * @description: TS-PC orderCompletePage
+ * @require: public.css
+ */
+.flow {
+	line-height: 45px;
+	border-bottom: 2px solid #8c8c8c;
+}
+.flow {
+	margin-top: 92px;
+}
+.flow__caption {
+	width: 270px;
+	border-bottom: 2px solid #ed1b23;
+	margin-bottom: -2px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.flow__step {
+
+}
+.flow__step .steps{
+	padding-top: 7px;
+	vertical-align: top;
+}
+
+
+.order-success-page {
+	color: #000;
+}
+.order-success-page a {
+	text-decoration: none;
+}
+.order-success-page a:hover {
+	text-decoration: underline;
+}
+
+.order-success-page .list {}
+.order-success-page .list__item {}
+.order-success-page .list__item--head {
+	line-height: 30px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	margin: 0;
+	font-size: 18px;
+	font-weight: normal;
+}
+.order-success-page .list__item--body {
+	padding: 40px 15px;
+	border: 1px solid #ddd;
+}
+
+.order-success-page .order {}
+.order-success-page .order .media {
+	margin-top: 0;
+}
+.order-success-page .order .media .pull-left {
+	margin-right: 50px;
+}
+.order-success-page .order .media__heading {
+	line-height: 30px;
+	font-size: 24px;
+	font-weight: normal;
+}
+.order-success-page .order__head {
+	line-height: 30px;
+	font-size: 18px;
+}
+.order-success-page .order__warn {
+	line-height: 25px;
+	margin-bottom: 40px;
+	font-size: 18px;
+}
+
+.order-success-page .order--id,
+.order-success-page .order--amount,
+.order-success-page .order--realpay {
+	color: #666;
+}
+.order-success-page  .paybrand {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+.order-success-page  .paybrand img {
+	border: 1px solid #ddd;
+	vertical-align: middle;
+}
+.order-success-page .order-action {
+	padding: 60px 0;
+	color: #666;
+	text-align: right;
+}
+.order-success-page .order-action .btn-large {
+	padding: 8px 20px;
+	border-radius: 4px;
+	margin-left: 20px;
+	font-family: "Microsoft YaHei";
+}

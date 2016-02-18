@@ -1,0 +1,59 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<title>统帅.自由播</title>
+<meta content="" name="keywords" />
+<meta content="" name="description" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<link type="text/css" rel="stylesheet" href="css/v2/freeBo.css">
+
+
+
+</head>
+<body>
+<div class="FreeBox">
+  <figure>
+	<img src="images/v2/freeBo/freeImg1.jpg" >
+	<img src="images/v2/freeBo/tel.jpg" >
+	<img src="images/v2/freeBo/freeImg2.jpg" >
+  </figure>
+
+  <div class="activeBox">
+		<h2><span>活动须知</span></h2>
+		<p>
+			4月15日11:00-4月29日23:59，用户微信扫描二维码进入活动页面并分享到朋友圈，即可获得一次抽奖机会（需填写姓名和手机号码），将有机会获得价值149元、299元、598元代金券返现首发购机，优惠券及2000元返现（四种面额随机获取一种），并于次日上午10:00统一发送相同面额的T码到用户的手机上。购机时同时填写T码，即可获得对应面额的现金减免。（代金券使用时效：4.15-4.30日）
+		</p>
+		<div class="weixinMark">
+			<img src="images/v2/freeBo/weixinMark.png" height="74">
+		</div>
+  </div>
+  <figure>
+	<img src="images/v2/freeBo/freeImg3.jpg" >
+	<a href="http://h5.tongshuai.com/mobile/product/R00425291.html"><img src="images/v2/freeBo/freeImg4_1.jpg" ></a>
+	<a href="http://h5.tongshuai.com/mobile/product/R00420236.html"><img src="images/v2/freeBo/freeImg4_2.jpg" ></a>
+	<a href="http://h5.tongshuai.com/mobile/product/R00432506.html"><img src="images/v2/freeBo/freeImg4_3.jpg" ></a>
+	<a href="http://h5.tongshuai.com/mobile/product_buy/R00374545.html"><img src="images/v2/freeBo/freeImg4_4.jpg" ></a>
+  </figure>
+ 
+</div>
+<script type="text/javascript">
+	var _mvq = window._mvq || [];
+	window._mvq = _mvq;
+	_mvq.push(['$setAccount', 'm-140638-0']);
+	 
+	_mvq.push(['$logConversion']);
+	(function() {
+	var mvl = document.createElement('script');
+	mvl.type = 'text/javascript'; mvl.async = true;
+	mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(mvl, s);
+	})();
+</script>
+</body>
+</html>

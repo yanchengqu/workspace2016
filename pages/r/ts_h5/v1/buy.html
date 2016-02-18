@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/pages/buy.css">
+	<script src="http://static.tongshuai.com/r/assets/zepto.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/swiper.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/iscroll/iscroll.min.js"></script>
+</head>
+<body>
+	<div id="J_drawer" class="drawer">
+		<div id="J_drawerLeft" class="drawer__left">
+			<div class="scroller">
+				<div class="search">
+					<form action="" class="search__form">
+						<div class="search__input--wrapper">
+							<input class="search__input" id="J_searchBox" type="text">
+							<div class="search__input--placeholder"><i class="icon-search"></i>搜索</div>
+						</div>
+					</form>
+					<ul class="search__list"></ul>
+				</div>
+				<div class="nav">
+					<a class="nav__item" href="#"><i class="icon-home"></i>首页</a>
+					<a class="nav__item" href="#"><i class="icon-location"></i>北京市海淀区</a>
+					<a class="nav__item" href="#"><i class="icon-people"></i>我的统帅</a>
+					<a class="nav__item" href="#"><i class="icon-order"></i>我的订单</a>
+					<a class="nav__item" href="#"><i class="icon-disc"></i>关于统帅</a>
+				</div>
+				<div class="ts-version">
+					<i class="icon-logo-v2"></i>V.10
+				</div>
+			</div>
+		</div>
+		<div id="J_drawerRight" class="drawer__right">
+			<div class="scroller">
+				<!-- The right content. -->
+			</div>
+		</div>
+	</div>
+	<div id="J_main" class="wrap buypage">
+		<header class="header">
+			<div class="pull-left">
+				<div id="J_switch" class="nav-icon"></div>
+			</div>
+			<div class="pull-right">
+				<!-- <div class="fes-chevron-right"></div> -->
+			</div>
+			<div class="text-center">
+				<a href=""><i class="icon-logo"></i></a>
+			</div>
+		</header>
+		<div class="container">
+			<div class="title">
+				<div class="money">&yen;1,149</div>
+				<dl>
+					<dt>
+						统帅烟灶套系
+					</dt>
+					<dd>
+						SKFR-72LW/02WAA22A(香槟金)套机-1
+					</dd>
+				</dl>
+			</div>
+			<div id="J_buySwiper" class="swiper-container slide">
+			  <div class="swiper-wrapper">
+			      <div class="swiper-slide"> 
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/buy/slide_1.jpg" alt="">
+			      </div>
+			       <div class="swiper-slide"> 
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/buy/slide_1.jpg" alt="">
+			      </div>
+			  </div>
+			  <div class="pagination"></div>
+			</div>
+			<div class="explain-box">
+				<h2><span>满减</span>购买至少一类商品，满<label>1000</label>减<label>100</label></h2>
+				<p>
+					行业首创空气射流术，舒适送风，示PM2.5浓度，超标自启去除PM2.5，康呼吸；WiFi智能物联网控制、随时随地轻松享受；情景灯光通过色彩变化显示空调运行状态和室内PM2.5浓度！
+				</p>
+			</div>
+			<div class="product-numBox">
+				<span class="name">数量</span>
+				<span id="numberBar" class="control bdRadius">
+					<span class="sub">-</span>
+					<input type="number" class="num" value="1" min="1" max="291" />
+					<span class="add">+</span>
+				</span>
+				<input type="hidden" id="avaibleQty" value="1">
+			</div>
+			<div class="product-addr">
+				<span class="name">库存</span>
+				<span class="selectBox bdRadius">
+					<select data-filed="provinceId" id="province_Sel" class="data_input"  data-value="26">
+						<option value="0">-请选择-</option>
+					</select>
+				</span>
+				<span class="selectBox bdRadius">
+					<select data-filed="cityId" id="city_sel" class="data_input" data-value="314">
+						<option value="0">-请选择-</option>
+					</select>
+				</span>
+				<span class="selectBox bdRadius">
+					<select data-filed="regionId" id="area_sel" class="data_input" data-value="1180">
+						<option value="0">-请选择-</option>
+					</select>
+				</span>
+				<label id="statuslb"></label>
+			</div>
+			<div class="tMoney-box">
+				<span class="money">
+					总计：<label id="pricelb"></label>
+					<!--商品ID-->
+					<input type="hidden" id="productId" value="1">
+					<!--商品sku-->
+					<input type="hidden" id="sku" value="GA0R98008">
+					<!--商品单价-->
+					<input id="tx_price" type="hidden" value="2000" />
+				</span>
+				<button id='submitBtn' class="Disabled">去结算</button>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer_service">客服电话：4006-999 999</div>
+			<div class="footer_slogan">
+				<span class="icon-slogan"></span>
+			</div>
+			<div class="footer_copyright">Copyright &copy; 2014 Haier Group Leader.All rights reserved 鲁ICP 09096283</div>
+		</footer>
+		<form id="dynamicForm"></form>
+	</div>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/plugins/zepto.drawer.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/event.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/region.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/buy.js"></script>
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<title>Comment Page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<link rel="shortcut icon" href="">
+	<!--[if lt IE 9]>
+	<script src="http://static.tongshuai.com/r/assets/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts/v1/css/pages/comments.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts/v1/css/pages/product_item.css">
+	<script src="http://static.tongshuai.com/r/assets/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<div class="wrap comments-page">
+		<div class="header">
+			<div class="container">
+				<div class="pull-left">
+					<a href="#" class="icon icon-logo">&nbsp;</a>
+				</div>
+				<div id="J_switchCity" class="area">
+					<span class="split-line"></span>
+					<i class="icon icon-location"></i>
+					<span id="J_currentCity">北京</span>
+				</div>
+				<div class="loginbar">
+					<i class="icon icon-user"></i><a href="#">登录</a><span class="split-line">|</span><a href="#">注册</a>
+				</div>
+				<div class="nav">
+					<a class="nav__item" href="#">网上商城</a>
+					<a class="nav__item" href="#">家电定制</a>
+					<a class="nav__item" href="#">产品中心</a>
+					<a class="nav__item" href="#"><i class="icon icon-csad"></i>社区</a>
+					<a class="nav__item" href="#">活动部落</a>
+					<a class="nav__item" href="#">安心服务</a>
+					<a class="nav__item" href="#">关于统帅</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="container">
+			<div class="layout__promos--holder"></div>
+			<div class="layout__promos--head ">
+				<!-- promos--fixed -->
+					<div class="promos-data-wrap">
+						<div class="promos-data clearfix">
+							<div class="product-name">
+								<a class="font-middle" href="">Air-Plus洗护一体机 TQG100-HBF1400</a><span class="split-line"></span><a href="http://" class="mark-gray">查看所有彩电产品</a>
+							</div>
+							<div class="product-operate">
+								<span class="price font-base">原价：3999RMB</span>
+								<button class="btn btn-important">我要购买</button>
+								<div class="operate--handle icon-chevron-up"></div>
+							</div>
+						</div>
+					</div>
+					<div class="promos-nav">
+						<a href="http://"><img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/title_describe.png" width="125" /><span>概述</span></a>
+						<a href="http://"><img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/title_specs.png" width="125" /><span>参数</span></a>
+						<a href="http://"><img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/title_comment.png" width="125" /><span>评论(1200)</span></a>
+						<a href="http://"><img src="http://static.tongshuai.com/r/dev/ts/v1/img/pages/title_service.png" width="125" /><span>服务</span></a>
+					</div>
+			</div>
+			<div class="comments-container">
+				<div class="commentsType">
+					<div class="commentTypeItem commentTypeItemNar">
+						<em class="comments-head">好评率</em>
+						<strong>98<em>%</em></strong>
+					</div>
+					<div class="commentTypeItem commentTypeItemWid">
+						<em class="em-comtitle">综合评分：</em><span class="star icon-star-0"></span>
+						<!-- icon-star-0为评级0星 icon-star-1为评级1星 icon-star-2为评级2星 icon-star-3为评级3星 icon-star-4为评级4星 icon-star-5为评级5星-->
+						<div class="ratebox">
+							<dl class="barbox">
+								<dt>好评(98%)</dt>
+								<dd class="barline">
+									<div divindex="0" id="chartSlide_0" w="98" class="charts"></div>
+									<!-- 属性w里面传好中评的数值 -->
+								</dd>
+								
+							</dl>
+							<dl class="barbox">
+								<dt>中评(1%)</dt>
+								<dd class="barline">
+									<div divindex="1" id="chartSlide_1" w="1" class="charts"></div>
+								</dd>
+								
+							</dl>
+							<dl class="barbox">
+								<dt>差评(1%)</dt>
+								<dd class="barline">
+									<div divindex="2" id="chartSlide_2" w="1" class="charts"></div>
+								</dd>
+								
+							</dl>
+						</div>
+					</div>
+				</div>
+			<div>
+				<ul id="commentsTabUl" class="comments-classify clearfix">
+					<li class="comments-tab" data-type="all" data-count="2333"><span class="comments-list comments-tab-sel">全部<em class="comments-num">(2333)</em></span></li>
+					<li class="comments-tab" data-type="praise" data-count="2330"><span class="comments-list">好评<em class="comments-num">(2330)</em></span></li>
+					<li class="comments-tab" data-type="neutral" data-count="2"><span class="comments-list">中评<em class="comments-num">(2)</em></span></li>
+					<li class="comments-tab" data-type="poor" data-count="1"><span class="comments-list">差评<em class="comments-num">(1)</em></span></li>
+				</ul>
+				<div id="commentsList" class="comments-mainbody">
+					<div class="media" data-comment="0">
+						<a href="" class="pull-left">
+							<img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/tx.jpg" alt="" width="80" height="80">
+						</a>
+						<div class="media__body">
+							<h4 class="media__heading">
+								Arthur...gon
+							</h4>
+							这个仆人很好用啊，就是有点儿笨手笨脚。不过总体来说还是挺老实的，应该没有偷过我潘大根的钱。给个好评。下面来晒图。
+							<div class="comment-content">						
+								<ul class="ul-sharebox clearfix">
+									<li class="comments-pix"><a href="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/cl.jpg"><img src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/cl.jpg" width="58" height="58" alt="分享图片"></a></li>
+									<li class="comments-pix"><a href="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/cl2.jpg"><img src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/cl2.jpg" width="58" height="58" alt="分享图片"></a></li>
+								</ul>
+								<div class="otherfuncs clearfix">
+									<span class="comments-time">2014-07-28  13:46:45</span>
+									<div class="reply-btns">
+										<em class="icon icon-reply"></em><span class="btn-reply">回复</span>
+									</div>
+									<div class="replybox Js_downbox clearfix"></div>
+								</div>																
+							</div>
+						</div>
+					</div>
+					<div class="media" data-comment="1">
+						<a href="" class="pull-left">
+							<img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/txg.jpg" alt="" width="80" height="80">
+						</a>
+						<div class="media__body">
+							<h4 class="media__heading">
+								世界第一帅骑士...ine
+							</h4>
+							前两天订购了这个仆人，非常好相处。就是不会喝酒，一喝就醉。听说我和大王潘大根订购的是同一款仆人，不知道他用起来舒不舒服。好像上面是他的评论诶。我也来晒图。
+							<div class="comment-content">						
+								<ul class="ul-sharebox clearfix">
+									<li class="comments-pix">
+										<a href="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/gm22.jpg">
+											<img src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/gm.jpg" width="58" height="58" alt="分享图片">
+										</a>
+									</li>
+									<li class="comments-pix">
+										<a href="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/gm11.jpg">
+											<img src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/gm2.jpg" width="58" height="58" alt="分享图片">
+										</a>
+									</li>
+								</ul>
+								<div class="otherfuncs clearfix">
+									<span class="comments-time">2014-08-01  22:20:15</span>
+									<div class="reply-btns">
+										<em class="icon icon-reply"></em><span class="btn-reply">回复</span>
+									</div>
+									<div class="replybox Js_downbox clearfix"></div>
+								</div>																
+							</div>
+						</div>
+					</div>
+					<div class="media" data-comment="2">
+						<a href="" class="pull-left">
+							<img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/damd.jpg" alt="" width="80" height="80">
+						</a>
+						<div class="media__body">
+							<h4 class="media__heading">
+								大莫...求父爱
+							</h4>
+							收到货很美啊，很温柔。但是不知道为什么后来变成了这样是我使用的不对吗？！有谁来给解答一下。
+							<div class="comment-content">						
+								<ul class="ul-sharebox clearfix">
+									<li class="comments-pix">
+										<a href="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/sd1.jpg">
+											<img src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/sd1.jpg" width="58" height="58" alt="分享图片">
+										</a>
+									</li>									
+								</ul>
+								<div class="otherfuncs clearfix">
+									<span class="comments-time">2014-08-22  11:09:17</span>
+									<div class="reply-btns">
+										<em class="icon icon-reply"></em><span class="btn-reply">回复</span>
+									</div>
+									<div class="replybox Js_downbox clearfix"></div>	
+								</div>															
+							</div>
+						</div>
+					</div>
+					<div class="media" data-comment="3">
+						<a href="" class="pull-left">
+							<img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/SC.jpg" alt="" width="80" height="80">
+						</a>
+						<div class="media__body">
+							<h4 class="media__heading">
+								LAN斯
+							</h4>
+							好喜欢这个男仆啊。晚上好听话，白天也好听话，总之爱死他啦。不过老婆好像有点儿吃醋，为什么啊。
+							<div class="comment-content">								
+								<div class="otherfuncs clearfix">
+									<span class="comments-time">2014-08-01  22:20:15</span>
+									<div class="reply-btns">
+										<em class="icon icon-reply"></em><span class="btn-reply">回复</span>
+									</div>
+									<div class="replybox Js_downbox clearfix"></div>	
+								</div>			
+							</div>
+						</div>
+					</div>
+					<div class="media" data-comment="4">
+						<a href="" class="pull-left">
+							<img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/mgnb.jpg" alt="" width="80" height="80">
+						</a>
+						<div class="media__body">
+							<h4 class="media__heading">
+								邪恶女王
+							</h4>
+							男友力满满！					
+							<div class="otherfuncs clearfix">
+								<ul class="ul-sharebox clearfix">
+									<li class="comments-pix">
+										<a href="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/sd2d.jpg">
+											<img src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/sd2.jpg" width="58" height="58" alt="分享图片">
+										</a>
+									</li>									
+								</ul>
+								<div class="otherfuncs clearfix">
+								<span class="comments-time">2014-08-01  22:20:15</span>
+								<div class="reply-btns">
+									<em class="icon icon-reply"></em><span class="btn-reply">回复</span>
+								</div>
+								<div class="replybox Js_downbox clearfix"></div>
+							</div>
+							</div>
+							    
+							<div class="submedia">
+								<p class="sub-reply">回复（<span class="replay-length">20</span>条）</p>
+                                <div class="subBox">
+                                    <a href="" class="pull-left">
+                                        <img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/dam.jpg" alt="" width="54" height="54">
+                                    </a>
+                                    <div class="media__body">
+                                        <h4 class="media__heading">
+                                            大莫...求父爱
+                                        </h4>
+                                        莫娘娘，你买的怎么会那么好用啊，为什么我的会那么凶。
+                                        <div class="otherfuncs">
+                                            
+                                        </div>	
+                                    </div>
+                                </div>
+                                <div class="subBox">
+                                    <a href="" class="pull-left">
+                                        <img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/dam.jpg" alt="" width="54" height="54">
+                                    </a>
+                                    <div class="media__body">
+                                        <h4 class="media__heading">
+                                            大莫...求父爱
+                                        </h4>
+                                        莫娘娘你怎么不回我话？
+                                        <div class="otherfuncs">
+                                            
+                                        </div>	
+                                    </div>
+                                </div>
+							</div>
+						</div>
+						<div class="media" data-comment="5">
+								<a href="" class="pull-left">
+									<img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/tx.jpg" alt="" width="80" height="80">
+								</a>
+								<div class="media__body">
+									<h4 class="media__heading">
+										不死的我
+									</h4>
+									哈哈！上次买的黑女仆送给妈妈了，我自己订购了个男仆。这个男仆不错啊，很听话！前两天出去喝high了，男仆还给配了解酒药。真是物超所值。
+									<div class="otherfuncs clearfix">
+										<span class="comments-time">2014-08-01  22:20:15</span>
+										<div class="reply-btns">
+											<em class="icon icon-reply"></em><span class="btn-reply">回复</span>
+										</div>
+										<div class="replybox Js_downbox clearfix"></div>
+									</div>
+								</div>
+						</div>
+
+
+					</div>
+				</div>
+				<div id="pagination" class="pagination pagination--centered">
+				 </div>
+			</div>
+			</div>
+			
+		</div>
+		<div class="footer">
+			<div class="container">
+				<ul class="footer-list">
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">统帅产品</h5>
+						<div class="footer-list__item--body">
+							<a href="#">了解统帅</a><br>
+							<a href="">统帅与海尔</a><br>
+							<a href="#">统帅新闻</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">产品中心</h5>
+						<div class="footer-list__item--body">
+							<a href="#">电视</a><span>\</span><a href="#">冷柜</a><span>\</span><a href="#">冰箱</a><br>
+							<a href="#">空调</a><span>\</span><a href="#">洗衣机</a><span>\</span><a href="#">热水器</a><br>
+							<a href="#">燃气灶</a><span>\</span><a href="#">吸油烟机</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">服务与支持</h5>
+						<div class="footer-list__item--body">
+							<a href="#">常见问题</a><span>\</span><a href="#">产品注册</a><br>
+							<a href="#">延保服务</a><span>\</span><a href="#">维修与安装</a><span>\</span><a href="#">收费标准</a><br>
+							<a href="#">燃气灶</a><span>\</span><a href="#">吸油烟机</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">关注我们</h5>
+						<div class="footer-list__item--body">
+							<i class="icon icon-weixin"></i>
+							<i class="icon icon-weibo"></i>
+							<i class="icon icon-douban"></i>
+							<i class="icon icon-renren"></i>
+							<a href="#">海尔集团</a><span>\</span><a href="#">社区</a>
+						</div>
+					</li>
+				</ul>  
+				<div class="footer-copyright">
+					<a href="#">联系我们</a>
+					<span class="split-line"></span>
+					<a href="#">声明法律</a>
+					<span class="split-line"></span>
+					<a href="#">网站地图</a>
+					&copy;2014 Haier Group Leader. All rights reserved 鲁ICP备09096283  
+				</div>
+			</div>
+		</div>
+	</div>
+	<script id="commentScriptTemplate" type="text/template">
+		<%_.each(data, function(item) {%>
+			<div class="media">
+				<a href="" class="pull-left">
+					<img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/dam.jpg" alt="" width="80" height="80">
+				</a>
+				<div class="media__body">
+					<h4 class="media__heading"><%=item.memberName%></h4>
+					<%=item.commentContent%>
+					<div class="otherfuncs clearfix">
+						<ul class="ul-sharebox clearfix">
+							<%_.each(item.cmtCommentSharePicsList, function(jitem) {%>
+								<li class="comments-pix">
+									<a href="<%=jitem.picFileId%>">
+										<img src="<%=jitem.picFileId%>" width="58" height="58" alt="分享图片">
+									</a>
+								</li>
+							<%});%>
+						</ul>
+						<div class="otherfuncs clearfix">
+							<span class="comments-time"><%=window.updateTime(item.createTime)%></span>
+							<div class="reply-btns">
+								<em class="icon icon-reply"></em><span class="btn-reply">回复</span>
+							</div>
+							<div class="replybox Js_downbox clearfix"></div>
+						</div>
+					</div>
+					<%if(item.cmtCommentRepliesList && item.cmtCommentRepliesList.length){%>
+						<div class="media">
+							<p class="sub-reply">回复（<span><%=item.cmtCommentRepliesList.length%></span>条）</p>
+							<%_.each(item.cmtCommentRepliesList, function(titem) {%>
+								<a href="" class="pull-left">
+									<img class="media__object" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/comments/dam.jpg" alt="" width="54" height="54">
+								</a>
+								<div class="media__body">
+									<h4 class="media__heading">
+										<%if(titem.targetMemberId==0 && titem.targetCommentReplyId!= 0){%>
+											小海
+										<%}else{%>
+											ID为：<%=titem.memberId%>回复
+										<%}%>
+									</h4>
+									<%=titem.replyContent%>
+									<div class="otherfuncs">
+										<span><%=window.updateTime(titem.createTime)%></span>
+									</div>	
+								</div>
+							 <%});%>
+						</div>
+					<%}%>
+				</div>
+			</div>
+		<%});%>
+	</script>
+	<script type="text/javascript" src="http://static.tongshuai.com/r/build/ts/v1/js/plugins/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="http://static.tongshuai.com/r/build/ts/v1/js/plugins/jquery.thumbox.1.2.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/underscore/underscore.js"></script>
+	<script type="text/javascript" src="http://static.tongshuai.com/r/build/ts/v1/js/plugins/paging.js"></script>
+	<script type="text/javascript" src="http://static.tongshuai.com/r/build/ts/v1/js/pages/comments.js"></script>
+	<script type="text/javascript" src="http://static.tongshuai.com/r/build/ts/v1/js/pages/holder.js"></script>
+
+</body>
+</html>

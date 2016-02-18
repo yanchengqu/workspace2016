@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>OrderList Page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/pages/order_list.css">
+	<script src="http://static.tongshuai.com/r/assets/zepto.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/iscroll/iscroll.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/underscore/underscore-min.js"></script>
+	<script src="http://static.tongshuai.com/r/dev/ts_h5/v1/js/pages/event.js"></script>	
+</head>
+<body>
+	<div id="J_drawer" class="drawer">
+		<div id="J_drawerLeft" class="drawer__left">
+			<div class="scroller">
+				<div class="search">
+					<form action="" class="search__form">
+						<div class="search__input--wrapper">
+							<input class="search__input" id="J_searchBox" type="text">
+							<div class="search__input--placeholder"><i class="icon-search"></i>搜索</div>
+						</div>
+					</form>
+					<ul class="search__list"></ul>
+				</div>
+				<div class="nav">
+					<a class="nav__item" href="#"><i class="icon-home"></i>首页</a>
+					<a class="nav__item" href="#"><i class="icon-location"></i>北京市海淀区</a>
+					<a class="nav__item" href="#"><i class="icon-people"></i>我的统帅</a>
+					<a class="nav__item" href="#"><i class="icon-order"></i>我的订单</a>
+					<a class="nav__item" href="#"><i class="icon-disc"></i>关于统帅</a>
+				</div>
+				<div class="ts-version">
+					<i class="icon-logo-v2"></i>V.10
+				</div>
+			</div>
+		</div>
+		<div id="J_drawerRight" class="drawer__right">
+			<div class="scroller">
+				<!-- The right content. -->
+			</div>
+		</div>
+	</div>
+	<div id="J_main" class="wrap order-list-page">
+		<header class="header">
+			<div class="pull-left">
+				<div id="J_switch" class="nav-icon"></div>
+			</div>
+			<div class="pull-right">
+				<!-- <div class="fes-chevron-right"></div> -->
+			</div>
+			<div class="text-center">
+				<a href=""><i class="icon-logo"></i></a>
+			</div>
+		</header>
+		<div class="container">
+			<input type="hidden" value="10" id="orderCount">
+			<div class="order">
+				<div class="clearfix order-title">
+					<div class="pull-left order--number">订单编号：32343454656</div>
+					<div class="pull-right text-important order--status ">已完成</div>
+				</div>
+				<div class="order-product">
+					<img class="order-product__img" src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/order/product_fridge.jpg" alt="product img">
+					<div class="order-product__info">
+						<div class="order-product--title">统帅洗衣机  KFR-26GW/DY-IF(R3)</div>
+						<div class="clearfix">
+							<div class="pull-left order-product--count">数量：2</div>
+							<div class="pull-right order-product--price showPricelb" data-value="12212"></div>
+						</div>
+					</div>
+				</div>
+				<div class="text-right">
+					<span class="order--count">共<em>2</em>件商品</span>
+					<span class="order--amount">实付：<em class="showPricelb" data-value="3243243"></em></span>
+				</div>
+				<div class="order-action">
+					<button class="btn">删除订单</button>
+					<button class="btn btn-line btn-line--red">再次购买</button>
+				</div>
+			</div>
+			<div class="order">
+				<div class="clearfix order-title">
+					<div class="pull-left order-number">订单编号：32343454656</div>
+					<div class="pull-right text-important order-status ">已完成</div>
+				</div>
+				<div class="order-product">
+					<img class="order-product__img" src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/order/product_fridge.jpg" alt="product img">
+					<div class="order-product__info">
+						<div class="order-product--title">统帅洗衣机  KFR-26GW/DY-IF(R3)</div>
+						<div class="clearfix">
+							<div class="pull-left order-product--count">数量：2</div>
+							<div class="pull-right order-product--price">&yen;8600</div>
+						</div>
+					</div>
+				</div>
+				<div class="text-right">
+					<span class="order--count">共2件商品</span>
+					<span class="order--amount">实付：&yen;134567</span>
+				</div>
+				<div class="order-action">
+					<button class="btn btn-line">支付订单</button>
+					<button class="btn btn-line">追踪订单</button>
+					<button class="btn btn-line">取消订单</button>
+				</div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer_service">客服电话：4006-999 999</div>
+			<div class="footer_slogan">
+				<span class="icon-slogan"></span>
+			</div>
+			<div class="footer_copyright">Copyright &copy; 2014 Haier Group Leader.All rights reserved 鲁ICP 09096283</div>
+		</footer>
+		<script id="order_list_template" type="text/template">
+			<%_.each(data, function(item) {%>
+				<div class="order" orderId="<%=item.orderSn%>">
+					<div class="clearfix order-title">
+						<div class="pull-left order--number">订单编号：<%=item.orderSn%></div>
+						<div class="pull-right text-important order--status "><%=item.orderStatus%></div>
+					</div>
+
+				<%_.each(item.showOrdProductListVos, function(jitem) {%>
+					<div class="order-product">
+						<img class="order-product__img" src="<%=jitem.imgFileId%>" alt="product img">
+						<div class="order-product__info">
+							<div class="order-product--title"><%=jitem.productName%></div>
+							<div class="clearfix">
+								<div class="pull-left order-product--count">数量：<%=jitem.productNumber%></div>
+								<div class="pull-right order-product--price"><%=window.resetPrice(jitem.price)%></div>
+							</div>
+						</div>
+					</div>
+				<%});%>
+
+					<div class="text-right">
+						<span class="order--count">共<em><%=item.orderNumber%></em>件商品</span>
+						<span class="order--amount">实付：<em><%=window.resetPrice(item.orderAmount)%></em></span>
+					</div>
+
+					<div class="order-action">
+					<%if(item.isCod == 0 && item.orderStatus == 200 && item.paymentStatus == 100 ){%>
+						<a class="btn btn-line paymentOrderBtn" href="javascript:void(0);">支付订单</a>
+						<a class="btn btn-line trackOrderBtn" href="javascript:void(0);">追踪订单</a>
+						<a class="btn btn-line cancelOrderBtn" href="javascript:void(0);">取消订单</a>
+					<%}%>
+					<%else if(item.isCod == 1 && item.orderStatus == 200){%>
+							<a class="btn btn-line trackOrderBtn" href="javascript:void(0);">追踪订单</a>
+							<a class="btn btn-line cancelOrderBtn" href="javascript:void(0);">取消订单</a>
+					<%}%>
+					<%else{%>
+							<a class="btn btn-line cancelOrderBtn" href="javascript:void(0);">追踪订单</a>
+					<%}%>
+					</div>
+
+				</div>
+			<%});%>
+		</script>
+	</div>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/plugins/zepto.drawer.js"></script>
+	<script src="http://static.tongshuai.com/r/dev/ts_h5/v1/js/pages/order_list.js"></script>
+</body>
+</html>

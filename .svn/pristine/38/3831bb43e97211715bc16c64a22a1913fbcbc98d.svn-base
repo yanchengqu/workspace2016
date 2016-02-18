@@ -1,0 +1,68 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+html {
+	height: 100%;
+}
+
+.promo-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #1973b8;
+  background-image: url(http://static.tongshuai.com/wd/img/pages/promo/bg.png);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.promo-page
+.nav__back {
+	position: absolute;
+	top: 20px;
+	left: 12px;
+	border: 1px solid #fff;
+	background: none;
+	color: #fff;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+	text-align: center;
+}
+
+.promo-page
+.nav__back::before {
+    position: relative;
+    left: 2px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: inline-block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-left: 1px solid currentcolor;
+    border-bottom: 1px solid currentcolor;
+    vertical-align: bottom;
+}
+
+.promo-page
+.btn-line {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+	width: 80px;
+	margin: auto;
+	border-color: rgba(255, 255, 255, .2);
+	color: #fff;
+	-webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}

@@ -1,0 +1,60 @@
+	.tsb-1{
+		background: url('http://static.tongshuai.com/r/build/ts/v1/img/pages/freetv/tongshuaitv_01.jpg') no-repeat center;
+		
+		height:728px;
+	}
+	.tsb-2{
+		background: #00e3bf;
+		height:212px;		
+	}
+	.infotitle{
+		width:131px;
+		height:36px;
+		display: block;
+		color:#fff;
+		font-size: 2em;
+		background: #000;
+		line-height: 36px;
+		text-align: center;
+	}
+	.infocontent{
+		padding-top:20px;
+		font-weight: bold;
+		font-size: 15px;
+		color:#000;
+		width: 768px;
+	}
+	.tsb-3{
+		background: url('http://static.tongshuai.com/r/build/ts/v1/img/pages/freetv/tongshuaitv_03.jpg') no-repeat center;
+		
+		height:151px;
+	}
+	.tsb-4{
+		background: url('http://static.tongshuai.com/r/build/ts/v1/img/pages/freetv/tongshuaitv_04.jpg') no-repeat center;
+		
+		height:542px;
+	}
+	.tsb-5{
+		background: url('http://static.tongshuai.com/r/build/ts/v1/img/pages/freetv/tongshuaitv_05.jpg') no-repeat center;
+		
+		height:542px;
+	}
+	.tsb-6{
+		background: url('http://static.tongshuai.com/r/build/ts/v1/img/pages/freetv/tongshuaitv_06.jpg') no-repeat center;
+		
+		height:533px;
+	}
+	.tsball{
+		width:100%;
+	}
+	.tsbinfo{
+		width: 1000px;
+		margin:0 auto;
+		position: relative;
+		padding:30px 0 0 30px;
+	}
+	.codeimg{
+		position: absolute;
+		right:-36px;
+		top:-50px;
+	}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>店铺申请</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/wdApply.css">
+	<link rel="stylesheet" href="/js/plugins/address/address.css">
+	<link rel="stylesheet" href="/js/plugins/slide/slide.css">
+	<script src="/js/hdk-1.0.0.js"></script>
+	<script src="/js/zepto.min.js"></script>	
+	<script src="/js/h/dist/h.js"></script>
+</head>
+<body class="wdApply-page">
+
+	<!-- 头部导航  -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<!-- <div class="nav__action"></div> -->
+			<div class="nav__title">店铺申请</div>
+		</div>
+	</div>
+
+	<p id="errorTip" class="errorTip"></p>
+
+	<!-- 店铺申请表单 -->	
+	<form action="" name="form" id="form">
+		<ul class="list">
+			<li class="list__item">
+				<label for="">店主姓名</label>
+				<div class="input-wrapper">
+					<input type="text" name="memberRealName" id="memberRealName" class="validate_input" emptyMsg="店主姓名不能为空" errorMsg="店主姓名为1~20字符" value="李老师">
+				</div>
+			</li>
+			<!-- <li class="list__item">
+				<label for="">店主性别</label>
+				<div class="input-wrapper">
+					<div class="checkbox checkbox--checked" data-name="male">
+						<input type="radio" name="male" id="">
+					</div>男
+					<div class="checkbox" data-name="male">
+						<input type="radio" name="male" id="">
+					</div>女
+				</div>
+			</li> -->
+			<!-- <li class="list__item">
+				<label for="">手机号码</label>
+				<div class="input-wrapper">
+					<input type="text" name="" id="" value="18612318716">
+				</div>
+			</li> -->
+			<li class="list__item">
+				<label for="">所在地区</label>
+				<div class="input-wrapper">
+					<input type="text" name="regionName" id="openAddressBtn" class="validate_input" emptyMsg="请选择所在地区" errorMsg="所在地区为2~50字符" value="" readonly>
+				</div>
+				<i class="fes-chevron-right"></i></li>
+			<li class="list__item">
+				<label for="">详细地址</label>
+				<div class="input-wrapper">
+					<input type="text" name="address" id="address" class="validate_input" emptyMsg="请输入详细地址" errorMsg="详细地址为2~50字符" value="">
+				</div>
+			</li>
+		</ul>
+		<div class="list">
+			<div class="list__item">
+				<label for="">店铺名称</label>
+				<div class="input-wrapper">
+					<input type="text" name="storeName" id="storeName" class="validate_input" emptyMsg="请输入店铺名字" errorMsg="店铺名字为1~20字符" value="">
+					<span>的顺逛小店</span>					
+				</div>
+			</div>
+		</div>
+		<div class="list">
+			<div class="list__item">
+				<label for="">联盟分类</label>
+				<div class="input-wrapper">
+					<input type="hidden" name="lmtype" id="lmtypeValue">
+					<input type="text" name="lmType" id="lmType" class="validate_input" emptyMsg="请选择联盟分类" errorMsg="详细地址为2~50字符" readonly>	
+					<i class="fes-chevron-right"></i>			
+				</div>				
+			</div>
+		</div>
+		<input type="hidden" name="memberId">
+		<input type="hidden" name="provinceId" id="provinceId">
+		<input type="hidden" name="cityId" id="cityId">
+		<input type="hidden" name="regionId" id="regionId">
+	</form>
+	<div class="fixed">
+		<a class="btn btn-info btn-large" href="javascript:;">我要开店</a>
+	</div>
+
+	<!--地址选择-->
+	<div class="menu_slidebar region_slidebar">
+		<div class="list_content_mask"></div>
+		<div class="slidebar-content">
+			<div class="slidebar-header">
+	            <span class="slidebar-title-back"><i></i></span>
+	            <span class="slidebar-title-name">配送至</span>
+	        </div>
+	        <div class="slidebar-items-container">
+	        	<div class="slidebar_space"></div>
+	        	<div class="slidebar_detail">
+	        		<div class="regionContainer"></div>
+	        	</div>
+	        </div>
+		</div>
+	</div>
+
+	<!--联盟分类-->
+	<div class="menu_slidebar lm_slidebar">
+		<div class="list_content_mask"></div>
+		<div class="slidebar-content">
+			<div class="slidebar-header">
+	            <span class="slidebar-title-back"><i></i></span>
+	            <span class="slidebar-title-name">联盟分类</span>
+	        </div>
+	        <div class="slidebar-items-container">
+	        	<div class="slidebar_space"></div>
+	        	<div class="slidebar_detail">
+	        		<div class="lmContainer">
+	        			<ul class="typeList list" id="typeList"></ul>
+	        		</div>
+	        	</div>
+	        </div>
+		</div>
+	</div>
+
+	<script src="/js/validate.js/validate.min.js"></script>
+	<script src="/js/plugins/address/address.js"></script>
+	<script src="/js/plugins/slide/sliderAside.js"></script>
+	<script src="/js/pages/wdApply.js"></script>
+</body>
+</html>

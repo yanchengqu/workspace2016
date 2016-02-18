@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>管理收货地址</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/addressManager.css">
+	<script src="/js/zepto.min.js"></script>
+	<script src="/js/h/src/h.js"></script>	
+	<script src="/js/h/src/h.event.js"></script>	
+</head>
+<body class="adm-page">
+
+	<!-- 头部导航  -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<!-- <div class="nav__action"></div> -->
+			<div class="nav__title">管理收货地址</div>
+		</div>
+	</div>
+
+	<!-- 收件人地址 -->
+	<div id="addressItems">
+		<div class="item">
+			<div class="item-head" data-id="123456">
+				<div class="item-head__inner">
+					<div class="pull-left">李先生</div>
+					<div class="pull-right">18612318716</div>
+					<p>北京北京市海淀区中关村街道北京市海淀区丹棱街18号创富大厦902</p>
+				</div>
+			</div>
+			<div class="item-body">
+				<div class="pull-left">
+					<span class="checkbox checkbox--checked"></span>默认地址
+				</div>
+				<div class="pull-right">
+					<a href="" class="btn btn-line">编辑</a><a class="btn btn-line">删除</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="item">
+			<div class="item-head">
+				<div class="item-head__inner">
+					<div class="pull-left">李先生</div>
+					<div class="pull-right">18612318716</div>
+					<p>北京北京市海淀区中关村街道北京市海淀区丹棱街18号创富大厦902</p>
+				</div>
+			</div>
+			<div class="item-body">
+				<div class="pull-left">
+					<span class="checkbox checkbox--checked"></span>默认地址
+				</div>
+				<div class="pull-right">
+					<a href="" class="btn btn-line">编辑</a><a href="" class="btn btn-line">删除</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="item">
+			<div class="item-head">
+				<div class="item-head__inner">
+					<div class="pull-left">李先生</div>
+					<div class="pull-right">18612318716</div>
+					<p>北京北京市海淀区中关村街道北京市海淀区丹棱街18号创富大厦902</p>
+				</div>
+			</div>
+			<div class="item-body">
+				<div class="pull-left">
+					<span class="checkbox checkbox--checked"></span>默认地址
+				</div>
+				<div class="pull-right">
+					<a href="" class="btn btn-line">编辑</a><a href="" class="btn btn-line">删除</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="fixed">
+		<a class="btn btn-info btn-large" href="#">新建地址</a>
+	</div>
+</body>
+</html>
+<script src="/js/pages/addressManger.js"></script>

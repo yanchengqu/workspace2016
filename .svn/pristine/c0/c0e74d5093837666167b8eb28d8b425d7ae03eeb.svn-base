@@ -1,0 +1,54 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.expressNotification-page {
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+.expressNotification-page
+.nav::after {
+  display: none;
+}
+
+.expressNotification-page
+.list__item {
+  overflow: hidden;
+  padding-left: 12px;
+  color: #8e8e93;
+  font-size: 14px;
+  
+}
+
+.expressNotification-page
+.list__item h3 {
+  padding: 15px 0;
+  color: #2e3033;
+  font-size: 16px;
+}
+
+.expressNotification-page
+.list__item p {
+  padding-bottom: 15px;
+}
+
+.expressNotification-page
+.list__item--lh {
+  line-height: 20px;
+}
+
+.expressNotification-page
+.list__item--pb {
+  padding-bottom: 15px;
+}
+
+.expressNotification-page
+.list__item
+.pull-right {
+  margin-right: 25px;
+}

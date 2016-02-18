@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>消息中心</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/msgNotification.css">
+</head>
+<body class="msgNotification-page">
+	<!-- 头部当行  -->
+	
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<div class="nav__title">消息中心</div>
+		</div>
+	</div>
+
+	<!-- 功能列表 -->
+
+	<div class="list">
+		<a class="list__item" href="#">
+			<div class="msg clearfix">
+				<div class="msg__img msg__img--express"></div>
+				<div class="msg-content">
+					<div class="msg-content__head">
+						<div class="pull-left">物流通知</div>
+						<div class="pull-right">11:36</div>
+					</div>
+					<div class="msg-content__body">您的订单9004952960已完成，感谢您对海尔商...</div>
+				</div>
+			</div>
+		</a>
+		<a class="list__item" href="#">
+			<div class="msg clearfix">
+				<div class="msg__img msg__img--privilege"></div>
+				<div class="msg-content">
+					<div class="msg-content__head">
+						<div class="pull-left">优惠促销</div>
+						<div class="pull-right">星期日</div>
+					</div>
+					<div class="msg-content__body">您的订单9004952960已完成，感谢您对海尔商...</div>
+				</div>
+			</div>
+		</a>
+		<a class="list__item" href="#">
+			<div class="msg clearfix">
+				<div class="msg__img msg__img--activity"></div>
+				<div class="msg-content">
+					<div class="msg-content__head">
+						<div class="pull-left">活动消息</div>
+						<div class="pull-right">09-30</div>
+					</div>
+					<div class="msg-content__body">您的订单9004952960已完成，感谢您对海尔商...</div>
+				</div>
+			</div>
+		</a>
+	</div>
+
+</body>
+</html>

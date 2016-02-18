@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" />
+	<title>订单提交</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<link rel="shortcut icon" href="">
+	<!--[if lt IE 9]>
+	<script src="http://static.tongshuai.com/r/assets/html5shiv.min.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts/v1/css/pages/order_submit.css">
+	<script src="http://static.tongshuai.com/r/assets/jquery-1.7.2.min.js"></script>
+	<script>
+
+		var pageConfig = {
+			skuId: 1,
+			regionId: 1
+		}
+
+	</script>
+</head>
+<body>
+	<div class="wrap order-submit-page">
+		<div class="header">
+			<div class="container">
+				<div class="pull-left">
+					<a href="#" class="icon icon-logo">&nbsp;</a>
+				</div>
+				<div id="J_switchCity" class="area">
+					<span class="split-line"></span>
+					<i class="icon icon-location"></i>
+					<span id="J_currentCity">北京</span>
+				</div>
+				<div class="loginbar">
+					<i class="icon icon-user"></i><a href="#">登录</a><span class="split-line">|</span><a href="#">注册</a>
+				</div>
+				<div class="nav">
+					<a class="nav__item" href="#">网上商城</a>
+					<a class="nav__item" href="#">家电定制</a>
+					<a class="nav__item" href="#">产品中心</a>
+					<a class="nav__item" href="#"><i class="icon icon-csad"></i>社区</a>
+					<a class="nav__item" href="#">活动部落</a>
+					<a class="nav__item" href="#">安心服务</a>
+					<a class="nav__item" href="#">关于统帅</a>
+				</div>
+			</div>
+			<div class="header__opacity"></div>
+		</div>
+		<div id="J_root" class="container">
+			<div class="clearfix flow">
+				<div class="pull-left flow__caption">核对并填写订单信息</div>
+				<div class="pull-right flow__step">
+					<ul class="steps">
+						<li class="steps__item steps__item--doing">1核对并填写订单信息<span class="steps__arrowhead"></span></li>
+						<li class="steps__item steps__item--willdo">2完成提交订单</li>
+					</ul>
+				</div>
+			</div>
+			<div class="order">
+				<ul class="list">
+					<li id="J_consignee" class="list__item">
+						<h4 class="list__item--head">收货人信息<a id="J_modify" class="list__item--modify" href="javascript:;">[修改]</a></h4>
+						<div class="list__item--body order-consignee">
+							<div class="order-consignee__inner">
+								<input type="hidden" name="memberAddressId" value="1">
+								<div class="order-consignee--name">某某某</div>
+								<div class="order-consignee--tel">12345678911</div>
+								<br>
+								<!-- <div class="order-consignee--province"></div>
+								<div class="order-consignee--city"></div> -->
+								<div class="order-consignee--region">北京&nbsp;北京&nbsp;海淀区</div>
+								<div class="order-consignee--address">丹棱街18号创富大厦1106海尔集团电子商务有限公司 </div>
+							</div>
+							<div id="J_CM" class="consignee-manage ">
+								<div class="consignee-list">
+									<div class="consignee-list__item J_consigneeItem" data-consignee='{"memberAddressId":285,"memberId":"testInsert","contacter":"武松","provinceId":16,"cityId":173,"regionId":2444,"regionName":"山东 青岛 城阳区","address":"海淀区海淀桥","zipCode":"","mobile":"13111111111","phone":"","defaultFlag":0}'>
+										<div class="consignee">
+											<input type="radio" name="cur" value="0">
+											<div class="consignee__inner">
+												<div class="consignee--name">某某一</div>
+												<div class="consignee--tel">12345678911</div>
+												<br>
+												<!-- <div class="consignee--province">北京</div>
+												<div class="consignee--city">北京</div> -->
+												<div class="consignee--region">北京 北京 海淀区</div>
+												<div class="consignee--address">丹棱街18号创富大厦1106海尔集团电子商务有限公司 </div>
+											</div>
+										</div>
+										<div class="consignee-list__item--action">
+											<a class="J_setDefault" href="javascript:;">设为默认地址</a>
+											<a class="J_edit" href="javascript:;">编辑</a>
+											<a class="J_delete" href="javascript:;">删除</a>
+										</div>
+									</div>
+									<div class="consignee-list__item J_consigneeItem" data-consignee='{"memberAddressId":287,"memberId":"testInsert","contacter":"武松","provinceId":16,"cityId":173,"regionId":2444,"regionName":"山东 青岛 城阳区","address":"海淀区海淀桥","zipCode":"","mobile":"13111111111","phone":"","defaultFlag":0}'>
+										<div class="consignee">
+											<input type="radio" name="cur" value="0">
+											<div class="consignee__inner">
+												<div class="consignee--name">某某二</div>
+												<div class="consignee--tel">12345678911</div>
+												<br>
+												<!-- <div class="consignee--province"></div>
+												<div class="consignee--city"></div> -->
+												<div class="consignee--region">北京 北京 海淀区</div>
+												<div class="consignee--address">丹棱街18号创富大厦1106海尔集团电子商务有限公司 </div>
+											</div>
+										</div>
+										<div class="consignee-list__item--action">
+											<a class="J_setDefault" href="javascript:;">设为默认地址</a>
+											<a class="J_edit" href="javascript:;">编辑</a>
+											<a class="J_delete" href="javascript:;">删除</a>
+										</div>
+									</div>
+									<div class="consignee-list__item J_consigneeItem" data-consignee='{"memberAddressId":288,"memberId":"testInsert","contacter":"武松","provinceId":16,"cityId":173,"regionId":2444,"regionName":"山东 青岛 城阳区","address":"海淀区海淀桥","zipCode":"","mobile":"13111111111","phone":"","defaultFlag":1}'>
+										<div class="consignee">
+											<input type="radio" name="cur" value="0">
+											<div class="consignee__inner">
+												<div class="consignee--name">某某三</div>
+												<div class="consignee--tel">12345678911</div>
+												<br>
+												<!-- <div class="consignee--province">北京</div>
+												<div class="consignee--city">北京</div> -->
+												<div class="consignee--region">北京 北京 海淀区</div>
+												<div class="consignee--address">丹棱街18号创富大厦1106海尔集团电子商务有限公司 </div>
+											</div>
+										</div>
+										<div class="consignee-list__item--action">
+											<a class="J_setDefault" href="javascript:;">设为默认地址</a>
+											<a class="J_edit" href="javascript:;">编辑</a>
+											<a class="J_delete" href="javascript:;">删除</a>
+										</div>
+									</div>
+								</div>
+								<div class="consignee-manage__new">
+									<div class="consignee-manage__new--head J_consigneeItem">
+										<input type="radio" name="cur" value="1">使用新地址
+									</div>
+									<form id="J_AE" action="">
+										<input type="hidden" name="memberAddressId">										
+										<div class="controls">
+										  	<label class="control-label"><i class="text-important">＊</i>收件人</label>
+										    <input class="input input-large" type="text" name="contacter">
+										    <span class="help-inline"></span>
+										</div>
+										 <div class="controls">
+										  	<label class="control-label"><i class="text-important">＊</i>手机号码</label>
+										    <input class="input input-large" type="text" name="mobile">
+										    <span class="help-inline"></span>
+										 </div>
+										
+										<div class="controls">
+											<label class="control-label"><i class="text-important">＊</i>所在地区</label>
+											<div class="ctrl-address input input-large">
+												<div class="ctrl-address__title">
+								
+												</div>
+												<span class="triangle triangle-small triangle-down"></span>
+												<input type="hidden" name="provinceId">
+												<input type="hidden" name="cityId">
+												<input type="hidden" name="regionId">
+												<input type="hidden" name="regionName">
+											</div>
+											<span class="help-inline"></span>
+										</div>
+										<div class="controls">
+											<label class="control-label"><i class="text-important">＊</i>详细地址</label>
+											<textarea class="textarea input-large" name="address" id="" rows="5"></textarea>
+											<span class="help-inline"></span>
+										</div>
+									</form>
+								</div>
+								<div class="consignee-manage__action">
+									<!-- <button class="btn btn-line" id="J_back">返回</button> -->
+									<button class="btn btn-important" id="J_save">保存收货人信息</button>
+								</div>
+							</div>
+						</div>
+					</li>
+					<form id="J_orderForm" action="">
+					<li id="J_pay" class="list__item">
+						<h4 class="list__item--head">支付方式</h4>
+						<div class="list__item--body order-payway">
+							<input type="hidden" name="paymentCode">
+							<input type="hidden" name="paymentName">
+							<input type="hidden" name="isCod">
+							<div class="controls-group">
+								<div class="radiobox checked" data-name="payway">
+									支付宝支付
+								</div>
+								<div class="radiobox" data-name="payway">
+									货到付款
+								</div>
+							</div>
+						</div>
+					</li>
+					<li id="J_delivery" class="list__item">
+						<h4 class="list__item--head">配送时间</h4>
+						<div class="list__item--body order-deliveryTime">
+							<input type="hidden" name="deliveryType" value="1">
+							<div class="order__head">
+								<span>日期</span>
+								<span>时间</span>
+							</div>							
+							<div class="controls-group">
+								<div id="J_date" class="selectbox">
+									<div class="selectbox__title">
+										<div class="order-deliveryTime--date">2015-09-21</div>
+										<div class="order-deliveryTime--day">星期五</div>
+									</div>
+									<ul class="selectbox__inner">
+										<li class="selectbox__option" data-value="1">
+											<div class="order-deliveryTime--date">2015-09-21</div>
+											<div class="order-deliveryTime--day">星期五</div>
+										</li>
+										<li class="selectbox__option" data-value="2" data-selected="true">
+											<div class="order-deliveryTime--date">2015-09-23</div>
+											<div class="order-deliveryTime--day">星期五</div>
+										</li>
+										<li class="selectbox__option" data-value="3">
+											<div class="order-deliveryTime--date">2015-09-21</div>
+											<div class="order-deliveryTime--day">星期五</div>
+										</li>
+
+									</ul>
+									<span class="triangle triangle-down"></span>
+									<input type="hidden" name="reserveDate">
+								</div>
+								<div id="J_time" class="selectbox">
+									<div class="selectbox__title">
+										<div class="order-deliveryTime--time">01:30</div>
+										<div class="order-deliveryTime--12">下午</div>
+									</div>
+									<ul class="selectbox__inner">
+										<li class="selectbox__option">
+											<div class="order-deliveryTime--time">01:30</div>
+											<div class="order-deliveryTime--12">下午</div>
+										</li>
+										<li class="selectbox__option">
+											<div class="order-deliveryTime--time">01:30</div>
+											<div class="order-deliveryTime--12">下午</div>
+										</li>
+										<li class="selectbox__option">
+											<div class="order-deliveryTime--time">01:30</div>
+											<div class="order-deliveryTime--12">下午</div>
+										</li>
+									</ul>
+									<span class="triangle triangle-down"></span>
+									<input type="hidden" name="reserveTimePeriod">
+								</div>
+							</div>
+
+							<div class="order__warn">您订购的产品将于<span class="text-important">上述时间</span>送达，请保持手机畅通。</div>
+						</div>
+					</li>
+					<li id="J_invoice" class="list__item">
+						<h4 class="list__item--head">发票信息</h4>
+						<div class="list__item--body order-invoice">
+							<div class="order__head"><span class="text-important">＊</span>发票类型</div>
+							<div class="tab">
+								<ul class="tab-head clearfix">
+									<li class="tab-head__item tab-head__item--active">
+										<div class="radiobox checked " data-name="memberInvoiceType">
+											电子发票(非纸质)
+											<input type="radio" name="memberInvoiceType" value="0">
+										</div>
+									</li>
+									<li class="tab-head__item">
+										<div class="radiobox" data-name="memberInvoiceType">
+											增值税发票(纸质)
+											<input type="radio" name="memberInvoiceType" value="1">
+										</div>
+									</li>									
+								</ul>
+								<div class="tab-body">
+									<div class="tab-body__item tab-body__item--active">
+										<div class="order-invoice--law">电子发票是经过国家税务机关认可的有效凭证，同样具有海尔商城<span class="text-important">保修与财务报销</span>的效力。当垫子发票开具后，将不可更改发票信息及更换海尔商城其他种类发票。相关电子发票政策可查看《青岛市国家税务机关局电子发票管理办法（试行）》，或登录青岛市电子发票服务平台
+										<a class="text-important" target="_blank" href="http://www.chinaeinv.com">www.chinaeinv.com</a>查询，如有问题可拨打税务热线<span class="text-important">12366</span>进行咨询。</div>
+										<div class="order__head"><span class="text-important">＊</span>发票抬头</div>
+										<textarea class="order-invoice--name" name="memberInvoiceTitle"></textarea>
+
+									</div>
+									<div class="tab-body__item">
+										<div class="order-invoice--law">
+											首次开具增值税专用发票的客户需提供加盖公章的营业执照副本、税务登记证副本、一般纳税人资格证书、银行开户许可证复印件，提供扫描件发送邮件至<br><a href="mailto:fapiao@ehaier.com" target="_blank">fapiao@ehaier.com</a>，请注明您的海尔商城用户名及商城订单号，我们收到您的开票资料后，将会尽快审核。您也可以登陆后到会员中心左侧的“增票资质”菜单中查询相关信息及审核状态。 如果您要修改原已审核通过的增值税发票信息，则和首次开具增值税专用发票一样需要邮寄给海尔相关证明，审核通过后由管理人员会为您修改。<br>
+											<span class="text-important">注意：有效增值税发票开票资质仅为一个。</span>
+										</div>
+										<div class="controls">
+											<label class="control-label"><span class="text-important">＊</span>公司名称</label>
+											<input class="input input-large" type="text" name="companyName">
+											<span class="help-inline"></span>
+										</div>
+										<div class="controls">
+											<label class="control-label"><span class="text-important">＊</span>纳税人识别号</label>
+											<input class="input input-large" type="text" name="taxPayerNumber">
+											<span class="help-inline"></span>
+										</div>
+										<div class="controls">
+											<label class="control-label"><span class="text-important">＊</span>注册地址</label>
+											<input class="input input-large" type="text" name="registerAddress">
+											<span class="help-inline"></span>
+										</div>
+										<div class="controls">
+											<label class="control-label"><span class="text-important">＊</span>注册电话</label>
+											<input class="input input-large" type="text" name="registerPhone">
+											<span class="help-inline"></span>
+										</div>
+										<div class="controls">
+											<label class="control-label"><span class="text-important">＊</span>开户银行</label>
+											<input class="input input-large" type="text" name="bankName">
+											<span class="help-inline"></span>
+										</div>
+										<div class="controls">
+											<label class="control-label"><span class="text-important">＊</span>开户帐号</label>
+											<input class="input input-large" type="text" name="bankCardNo">
+											<span class="help-inline"></span>
+										</div>
+										
+										<!--  发票邮寄地址 -->
+										<div class="invoice-consignee">
+											
+											<h5 class="invoice-consignee__head">
+												<em>发票邮寄地址：</em>如商品与发票发往同一地址，发票邮寄地址可不填，如商品与发票发往不同地址，请填写发票邮寄地址！
+											</h5>
+
+											<div class="controls">
+												<label class="control-label">收件人姓名</label>
+												<input class="input input-large" type="text" name="receiptConsignee">
+												<span class="help-inline"></span>
+											</div>
+											<div class="controls">
+												<label class="control-label">详细地址</label>
+												<input class="input input-large" type="text" name="receiptAddress">
+												<span class="help-inline"></span>
+											</div>
+											<div class="controls">
+												<label class="control-label">收件人邮编</label>
+												<input class="input input-large" type="text" name="receiptZipcode">
+												<span class="help-inline"></span>
+											</div>
+											<div class="controls">
+												<label class="control-label">收件人电话</label>
+												<input class="input input-large" type="text" name="receiptMobile">
+												<span class="help-inline"></span>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="order__warn text-important">您填写的所有内容都将被系统自动打印到发票上，请务必填写正确</div>
+						</div>
+					</li>
+					<li id="J_remark" class="list__item">
+						<h4 class="list__item--head">备注信息</h4>
+						<div class="list__item--body order-remark">
+							<div class="order__head"><span class="text-important">＊</span>订单备注</div>
+							<textarea class="order-remark--msg" name="remark"></textarea>
+						</div>
+					</li>
+					<li id="J_list" class="list__item">
+						<h4 class="list__item--head">商品清单</h4>
+						<div class="list__item--body order-goods">
+							<input type="hidden" name="number">
+							<input type="hidden" name="productId">
+							<table>
+								<thead>
+									<tr>
+										<td width="55%">&nbsp;&nbsp;商品名称</td>
+										<td class="text-center" width="15%">单品价格</td>
+										<td class="text-center" width="15%">购买数量</td>
+										<td class="text-center" width="15%">小计</td>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<a href="#">
+												<img class="order-goods__img" src="http://static.tongshuai.com/r/build/ts/v1/img/pages/settlement/goods.jpg" alt="">滚筒洗衣机XQG70-100J
+
+											</a>
+										</td>
+										<td class="text-center">
+											<div class="order-goods--price">价格：<em>&yen;8000</em></div>
+										</td>
+										<td class="text-center">
+											<div class="order-goods--count">数量：<em>2</em></div>
+										</td>
+										<td class="text-center">
+											<div class="order-goods--total">小计：<em>&yen;16000</em></div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</li>
+					<li id="J_tCode" class="list__item">
+						<div class="list__item--body tcode">
+							<label class="control-label">优惠券：</label>
+							<input class="input input-large" type="text" name="tCode">
+							<span class="help-inline"></span>
+						</div>
+					</li>
+					</form>
+				</ul>
+				<div class="order-submit">
+					<span class="order--amount">应付金额：<em>&yen;16000</em></span>
+					<button id="J_submit" class="btn btn-important btn-large">提交订单</button>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<ul class="footer-list">
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">统帅产品</h5>
+						<div class="footer-list__item--body">
+							<a href="#">了解统帅</a><br>
+							<a href="">统帅与海尔</a><br>
+							<a href="#">统帅新闻</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">产品中心</h5>
+						<div class="footer-list__item--body">
+							<a href="#">电视</a><span>\</span><a href="#">冷柜</a><span>\</span><a href="#">冰箱</a><br>
+							<a href="#">空调</a><span>\</span><a href="#">洗衣机</a><span>\</span><a href="#">热水器</a><br>
+							<a href="#">燃气灶</a><span>\</span><a href="#">吸油烟机</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">服务与支持</h5>
+						<div class="footer-list__item--body">
+							<a href="#">常见问题</a><span>\</span><a href="#">产品注册</a><br>
+							<a href="#">延保服务</a><span>\</span><a href="#">维修与安装</a><span>\</span><a href="#">收费标准</a><br>
+							<a href="#">燃气灶</a><span>\</span><a href="#">吸油烟机</a>
+						</div>
+					</li>
+					<li class="footer-list__item">
+						<h5 class="footer-list__item--head">关注我们</h5>
+						<div class="footer-list__item--body">
+							<i class="icon icon-weixin"></i>
+							<i class="icon icon-weibo"></i>
+							<i class="icon icon-douban"></i>
+							<i class="icon icon-renren"></i>
+							<a href="#">海尔集团</a><span>\</span><a href="#">社区</a>
+						</div>
+					</li>
+				</ul>  
+				<div class="footer-copyright">
+					<a href="#">联系我们</a>
+					<span class="split-line"></span>
+					<a href="#">法律声明</a>
+					<span class="split-line"></span>
+					<a href="#">网站地图</a>
+					&copy;2014 Haier Group Leader. All rights reserved 鲁ICP备09096283  
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="http://static.tongshuai.com/r/build/ts/v1/js/plugins/jquery.tab.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts/v1/js/plugins/jquery.addressCtrl.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts/v1/js/pages/order_submit.js"></script>
+</body>
+</html>

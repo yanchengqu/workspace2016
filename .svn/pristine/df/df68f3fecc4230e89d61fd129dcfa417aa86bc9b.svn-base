@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>购物篮</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/basket.css">
+	<script src="http://static.tongshuai.com/r/assets/zepto.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/swiper.min.js"></script>
+</head>
+<body class="basket-page">
+	<!-- 头部导航  -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<!-- <div class="nav__action"></div> -->
+			<div class="nav__title">购物车</div>
+		</div>
+	</div>
+
+	<!-- 头部商品信息 -->
+	
+	<div class="p-info">
+		<div class="clearfix">
+			<div class="pull-left">统帅烟灶套系</div>
+			<div class="pull-right text-warning">微价：&yen;1,149</div>
+		</div>
+		<div class="clearfix">
+			<div class="pull-left">SKFR-72LW/02WAA22A(香槟金)套机-1</div>
+			<div class="pull-right muted">原价：&yen;1,149</div>
+		</div>
+	</div>
+	
+	<!-- 轮播图 -->
+	<div id="J_buySwiper" class="swiper-container slide">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"> 
+				<img src="/img/pages/basket/slide_1.jpg" alt="">
+			</div>
+			<div class="swiper-slide"> 
+				<img src="/img/pages/basket/slide_1.jpg" alt="">
+			</div>
+		</div>
+	  <div class="pagination"></div>
+	</div>
+
+	<!-- 活动和吹牛逼 -->
+	<div class="p-event">
+		<div>
+			<span class="label label-line">满减</span>
+			购买至少一类商品，满<span class="text-warning">1000</span>减<span class="text-warning">100</span>
+		</div>
+		<p>
+			行业首创空气射流术，舒适送风，示PM2.5浓度，超标自启去除PM2.5，康呼吸；WiFi智能物联网控制、随时随地轻松享受；情景灯光通过色彩变化显示空调运行状态和室内PM2.5浓度！
+		</p>
+	</div>
+		
+	<!-- 数量选择 -->
+	<div class="wd">
+		<div class="wd__w">数量</div>
+		<div class="wd__d">
+			<div class="quantity">
+			<div class="quantity__btn quantity__btn--decrease"></div>
+			<input class="quantity__input" type="text" name="" id="" value="1">
+			<div class="quantity__btn quantity__btn--increase"></div>		
+		</div>
+		</div>
+		<div class="wd__ps"></div>
+	</div>
+
+	<!-- 库存选择 -->
+	<div class="wd">
+		<div class="wd__w">库存</div>
+		<div class="wd__d region">
+			<input type="text" name="" id="" placeholder="请选择所在区域" readonly>
+			<i class="fes-chevron-down"></i>
+		</div>
+		<div class="wd__ps">有货</div>
+	</div>
+	
+	<div class="fixed">
+		<!-- 底部结算工具条 -->
+		<div class="toolbar">
+			<div class="toolbar__left">
+				总计：<span>¥32,434</span>
+			</div>
+			<div class="toolbar__right">
+				<a class="btn btn-info" href="javascript:;" >加入购物车</a>
+				<a class="btn btn-important" href="javascript:;">立即购买</a>
+			</div>
+		</div>
+	</div>
+	<script>
+		 new Swiper("#J_buySwiper",{
+	        pagination: ".pagination",
+	        loop: !0,
+	        grabCursor: !0,
+	        paginationClickable: !0,
+	        calculateHeight: !0
+         })
+	</script>
+</body>
+</html>

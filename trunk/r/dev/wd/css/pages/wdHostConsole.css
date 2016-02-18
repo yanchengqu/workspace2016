@@ -1,0 +1,292 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.wdHostConsole-page {
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+  -webkit-user-select:none;
+}
+
+.wdHostConsole-page
+.nav::after {
+  display: none;
+}
+
+.wdHostConsole-page .menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.wdHostConsole-page
+.statusbar {
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 45px;
+  line-height: 45px;
+  padding: 0 12px;
+  color: #6e6e6e;
+  font-size: 16px;
+  font-size: 0;
+  background-color: #fff;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.wdHostConsole-page
+.statusbar::-webkit-scrollbar-track-piece {
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.wdHostConsole-page
+.statusbar::-webkit-scrollbar {
+    width: 100%;
+    height: 1px;
+}
+
+.wdHostConsole-page
+.statusbar::-webkit-scrollbar-thumb:horizontal {
+    height: 1px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -ms-border-radius:3px;
+    background-color: #efefef;
+}
+
+.wdHostConsole-page
+.statusbar li {
+  /* float: left; */
+  display: inline-block;
+  width: 20%;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wdHostConsole-page
+.statusbar span{
+  color: #6e6e6e;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.wdHostConsole-page
+.statusbar .cur span{
+  display: inline-block;
+  position: relative;
+  color: #32beff;
+}
+
+.wdHostConsole-page
+.statusbar .cur 
+span::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #32beff;
+}
+
+.wdHostConsole-page
+.item {
+  margin-bottom: -1px;
+}
+
+.wdHostConsole-page
+.item-head {
+  color: #000;
+  font-size: 15px;
+}
+
+.wdHostConsole-page
+.item-head::after {
+  display: none;
+}
+
+.wdHostConsole-page
+.item-head .btn {
+  padding: 2px 12px;
+}
+
+.wdHostConsole-page
+.item-head .btn-important {
+  background-color: #f02864;
+}
+
+.wdHostConsole-page
+.item-head .btn-info {
+  background-color: ##32beff;
+}
+
+.wdHostConsole-page
+.item-body {
+  position: relative;
+  padding: 12px;
+}
+
+.wdHostConsole-page
+.item-body__aside {
+  width: 104px;
+  height: 104px;
+  line-height: 104px;
+  text-align: center;
+}
+
+.wdHostConsole-page
+.item-body__aside
+img {
+  width: 70%;
+  vertical-align: middle;
+}
+
+.wdHostConsole-page
+.item-body__main {
+  margin-left: 120px;
+}
+
+.wdHostConsole-page
+.item-body__main
+.s {
+  /* height: 20px; */
+  line-height: 20px;
+  white-space: nowrap;
+  word-wrap: normal;
+}
+
+.wdHostConsole-page
+.item-body__top .s {
+	overflow: hidden;
+	width: 100%;
+	text-overflow: ellipsis;
+}
+
+.wdHostConsole-page
+.item-body__top 
+.s1 {
+  color: #000;
+  font-size: 16px;
+}
+
+.wdHostConsole-page
+.item-body__top 
+.s2 {
+  color: #000;
+  font-size: 16px;
+}
+
+.wdHostConsole-page
+.item-body__top 
+.s3 {
+  color: #6e6e6e;
+  font-size: 14px;
+}
+
+.wdHostConsole-page
+.item-body__bottom {}
+
+.wdHostConsole-page
+.item-body__bottom 
+.s4 {
+  display: inline-block;
+  color: #6e6e6e;
+  font-size: 13px;
+}
+
+.wdHostConsole-page
+.item-body__bottom 
+.s5 {
+  color: #6e6e6e;
+  font-size: 13px;
+}
+
+.wdHostConsole-page
+.item-body__bottom
+.s5 span {
+  color: #f02864;
+  font-size: 17px;
+}
+
+.wdHostConsole-page
+.item-body__bottom 
+.btn-line {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  padding: 2px 12px;
+  color: #32beff;
+  border-color: #32beff;
+}
+
+.wdHostConsole-page
+.item-body__bottom 
+.btn-line.disabled {
+  color: #6e6e6e;
+  border-color: #6e6e6e;
+  opacity: 1;
+}
+
+.wdHostConsole-page
+.item .label {
+  color: #fff;
+  font-size: 12px;
+  webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  text-shadow: none;
+}
+
+.wdHostConsole-page
+.item .label-important,
+.item .label-warning {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  padding: 2px 8px;
+  background-color: #f02864;
+}
+
+.wdHostConsole-page
+.item .label-warning {
+  background-color: #32beff;
+}
+
+.wdHostConsoleRemove-page .wrapper .item{
+  transition:height ease 0.5s;
+  -webkit-transition:height ease 0.5s;
+  overflow: hidden;
+  height: 130px;
+}
+
+.wdHostConsole-page .wrapper{
+  display: none;
+}
+
+.wdHostConsoleRemove-page .wrapper{
+  display: block;
+}
+
+.wdHostConsole-page .wrapper.cur{
+  display: block;
+}
+
+.wdHostConsole-page .wrapper .loading{
+  margin: auto;
+  display: none;
+}
+
+.wdHostConsole-page .wrapperList.mloadding .wrapper.cur .loading{
+  display: block;
+}
+

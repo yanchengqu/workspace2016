@@ -1,0 +1,384 @@
+/**
+ * @author: chenxiaoyong@ehaier.com
+ * @date: 2015-02-03
+ * @description: TS-PC homepage
+ * @require: public.css
+ */
+
+.homepage .container {
+	width: 100%;
+	min-width: 1000px;
+}
+
+.homepage .footer {
+	padding-top: 100px;
+}
+
+.homepage .header .container,
+.homepage .footer .container,
+.homepage .slide  .container,
+.homepage .topswiper  .container,
+.homepage .category-anchor .container {
+	width: 1000px;
+}
+
+.homepage .header {
+	position: relative;
+	z-index: 5;
+}
+
+/* 锚点 */
+
+.category-anchor {
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	min-width: 1000px;
+}
+
+.category-anchor .container {
+	text-align: center;
+}
+
+.category-anchor__item {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	width: 110px;
+	padding: 5px 0;
+	color: #545454;
+	text-align: center;
+	text-decoration: none;
+} 
+
+.category-anchor__icon {
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-image: url(http://static.tongshuai.com/r/build/ts/v1/img/pages/home/icons_category.png);
+	background-repeat: no-repeat;
+	margin:0 auto
+} 
+.category-anchor__icon--tv {
+	background-position: 0 0;
+}
+.category-anchor__icon--fridge {
+	background-position: 0 -50px;
+}
+.category-anchor__icon--washer {
+	background-position: 0 -100px;
+}
+.category-anchor__icon--ac {
+	background-position: 0 -150px;
+}
+.category-anchor__icon--projector {
+	background-position: 0 -200px;
+}
+.category-anchor__icon--kitchen {
+	background-position: 0 -250px;
+}
+.category-anchor__icon--air {
+	background-position: 6px -300px;
+}
+.category-anchor__icon--calorifier {
+	background-position: 0 -350px;
+}
+
+.category-anchor__opacity {	
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	overflow: hidden;
+	content: '';
+	background-color: #fff;
+	opacity: .6;
+	filter:alpha(opacity=60);
+}
+
+/* 广告图  */
+
+.promos {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	min-width: 1000px;
+	height: 500px;
+}
+.promos__inner {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: url(http://static.tongshuai.com/r/build/ts/v1/img/icons/loading.gif) no-repeat center center;
+	text-decoration: none;
+}
+.promos__layout {
+	position: absolute;
+	z-index: 9;
+	width: 100%;
+	text-align: center;
+}
+.promos__layout--top {
+	padding: 45px 0 35px ;
+}
+.promos__layout--left,
+.promos__layout--right {
+	left: 50%;
+	top: 170px;
+	width: 500px;
+}
+.promos__layout--left {
+	margin-left: -500px;
+}
+.promos__layout--right {
+	
+}
+.promos__type {
+	line-height: 30px;
+	color: #110604;
+	font-size: 24px;
+}
+.promos__description {
+	color: #110604;
+	font-size: 18px;
+}
+.promos__description--head {
+	line-height: 40px;
+	color: #2e3136;
+	font-size: 38px;
+	font-weight: normal;
+}
+.promos__description--body {
+	line-height: 20px;
+	margin: 10px 0;
+}
+
+.promos__price {
+	line-height: 20px;
+	margin: 10px 0;
+	color: #110604;
+	font-size: 18px;
+}
+
+.promos__other {
+
+}
+.promos__other .btn {
+	padding: 8px 20px;
+	font-size: 18px;
+}
+.promos__img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+
+/* swiper */
+
+.homepage .slide .container,
+.homepage .topswiper .container {
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.homepage .topswiper .container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -500px;
+}
+.homepage .slide .container .prev, 
+.homepage .slide .container .next, 
+.homepage .topswiper .container .prev, 
+.homepage .topswiper .container .next {
+	position: absolute;
+	top: 50%;
+	margin-top: -60px;
+	z-index: 9;
+	overflow: hidden;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	line-height: 70px\9;
+	color: #d5d5d5;
+	font-size: 60px;
+	font-family: simsun, "宋体";
+	text-align: center;
+	cursor: pointer;
+}
+
+.homepage .topswiper .container .prev, 
+.homepage .topswiper .container .next {
+	top: 355px;
+}
+
+.homepage .slide .container .prev:hover, 
+.homepage .slide .container .next:hover,
+.homepage .topswiper .container .prev:hover, 
+.homepage .topswiper .container .next:hover  {
+	background-color: #000;
+	color: #fff;
+	filter: alpha(opacity=60);
+	opacity: .6;
+}
+.homepage .slide .container .prev,
+.homepage .topswiper .container .prev {
+	left: -60px;
+	display: none;
+}
+.homepage .topswiper .container .prev {
+	display: block;
+}
+.homepage .slide .container .next,
+.homepage .topswiper .container .next  {
+	right: -60px;
+}
+
+
+.homepage .topswiper.swiper-container { 
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	height: 677px;
+	margin-top: -57px;
+}
+.homepage .topswiper .promos {
+	height: 677px;
+}
+
+.homepage .topswiper.swiper-container 
+.pagination {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin: 0 0 30px;
+	text-align: center;
+}
+.homepage .topswiper.swiper-container 
+.swiper-pagination-switch {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	overflow: hidden;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #fff;
+	border-radius: 10px;
+	/* background: #a6a6a6; */
+	/*  box-shadow: 0px 1px 2px #555 inset; */
+	margin: 0 6px;
+	vertical-align: middle;
+	cursor: pointer;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	flex: 1;
+}
+.homepage .topswiper.swiper-container 
+.swiper-active-switch{
+	background:#fff;
+}
+
+.homepage .slide .swiper-container { 
+	position: relative;
+	width: 100%;
+	height: 340px;
+	overflow: hidden;
+}
+.homepage .slide .figure {
+	text-decoration: none;
+}
+.homepage .slide .figure__img--wrapper {
+	margin-top: 15px;
+	text-align: center;
+}
+.homepage .slide .figure__img {
+	width: 250px;
+	height: 250px;
+	background: url(http://static.tongshuai.com/r/build/ts/v1/img/icons/loading.gif) no-repeat center center;
+	vertical-align: middle;
+}
+.homepage .slide .figure__caption {
+	color: #000;
+	font-size: 12px;
+	text-align: center;
+}
+
+.homepage .slide .figure__caption--type {}
+.homepage .slide .figure__caption--description {}
+.homepage .slide .figure__caption--price {}
+
+.homepage .slide.creative {
+	background-color: #ededed;
+	color: #2e3136;
+}
+.homepage .slide .creative__head {
+	padding: 40px 0;
+	line-height: 40px;
+	font-size: 38px;
+	font-weight: normal;
+	text-align: center;
+}
+.homepage .slide .creative__body {
+	padding-bottom: 70px;
+}
+.homepage .slide .creative__head .icon {
+	vertical-align: top;
+}
+.homepage .slide.creative .container .prev, 
+.homepage .slide.creative .container .next {
+	margin-top: 0;
+}
+
+.homepage .slide.creative .swiper-container {
+	height: 160px;
+}
+.homepage .slide.creative .figure__img--wrapper {
+	margin-top: 0;
+}
+.homepage .slide.creative .figure__img {
+	height: 160px;
+}
+
+/* gotop */
+html {
+	overflow-y: scroll;
+}
+
+.sbar-tools {
+	position: fixed;
+	_position: absolute;
+	right: 0.5%;
+    bottom: 30px;
+    z-index: 2999;
+}
+
+.sbar-tools .gotop {
+	width: 36px;
+	height: 36px;
+}
+
+.sbar-tools .gotop a {
+	display: block;
+	width: 36px;
+	height: 36px;
+	background: url(http://static.tongshuai.com/r/build/ts/v1/img/icons/gotop.png) 0 0 no-repeat;
+}
+
+
+
+
+

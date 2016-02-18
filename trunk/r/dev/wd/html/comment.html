@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="pragma" content="no-cache"> 
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" type="text/css" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/preComment.css">
+	<link rel="stylesheet" href="/css/pages/comment.css">
+	<link rel="stylesheet" href="/css/pages/item.css">
+	<script src="/js/zepto.min.js"></script>
+	<script src="/js/h/src/h.js"></script>
+	<script src="/js/h/src/h.event.js"></script>
+	<script src="/js/h/src/h.template.js"></script>	
+	<script src="/js/zepto.dialog.js"></script>	
+</head>
+<body class="item-page">
+	<div id="J_main" class="wrap">
+		<div class="nav">
+			<div class="nav__inner clearfix">
+				<div class="nav__back"></div>
+				<!-- <div class="nav__action"></div> -->
+				<div class="nav__title">单品页</div>
+			</div>
+		</div>
+		<div class="container listContainer">
+			<input type='hidden' id="productIdEl" value='1' />
+			<div class="details-box" id="details-box">
+				<!--
+				<div class="pull-left">
+					<div>统帅洗衣机BCD统帅洗衣机BCD统帅洗衣机BCD统帅洗衣机BCD-5WBBCD-5WB</div>
+					<p>&yen;4,500</p>
+				</div>
+				-->
+				<h2>
+					<label>统帅冰箱</label>
+					<div class="mark-down"></div>
+					<a href="" class="buyBtn btn btn-important">我要购买</a>
+				</h2>
+				<ul>
+					<li target="#promos">
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg1.jpg" width="110" />
+						<p>概述</p>
+					</li>
+					<li target="#list">
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg2.jpg" width="110" />
+						<p>参数</p>
+					</li>
+					<li target="#commentSlider">
+						<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg3.jpg" width="110" />
+						<p>评论(1009)</p>
+					</li>
+				</ul>
+			</div>
+			<!-- 广告图  -->
+			<div id="promos" class="catItemDetail promos hide">
+				<img src="/img/pages/item/p1.jpg" alt="广告图">
+				<img src="/img/pages/item/p2.jpg" alt="广告图">
+				<img src="/img/pages/item/p3.jpg" alt="广告图">
+			</div>
+			<!-- 商品参数 -->
+			<div id="list" class="catItemDetail list param hide">
+				<div class="list__item">尺寸(长*宽*高mm)</div>
+				<div class="list__item">596*698*1080</div>
+				<div class="list__item">重量</div>
+				<div class="list__item">29kg</div>
+				<div class="list__item">尺寸(长*宽*高mm)</div>
+				<div class="list__item">596*698*1080</div>
+				<div class="list__item">重量</div>
+				<div class="list__item">29kg</div>
+				<div class="list__item">尺寸(长*宽*高mm)</div>
+				<div class="list__item">596*698*1080</div>
+				<div class="list__item">重量</div>
+				<div class="list__item">29kg</div>
+				<div class="list__item">尺寸(长*宽*高mm)</div>
+				<div class="list__item">596*698*1080</div>
+				<div class="list__item">重量</div>
+				<div class="list__item">29kg</div>
+				<div class="list__item">尺寸(长*宽*高mm)</div>
+				<div class="list__item">596*698*1080</div>
+				<div class="list__item">重量</div>
+				<div class="list__item">29kg</div>
+				<div class="list__item">尺寸(长*宽*高mm)</div>
+				<div class="list__item">596*698*1080</div>
+				<div class="list__item">重量</div>
+				<div class="list__item">29kg</div>
+			</div>
+			<!-- 评论 -->
+			<div id="commentSlider" class="catItemDetail commentSlider">	
+				<table class="comment-box">
+				   <tr>
+					<td valign="middle">
+						好评率<br>
+						<strong>
+							97%
+						</strong>
+					</td>
+					<td>
+						<ul>
+							<li>
+								<label>综合评分:</label><div class="icon-star-0"></div>
+							</li>
+							<li>
+								<label>好评(86%)</label>
+								<div class="progress-box">
+									<div class="progress" style="width:86%"></div>
+								</div>
+							</li>
+							<li>
+								<label>中评(10%)</label>
+								<div class="progress-box">
+									<div class="progress" style="width:10%"></div>
+								</div>
+							</li>
+							<li>
+								<label>差评(4%)</label>
+								<div class="progress-box">
+									<div class="progress" style="width:4%"></div>
+								</div>
+							</li>
+						</ul>
+					</td>
+					</tr>
+				</table>
+				<div class="comment-count">
+					<div data-type="0" class="piece active">
+						<span>全部</span><br>
+						<label>(2132)</label>
+					</div>
+					<div data-type="1" class="piece">
+						<span>好评</span><br>
+						<label>(2132)</label>
+					</div>
+					<div data-type="2" class="piece">
+						<span>中评</span><br>
+						<label>(2132)</label>
+					</div>
+					<div data-type="3" class="piece">
+						<span>差评</span><br>
+						<label>(2132)</label>
+					</div>
+				</div>
+				<ul class="comment-list">
+					<li data-value="255">
+						<figure>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="38" height="38" />
+						</figure>
+						<dl>
+							<dd>
+								hai****758
+							</dd>
+							<dd>
+								这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+							</dd>
+							<dd>
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+							</dd>
+							<dd>
+								<span>2014-07-28</span>
+								<span>13:46:45</span>
+								<a href="javascript:void(0)" data-toggle="dialog" data-target="#return" class="reply">
+								 <div class="icon-return"></div><label>回复</label>
+								</a>
+							</dd>
+						</dl>
+						<div class="reply-box">
+							<p>回复（<span>81</span>条）</p>
+							<ol class="box">
+								<li>
+									<figure>
+										<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="25" height="25" />
+									</figure>
+									<dl>
+									<dd>
+										hai****758
+									</dd>
+									<dd>
+										这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+									</dd>
+									<dd>
+										<span>2014-07-28</span>
+										<span>13:46:45</span>
+										
+									</dd>
+								</dl>
+								</li>
+								<li>
+									<figure>
+										<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="25" height="25" />
+									</figure>
+									<dl>
+									<dd>
+										hai****758
+									</dd>
+									<dd>
+										这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+									</dd>
+									<dd>
+										<span>2014-07-28</span>
+										<span>13:46:45</span>
+										
+									</dd>
+								</dl>
+								</li>
+							</ol>
+						</div>
+					</li>
+					<li>
+						<figure>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="38" height="38" />
+						</figure>
+						<dl>
+							<dd>
+								hai****758
+							</dd>
+							<dd>
+								这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+							</dd>
+							<dd>
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+							</dd>
+							<dd>
+								<span>2014-07-28</span>
+								<span>13:46:45</span>
+								<a href="javascript:void(0)" class="reply">
+								 <div class="icon-return"></div><label>回复</label>
+								</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<figure>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="38" height="38" />
+						</figure>
+						<dl>
+							<dd>
+								hai****758
+							</dd>
+							<dd>
+								这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+							</dd>
+							<dd>
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+							</dd>
+							<dd>
+								<span>2014-07-28</span>
+								<span>13:46:45</span>
+								<a href="javascript:void(0)" class="reply">
+								 <div class="icon-return"></div><label>回复</label>
+								</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<div class="viewMore">查看更多</div>
+				<div class="viewMoreloading"><div class="loading"></div></div>
+			</div>
+		</div>
+	</div>
+
+    <div class="dialog" id="return">
+    	<div class="dialog-header">
+        	<div class="dialog-header__inner">
+        		<div class="clearfix replayHeader">
+        			<div class="pull-left"><span data-action="hide">取消</span></div>
+        			<div class="pull-right"><span id="replayBtn">回复</span></div>
+        		</div>            	
+            </div>
+        </div>
+        <div class="dialog-body">
+        	<div class="doCommentContainer">
+        		<textarea id="replyContentBox" maxlength="300" placeholder="请输入回复的内容"></textarea>
+        	</div>
+        </div>
+    </div>
+
+	<script id="commentScriptTemplate" type="text/template">
+		<%window.commentData.forEach(function(item){%>
+			<li data-value="<%=item.eltItemComment.commentId%>">
+				<figure>
+					<img src="<%=item.userPhoto || "http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg"%>" width="38" height="38" />
+				</figure>	
+				<dl>
+					<dd><%=item.username%></dd><dd><%=item.eltItemComment.content%></dd>
+					<dd>
+						<%if(item.commentImages && item.commentImages.length){%>
+							<%item.commentImages.forEach(function(pitem){%>
+								<%if(pitem.imageUrl){%>
+									<img src="<%=pitem.imageUrl %>" width="55" height="55" /> 
+								<%}%>
+							<%});%>
+						<%}%>
+					</dd>
+					<dd>
+						<span><%=window.updateTime(item.eltItemComment.createTime)%></span>
+						<a href="javascript:void(0)" class="reply" data-toggle="dialog" data-target="#return">
+						 	<div class="icon-return"></div><label>回复</label>
+						</a>
+					</dd>
+				</dl>
+				<%if(item.replyList && item.replyList.length){%>
+					<div class="reply-box">
+					<p>回复（<span><%=item.replyList.length%></span>条）</p>
+					<ol class="box">
+						<%item.replyList.forEach(function(citem){%>
+							<li>
+								<figure><img src="<%=citem.userPhoto||"http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg"%>" width="25" height="25" /></figure>
+								<dl>
+									<dd><%=citem.memberName%>回复</dd>
+									<dd><%=citem.content%></dd>
+									<dd><span><%=window.updateTime(citem.createTime)%></span></dd>
+								</dl>
+							</li>
+						<%});%>
+					</ol>
+				<%}%>
+			</li>
+		<%});%>
+	</script>
+	<script id="commentRepeateTemplate" type="text/template">
+		<%if(rptitem.showBox){%>
+		<div class="reply-box">
+			<p>回复（<span>1</span>条）</p>
+			<ol class="box">
+		<%}%>
+			<li>
+				<figure><img src="<%=rptitem.userPhoto||"http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg"%>" width="25" height="25" /></figure>
+				<dl>
+					<dd><%=rptitem.memberName%>回复</dd>
+					<dd><%=rptitem.replyContent%></dd>
+					<dd><span><%=window.updateTime(rptitem.createTime)%></span></dd>
+				</dl>
+			</li>
+		<%if(rptitem.showBox){%>
+		</ol>
+		<%}%>
+	</script>
+	</body>
+</html>
+<script src="/js/pages/comment.js"></script>

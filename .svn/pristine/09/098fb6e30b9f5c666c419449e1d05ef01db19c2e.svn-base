@@ -1,0 +1,187 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.cart-page {
+  padding-bottom: 99px;
+  background-color: #f4f4f4;
+}
+
+.cart-page
+.nav {
+  position: relative;
+  z-index: 10;
+}
+
+.cart-page .fixed {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.cart-page
+.items-total {
+  line-height: 40px;
+  padding: 0 12px;
+  color: #6e6e6e;
+  font-size: 13px;
+}
+
+.cart-page 
+.item-head {
+  color: #000;
+  font-size: 15px;
+}
+
+.cart-page 
+.item-head .checkbox {
+  position: relative;
+  top: 10px;
+  vertical-align: top;
+}
+
+.cart-page
+.item-inner-wrapper {
+  position: relative;
+}
+
+.cart-page
+.item-body {
+  position: relative;
+  z-index: 10;
+  background-color: #fff;
+}
+
+.cart-page
+.item-body__aside img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.cart-page
+.item-body__main {
+  color: #6d6e71;
+  font-size: 13px;
+}
+
+.cart-page
+.item-body__top {
+  overflow: hidden;
+  max-height: 30px;
+  line-height: 15px;
+  font-size: 13px;
+  text-overflow: ellipsis;
+}
+
+.cart-page
+.item-body__top span { color: #f63;}
+
+.cart-page
+.item-body__bottom { 
+  overflow: hidden; 
+  height: 30px;
+  line-height: 30px;
+}
+
+.cart-page
+.item-body__hr {
+  margin: 7px 0;
+}
+
+.cart-btn {
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  background-color: #f63;
+}
+
+.cart-page 
+.cart-btn-delete {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 84px;
+}
+
+.cart-page 
+.cart-btn-delete span {
+  vertical-align: middle;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 20px;
+}
+
+
+/* 编辑 PS:对比京东这个的操作步骤有点多，不方便 */
+
+.cart-page .quantity {
+  display: none;
+}
+
+.cart-page 
+.item-body__bottom .btn-line{
+  display: inline-block;
+  display: none;
+  height: 28px;
+  line-height: 28px;
+  padding: 0 14px 0 14px;
+  border: 1px solid #efefef;
+  color: #000;
+  font-size: 15px;
+  vertical-align: top;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.cart-page.edit .quantity,
+.cart-page.edit .item-body__bottom .btn-line { display: inline-block;}
+
+.cart-page.edit .amount,
+.cart-page.edit .price { display: none;}
+
+.cart-page
+.cart-btn-pay {
+  display: block;
+  text-decoration: none;
+}
+
+.cart-page
+.toolbar__left
+.pull-left {
+  color: #000;
+  font-size: 15px;
+}
+
+.cart-page
+.toolbar__left
+.pull-left .checkbox {
+  position: relative;
+  top: 14px;
+  vertical-align: top;
+}
+
+.cart-page
+.toolbar__left
+.pull-right {
+  color: #6e6e6e;
+  font-size: 14px;
+}
+
+.cart-page
+.toolbar__left
+.pull-right span {
+  color: #000;
+}

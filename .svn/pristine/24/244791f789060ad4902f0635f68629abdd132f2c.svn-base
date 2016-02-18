@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>用户信息</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/recommend.css">
+</head>
+<body class="userProfile-page">
+	<!-- 头部导航  -->
+	
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<div class="nav__title">意见反馈</div>
+		</div>
+	</div>
+
+	<!-- 热线电话 -->
+	<div class="customer-service">
+		购买和售后支持，请拨打24小时客服电话<br>
+		<a href="tel:4006999999">4006-999-999</a>
+	</div>
+	<div class="feedback-form">
+		<p>海尔顺逛微小店相关内容，请填写下表：</p>
+		<ul>
+			<li>
+				<label>反馈类型：</label>
+				<span class="select-box">
+					<select>
+						<option>请选择</option>
+						<option>满意</option>
+					</select>
+				</span>
+			</li>
+			<li>
+				<label>反馈内容：</label>
+				<textarea>
+
+				</textarea>
+			</li>
+			<li>
+				<label>联系方式：</label>
+				<input type="number"/>
+			</li>	
+		</ul>
+	</div>
+	<a href="javascript:;" class="btn btn-large feedbackBtn">提交</a>
+</body>
+</html>

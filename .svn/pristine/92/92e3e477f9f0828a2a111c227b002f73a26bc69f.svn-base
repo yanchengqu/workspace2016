@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>选择支付及配送时间</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/payWayAndDeliveryTime.css">
+	<script src="/js/zepto.min.js"></script>
+	<script src="/js/h/src/h.js"></script>
+	<script src="/js/h/src/h.event.js"></script>			
+	<script src="/js/h/src/h.template.js"></script>
+</head>
+<body class="pwdt-page">
+
+	<!-- 头部导航  -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<!-- <div class="nav__action"></div> -->
+			<div class="nav__title">选择支付及配送时间</div>
+		</div>
+	</div>
+
+	<form action="#" method="get" id="reserveForm">	
+	<!-- 支付方式 -->
+	<div class="item payway">
+		<div class="item-head">
+			<div class="item-head__inner">发票类型</div>
+		</div>
+		<div class="item-body">
+			<input id="cod" type="radio" value="cod" name="payment" class="payment" checked="checked" />
+			<label for="cod" class="btn btn-line">在线支付</label>
+			<input id="umspay" type="radio" value="umspay" name="payment"  class="payment"/>
+			<label for="umspay" class="btn btn-line">货到付款</label>
+		</div>
+	</div>
+
+	<!-- 配送时间 -->
+	<div class="item time">
+		<div class="item-head">
+			<div class="item-head__inner">配送时间</div>
+		</div>
+		<div class="item-body">
+			<div class="select-wrapper">
+				<select name="reserveDate" id="reserveDateSel">
+					<option value="" selected>选择日期</option>
+					<option value="" >1</option>
+					<option value="" >1</option>
+				</select>
+				<i class="fes-chevron-down"></i>
+			</div>
+			<div class="select-wrapper">
+				<select name="reserveTimePeriod" id="reserveTimePeriodSel">
+					<option value="" selected>选择时段</option>
+					<option value="" >1</option>
+					<option value="" >1</option>
+				</select>
+				<i class="fes-chevron-down"></i>
+			</div>
+		</div>
+	</div>
+	</form>
+
+	<div class="fixed">
+		<a id="submitBtn" class="btn btn-info btn-large">确定</a>
+	</div>
+</body>
+</html>
+<script src="/js/pages/payWayAndDeliveryTime.js"></script>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="Brave Chen">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>GAGU TEST</title>
+	<script src="../src/h.js"></script>
+	<script src="../src/h.cookie.js"></script>
+	<script src="../src/h.ua.js"></script>
+	<script src="../src/h.user.js"></script>
+	<script src="../src/h.env.js"></script>
+	<!-- 
+	<script src="../src/gagu.location.js"></script>
+	 -->
+	 <script>
+		if ( H.UA.isHaier ) {
+			// document.write('<script src="'+'http://'+H.ENV.domain+'/wd/js/hdk-0.1.0.js"><\/script>');
+			document.write('<script src="/js/hdk-0.1.0.js"><\/script>');
+		}
+	 </script>
+	 <script>
+	 	if ( H.UA.isHaier && window['hdk'] ) {
+	 		hdk.init("ehaier", 'user', function () {});
+	 	}
+	 </script>
+</head>
+<body>
+	<button onclick="H.User.login()">登录</button>
+</body>
+</html>

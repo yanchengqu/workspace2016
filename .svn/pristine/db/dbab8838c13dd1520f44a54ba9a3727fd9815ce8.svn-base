@@ -1,0 +1,188 @@
+/**
+ * @author: chenxiaoyong@ehaier.com
+ * @date: 2015-02-05
+ * @description: TS-PC orderSubmitPage
+ * @require: public.css
+ */
+
+
+.order__track a {
+	text-decoration: none;
+}
+.order__track a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+.order__track .order-goods {
+	padding-bottom: 0;
+	border-bottom: none;
+}
+.order__track .order-goods a,
+.order__track .order-goods em {
+	color: #000;
+	font-weight: bold;
+}
+.order__track .order-goods table {
+	width: 100%;
+	color: #666;
+	table-layout: fixed;
+}
+.order__track .order-goods thead {
+	height: 42px;
+	line-height: 42px;
+	background-color: #f3f3f3;
+}
+
+.order__track .order-goods td {
+	vertical-align: middle;
+}
+.order__track .order-goods tbody td{
+	padding: 35px 0;
+	border-bottom: 1px solid #ddd;
+
+}
+.order__track .order-goods__img {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+.order__track .order-goods--price {}
+.order__track .order-goods--count {}
+.order__track .order-goods--total {}
+
+.order__track h4 {
+	line-height: 30px;
+	padding-top: 25px;
+	padding-bottom: 15px;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.track__status--body ul li {
+	text-align: center;
+	float: left;
+	width: 16.5%;
+	color: #38454f;
+	position: relative;
+}
+
+.track__status--body ul li span {
+	display: inline-block;
+	overflow: hidden;
+	vertical-align: middle;
+	margin-left: -7px;
+	position: absolute;
+	z-index: 2;
+}
+
+.track__status--body {
+	overflow: hidden;
+	width: 100%;
+}
+
+.track__status--body ul {
+	padding: 20px 0 60px;
+	margin-left: 11%;
+	width: 100%;
+}
+
+.track__status--body ul li p {
+	margin-top: 23px;
+	position: relative;
+	width: 100%;
+	left: -50%;
+}
+
+.track__status--body ul li .status-circle {
+	left: -1px;
+	/* margin-left: -6px; */
+	width: 10px;
+	height: 10px;
+	border: 1px #38454f solid;/* #ed1b23 */
+	background-color: #fff;
+	border-radius: 50%;
+	z-index: 5;
+}
+
+.track__status--body ul li .status-line {
+	left:0;
+	height:0;
+	width: 100%;
+	border-bottom: 1px #38454f solid;
+	top: 5px;
+}
+
+.track__status--body ul li .line-no-l {
+	width: 0;
+}
+
+/* .track__status--body ul li .line-no-r {
+	width: 50%;
+	left: auto;
+	right: 0;
+} */
+
+.track__status--body ul .status__done ,
+.track__status--body ul .status__done span {
+	color: #ed1b23;
+	border-color: #ed1b23;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+!function(){
+	 //通用手机点击事件
+	var EventObj = (function(win){ 
+	  var EventFun = function(){ 
+	    this.isMobile = 'ontouchstart' in win;
+	    this.Start = this.isMobile ? "touchstart" : "mousedown",
+	    this.Move = this.isMobile ? "touchmove" : "mousemove",
+	      this.End = this.isMobile ? "touchend" : "mouseup";
+	  }
+	    EventFun.prototype = { 
+	      addEvent:function(a,b,c){ 
+	        c || (c = "load"); 
+	        b || (b = win); 
+	        b.attachEvent ? b.attachEvent("on" + c, a) : b.addEventListener(c, a, false) 
+	      },
+	      tapClick:function(callback,dom){ 
+	        var self = this;
+	        var startPoint = {};
+	        this.addEvent(function(e){ 
+	          var point = self.isMobile ? e.touches[0] : e;
+	        self.startPonter = {x:point.pageX,y:point.pageY};
+	        },dom,this.Start);
+	        this.addEvent(function(e){ 
+	        e.preventDefault();
+	          e.stopPropagation();
+	        if(!self.startPonter) return;
+	        var point = self.isMobile ? e.changedTouches[0] : e;
+	        if(self.startPonter.x!=point.pageX && self.startPonter.y!=point.pageY) return;
+	        self.startPonter = null;
+	        // callback(dom,e);
+	        callback(e);
+	        },dom,this.End);
+	      }
+	    }
+	    return new EventFun();
+	})(window);
+
+   function G(id){
+   	return document.getElementById(id);
+   }
+   var submitBtn = G('submitBtn'),
+   	   sType = G('sType'),
+   	   content = G('content'),
+   	   mobile = G('mobile');
+
+
+   var checkForm = function(){
+       var index = sType.selectedIndex,
+       	   value = sType.options[index].value,
+       	   conVal = content.value,
+       	   len = conVal.length,
+       	   mobileVal = mobile.value;
+
+       	   //console.log(conVal);
+       	   if(value == -1){
+			alert("请选择反馈类型");
+			return;
+		   }
+		   if(conVal == null || conVal == '' || conVal == undefined){
+	   			alert("请填写反馈内容");
+	   			return;
+	   		}else if(len > 200){
+	   			alert("最多只能填写200个字符");
+	   			return;
+	   		}
+	   		if(mobileVal == null || mobileVal == ""){
+	   			alert("请选择联系方式");
+	   			return;
+	   		}else{
+				var reg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;   
+				var tel = /^0+\d{10,11}$/;
+				if(!(tel.test(mobileVal) || reg.test(mobileVal))){
+					alert("请填写正确格式的电话号码");
+					return;
+				}
+			}
+       return true;
+   }
+  var ajaxCommit = function(){
+  	  var index = sType.selectedIndex,
+  	  	   value = sType.options[index].value,
+  	  	   conVal = content.value,
+  	  	   mobileVal = mobile.value;
+
+  	  	   var request = new XMLHttpRequest();
+  	  	   request.open("GET", '/v2/h5/content/recommend.html' + 'type=' + value + '&content=' + conVal + '&contact=' + mobileVal);
+  	  	   request.send();
+  	  	   request.onreadystatechange = function() {
+  	  	     if (request.readyState===4) {
+  	  	       if (request.status===200) {
+  	  	         var data = JSON.parse(request.responseText),
+  	  	             success = data.success;
+  	  	             if(success){
+  	  	             	alert("提交成功");
+  	  	             }else{
+  	  	             	alert("提交失败!");
+  	  	             }
+  	  	       } else {
+  	  	         alert("发生错误：" + request.status);
+  	  	       }
+  	  	     } 
+  	  	   }
+  }
+
+   EventObj.tapClick(function() { //保存按钮点击    
+       var flag =  checkForm();
+       if(flag){        
+         ajaxCommit();
+         console.log('yes');
+       }
+    },submitBtn);
+}();

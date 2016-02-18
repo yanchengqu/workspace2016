@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="pragma" content="no-cache"> 
+	<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/pages/detail.css">
+	<script src="http://static.tongshuai.com/r/assets/zepto.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/iscroll/iscroll.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/underscore/underscore-min.js"></script>
+</head>
+<body>
+	<div id="J_drawer" class="drawer">
+		<div id="J_drawerLeft" class="drawer__left">
+			<div class="scroller">
+				<div class="search">
+					<form action="" class="search__form">
+						<div class="search__input--wrapper">
+							<input class="search__input" id="J_searchBox" type="text">
+							<div class="search__input--placeholder"><i class="icon-search"></i>搜索</div>
+						</div>
+					</form>
+					<ul class="search__list"></ul>
+				</div>
+				<div class="nav">
+					<div class="nav__top">
+						<a class="nav__item" href="#">
+							<i class="icon-home"></i>
+							首页
+						</a>
+						<a id="J_switchCity" class="nav__item" href="#">
+							<i class="icon-location"></i>
+							<span id="J_currentCity" class="nav__top--city">北京市海淀区</span>
+						</a>						
+					</div>
+					<a class="nav__item" href="#"><i class="icon-people"></i>个人中心</a>
+					<a class="nav__item" href="#"><i class="icon-file"></i>我的订单</a>
+					<a class="nav__item" href="#"><i class="icon-search-v2"></i>专柜查询</a>
+					<a class="nav__item" href="#"><i class="icon-superstar"></i>明星产品</a>
+					<a class="nav__item" href="#"><i class="icon-vmware"></i>产品中心</a>
+					<a class="nav__item" href="#"><i class="icon-heart"></i>安心服务</a>
+					<a class="nav__item" href="#"><i class="icon-speaker"></i>热门服务</a>
+					<a class="nav__item" href="#"><i class="icon-disc"></i>关于统帅</a>
+				</div>
+				<div class="ts-version">
+					<i class="icon-logo-v2"></i>
+				</div>
+			</div>
+		</div>
+		<div id="J_drawerRight" class="drawer__right">
+			<div class="scroller">
+				<!-- The right content. -->
+			</div>
+		</div>
+	</div>
+	<div id="J_main" class="wrap">
+		<header class="header">
+			<div class="pull-left">
+				<div id="J_switch" class="nav-icon"></div>
+			</div>
+			<div class="pull-right">
+				<!-- <div class="fes-chevron-right"></div> -->
+			</div>
+			<div class="text-center">
+				<a href=""><i class="icon-logo"></i></a>
+			</div>
+		</header>
+		<div class="container listContainer">
+			<input type='hidden' id="productIdEl" value='1' />
+			<div class="doCommentContainer">
+				<nav>
+					<span id="cancelBtn">取消</span>
+					<span id="replayBtn">回复</span>
+					<i class="icon-logo"></i>
+				</nav>
+				<figure>
+					<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="38" height="38" />
+					<span>hai****758</span>
+				</figure>
+				<textarea id="replyContentBox" placeholder="请输入回复的内容"></textarea>
+			</div>
+			<div class="commentSlider">
+				<div class="details-box" id="details-box">
+					<h2>
+						<label>统帅冰箱</label>
+						<div class="mark-down"></div>
+						<a href="" class="buyBtn btn btn-important">我要购买</a>
+					</h2>
+					<ul>
+						<li>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg1.jpg" width="110" />
+							<p>概述</p>
+						</li>
+						<li>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg2.jpg" width="110" />
+							<p>参数</p>
+						</li>
+						<li>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg3.jpg" width="110" />
+							<p>评论(1009)</p>
+						</li>
+						<li>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/detailImg4.jpg" width="110" />
+							<p>服务</p>
+						</li>
+					</ul>
+				</div>
+				<table class="comment-box">
+				   <tr>
+					<td valign="middle">
+						好评率<br>
+						<strong>
+							97%
+						</strong>
+					</td>
+					<td>
+						<ul>
+							<li>
+								<label>综合评分:</label><div class="icon-star-0"></div>
+							</li>
+							<li>
+								<label>好评(86%)</label>
+								<div class="progress-box">
+									<div class="progress" style="width:86%"></div>
+								</div>
+							</li>
+							<li>
+								<label>中评(10%)</label>
+								<div class="progress-box">
+									<div class="progress" style="width:10%"></div>
+								</div>
+							</li>
+							<li>
+								<label>差评(4%)</label>
+								<div class="progress-box">
+									<div class="progress" style="width:4%"></div>
+								</div>
+							</li>
+						</ul>
+					</td>
+					</tr>
+				</table>
+				<div class="comment-count">
+					<div data-type="all" class="piece active">
+						<span>全部</span><br>
+						<label>(2132)</label>
+					</div>
+					<div data-type="praise" class="piece">
+						<span>好评</span><br>
+						<label>(2132)</label>
+					</div>
+					<div data-type="neutral" class="piece">
+						<span>中评</span><br>
+						<label>(2132)</label>
+					</div>
+					<div data-type="poor" class="piece">
+						<span>差评</span><br>
+						<label>(2132)</label>
+					</div>
+				</div>
+				<ul class="comment-list">
+					<li>
+						<figure>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="38" height="38" />
+						</figure>
+						<dl>
+							<dd>
+								hai****758
+							</dd>
+							<dd>
+								这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+							</dd>
+							<dd>
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+							</dd>
+							<dd>
+								<span>2014-07-28</span>
+								<span>13:46:45</span>
+								<a href="javascript:void(0)" class="reply">
+								 <div class="icon-return"></div><label>回复</label>
+								</a>
+							</dd>
+						</dl>
+						<div class="reply-box">
+							<p>回复（<span>81</span>条）</p>
+							<ol class="box">
+								<li>
+									<figure>
+										<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="25" height="25" />
+									</figure>
+									<dl>
+									<dd>
+										hai****758
+									</dd>
+									<dd>
+										这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+									</dd>
+									<dd>
+										<span>2014-07-28</span>
+										<span>13:46:45</span>
+										
+									</dd>
+								</dl>
+								</li>
+								<li>
+									<figure>
+										<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="25" height="25" />
+									</figure>
+									<dl>
+									<dd>
+										hai****758
+									</dd>
+									<dd>
+										这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+									</dd>
+									<dd>
+										<span>2014-07-28</span>
+										<span>13:46:45</span>
+										
+									</dd>
+								</dl>
+								</li>
+							</ol>
+						</div>
+					</li>
+					<li>
+						<figure>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="38" height="38" />
+						</figure>
+						<dl>
+							<dd>
+								hai****758
+							</dd>
+							<dd>
+								这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+							</dd>
+							<dd>
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+							</dd>
+							<dd>
+								<span>2014-07-28</span>
+								<span>13:46:45</span>
+								<a href="javascript:void(0)" class="reply">
+								 <div class="icon-return"></div><label>回复</label>
+								</a>
+							</dd>
+						</dl>
+					</li>
+					<li>
+						<figure>
+							<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/headerPic.jpg" width="38" height="38" />
+						</figure>
+						<dl>
+							<dd>
+								hai****758
+							</dd>
+							<dd>
+								这款空调非常好用，用了两个了，爽死了，外是的辅导形也非常好看的
+							</dd>
+							<dd>
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/detail/commentImg.jpg" width="55" height="55" />
+							</dd>
+							<dd>
+								<span>2014-07-28</span>
+								<span>13:46:45</span>
+								<a href="javascript:void(0)" class="reply">
+								 <div class="icon-return"></div><label>回复</label>
+								</a>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+				<div class="viewMore">查看更多</div>
+				<div class="viewMoreloading"><div class="loading"></div></div>
+			</div>
+		</div>
+		<footer class="footer">
+			<div class="footer__link">
+				<a class="btn btn-line btn-small" href="#">登录</a>
+				<a class="btn btn-line btn-small" href="#">注册</a>
+			</div>
+			<div class="footer__service">客服电话：4006-999 999</div>
+			<div class="footer__slogan">
+				<span class="icon-slogan"></span>
+			</div>
+			<div class="footer__copyright">Copyright &copy; 2014 Haier Group Leader.<span>All rights reserved 鲁ICP 09096283</span></div>
+		</footer>
+	</div>
+	<script id="commentScriptTemplate" type="text/template">
+		<%_.each(window.commentData, function(item) {%>
+			<li data-value="<%=item.commentId%>">
+				<figure><img src="<%=window.imgUrl %>" width="38" height="38" /></figure>	
+				<dl>
+					<dd><%=item.memberName%></dd><dd><%=item.commentContent%></dd>
+					<dd>
+						<%if(item.cmtCommentSharePicsList && item.cmtCommentSharePicsList.length){%>
+							<%_.each(item.cmtCommentSharePicsList,function(pitem){ %>
+								<img src="<%=pitem.picFileId %>" width="55" height="55" /> 
+							<%});%>
+						<%}%>
+					</dd>
+					<dd>
+						<span><%=window.updateTime(item.createTime)%></span>
+						<a href="javascript:void(0)" class="reply">
+						 	<div class="icon-return"></div><label>回复</label>
+						</a>
+					</dd>
+				</dl>
+				<%if(item.cmtCommentRepliesList && item.cmtCommentRepliesList.length){%>
+					<div class="reply-box">
+					<p>回复（<span><%=item.cmtCommentRepliesList.length%></span>条）</p>
+					<ol class="box">
+						<%_.each(item.cmtCommentRepliesList,function(citem){%>
+							<li>
+								<figure><img src="<%=window.imgUrl%>" width="25" height="25" /></figure>
+								<dl>
+									<dd>
+										<%if(citem.targetMemberId == 0 && citem.targetCommentReplyId != 0){%>
+											小海
+										<%}else{%>
+											ID为：<%=citem.memberId%>回复
+										<%}%>
+									</dd>
+									<dd><%=citem.replyContent%></dd>
+									<dd><span><%=window.updateTime(citem.createTime)%></span></dd>
+								</dl>
+							</li>
+						<%});%>
+					</ol>
+				<%}%>
+			</li>
+		<%});%>
+	</script>
+	<script id="commentRepeateTemplate" type="text/template">
+		<%if(rptitem.showBox){%>
+		<div class="reply-box">
+			<p>回复（<span>1</span>条）</p>
+			<ol class="box">
+		<%}%>
+			<li>
+				<figure><img src="<%=window.imgUrl%>" width="25" height="25" /></figure>
+				<dl>
+					<dd>
+						<%if(rptitem.targetMemberId == 0 && rptitem.targetCommentReplyId != 0){%>
+							小海
+						<%}else{%>
+							ID为：<%=rptitem.memberId%>回复
+						<%}%>
+					</dd>
+					<dd><%=rptitem.replyContent%></dd>
+					<dd><span><%=window.updateTime(rptitem.createTime)%></span></dd>
+				</dl>
+			</li>
+		<%if(rptitem.showBox){%>
+		</ol>
+		<%}%>
+	</script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/position.js"></script>	
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/plugins/zepto.drawer.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/detail.js"></script>	
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/comment.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/plugins/dialog/layer.m.js"></script>
+	</body>
+</html>

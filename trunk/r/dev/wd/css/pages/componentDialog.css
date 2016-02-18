@@ -1,0 +1,84 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+ 
+ .mask-layer  {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.dialog {
+	position: fixed;
+	left: 0;
+	bottom: -100%;
+	z-index: 100;
+	overflow: hidden;
+	width: 100%;
+	background-color: #fff;
+	-webkit-transition: all ease  .5s;
+	-o-transition: all ease .5s;
+	transition: all ease .5s;
+}
+
+.dialog.dialog--show { bottom: 0; }
+
+.dialog-header {}
+
+.dialog-body { padding: 12px;}
+
+.dialog-footer {
+	
+}
+
+.dialog-header__inner,
+.dialog-footer__inner {
+	height: 38px;
+	line-height: 38px;
+	padding: 0 12px;
+	color: #454547;
+	font-size: 14px;
+	position: relative;
+}
+
+.dialog-footer__inner {
+	color: #32beff;
+	text-align: center;	
+}
+
+.dialog-header::before,
+.dialog-header::after,
+.dialog-footer::before {
+	display: block;
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #d9d9d9;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+	.dialog-header::before,
+	.dialog-header::after,
+	.dialog-footer::before {
+      -webkit-transform: scaleY(0.5);
+      transform: scaleY(0.5);
+    }
+}
+#qrcode .dialog-body {
+	padding: 50px 0;
+	text-align: center;
+}
+#qrcode .dialog-body img {
+	width: 220px;
+	height: 220px;
+	vertical-align: middle;
+}

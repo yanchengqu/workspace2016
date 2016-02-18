@@ -1,0 +1,25 @@
+{
+  "name": "FES",
+  "version": "0.0.0",
+  "description": "FES Assets",
+  "authors": [
+    "chenxiaoyong@ehaier.com"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "underscore": "~1.7.0",
+    "swiper": "https://github.com/nolimits4web/Swiper.git#~2.7.0",
+    "labjs": "*",
+    "handlebars": "~2.0.0",
+    "html5shiv": "~3.7.2",
+    "Snap.js": "~1.9.3"
+  }
+}

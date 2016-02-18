@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>收入提现</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/wdFetch.css">
+	<script src="/js/zepto.min.js"></script>	
+	<script src="/js/h/src/h.js"></script>	
+	<script src="/js/h/src/h.event.js"></script>
+	<script src="/js/h/src/h.common.js"></script>
+</head>
+<body class="wdFetch-page">
+	<!-- 头部导航  -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<!-- <div class="nav__action"></div> -->
+			<div class="nav__title">收入提现</div>
+		</div>
+	</div>
+
+	<!-- 提现表单 -->
+	<form id="form" action="">
+		<p id="errorTip" class="errorTip"></p>
+		<ul class="list">
+			<li class="list__item">
+				<label for="">快捷通账号</label>
+				<div class="input-wrapper">
+					<input type="text" class="validate_input" emptyMsg="请输入快捷通账号" errorMsg="账号格式有误" name="cardId" id="cardId" value="186123@qq.com">
+				</div>
+			</li>
+			<li class="list__item">
+				<label for="">金额（元）</label>
+				<div class="input-wrapper">
+					<input type="text" class="validate_input" emptyMsg="请输入金额" errorMsg="金额格式有误" name="money" id="money" value="" placeholder="本次可提现1400元">
+				</div>
+			</li>			
+		</ul>
+	</form>
+	<div class="fixed">
+		<a id="submitBtn" class="btn btn-info btn-large" href="javascript:void(0)">下一步</a>
+	</div>
+</body>
+</html>
+<script src="/js/pages/wdFetch.js"></script>

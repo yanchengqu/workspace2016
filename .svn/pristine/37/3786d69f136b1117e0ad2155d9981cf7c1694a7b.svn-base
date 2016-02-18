@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Home Page</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/home.css">
+	<script src="http://static.tongshuai.com/r/assets/zepto.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/swiper.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/iscroll/iscroll.min.js"></script>
+	<script src="http://static.tongshuai.com/r/assets/underscore/underscore-min.js"></script>
+</head>
+<body>
+	<div id="J_drawer" class="drawer">
+		<div id="J_drawerLeft" class="drawer__left">
+			<div class="scroller">
+				<div class="search">
+					<form action="" class="search__form">
+						<div class="search__input--wrapper">
+							<input class="search__input" id="J_searchBox" type="text">
+							<div class="search__input--placeholder"><i class="icon-search"></i>搜索</div>
+						</div>
+					</form>
+					<ul class="search__list"></ul>
+				</div>
+				<div class="nav">
+					<div class="nav__top">
+						<a class="nav__item" href="#">
+							<i class="icon-home"></i>
+							首页
+						</a>
+						<a id="J_switchCity" class="nav__item" href="#">
+							<i class="icon-location"></i>
+							<span id="J_currentCity" class="nav__top--city">北京市海淀区</span>
+						</a>						
+					</div>
+					<a class="nav__item" href="#"><i class="icon-people"></i>个人中心</a>
+					<a class="nav__item" href="#"><i class="icon-file"></i>我的订单</a>
+					<a class="nav__item" href="#"><i class="icon-search-v2"></i>专柜查询</a>
+					<a class="nav__item" href="#"><i class="icon-superstar"></i>明星产品</a>
+					<a class="nav__item" href="#"><i class="icon-vmware"></i>产品中心</a>
+					<a class="nav__item" href="#"><i class="icon-heart"></i>安心服务</a>
+					<a class="nav__item" href="#"><i class="icon-speaker"></i>热门服务</a>
+					<a class="nav__item" href="#"><i class="icon-disc"></i>关于统帅</a>
+				</div>
+				<div class="ts-version">
+					<i class="icon-logo-v2"></i>
+				</div>
+			</div>
+		</div>
+		<div id="J_drawerRight" class="drawer__right">
+			<div class="scroller">
+				<!-- The right content. -->
+			</div>
+		</div>
+	</div>
+	<div id="J_main" class="wrap homepage">
+		<header class="header">
+			<div class="pull-left">
+				<div id="J_switch" class="nav-icon"></div>
+			</div>
+			<div class="pull-right">
+				<!-- <div class="fes-chevron-right"></div> -->
+			</div>
+			<div class="text-center">
+				<a href=""><i class="icon-logo"></i></a>
+			</div>
+		</header>
+		<div class="container">
+			<div id="J_homeSwiper" class="swiper-container slide">
+			  <div class="swiper-wrapper">
+			      <div class="swiper-slide"> 
+			      		<div class="slide__profile--layout">
+							<div class="slide__profile--type">iSee mini</div>
+							<div class="slide__profile--description">随心所欲的私人移动影院</div>
+							<div class="slide__profile--other">
+								<a href="#" class="btn btn-line">预约购买</a>
+							</div>
+						</div>
+						<a  href="">
+							<img class="slide__img" src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/home/slide_1.jpg" alt="">
+						</a>
+			      </div>
+			      <div class="swiper-slide"> 
+			      		<div class="slide__profile--layout">
+							<div class="slide__profile--type">iSee mini</div>
+							<div class="slide__profile--description">随心所欲的私人移动影院</div>
+							<div class="slide__profile--other">
+								<a href="#" class="btn btn-line">预约购买</a>
+							</div>
+						</div>
+						<a class="slide" href="">
+							<img class="slide__img" src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/home/slide_2.jpg" alt="">
+						</a>
+			      </div>
+			  </div>
+			  <div class="pagination"></div>
+			</div>
+			<ul class="promos">
+				<li>
+					<a class="promos__profile" href="">
+						<div class="promos__profile--layout">
+							<div class="promos__profile--type">TQG100-HBF1400 (TQG100-HBF1400)</div>
+							<div class="promos__profile--description">从没如此贴近过我们的心</div>
+							<div class="promos__profile--other"><span class="label label-important">众筹</span>12.18 ~ 01.20</div>
+						</div>
+						<img class="promos__img" src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/home/promos_1.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a class="promos__profile" href="">
+						<div class="promos__profile--layout">
+							<div class="promos__profile--type">D48MF7000</div>
+							<div class="promos__profile--description">让精彩迫不及待的精彩</div>
+							<div class="promos__profile--other">2880元</div>
+						</div>
+						<img class="promos__img" src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/home/promos_2.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a class="promos__profile" href="">
+						<div class="promos__profile--layout">
+							<div class="promos__profile--type">BCD-215LSDCM</div>
+							<div class="promos__profile--description">生活还可以更出“色”</div>
+							<div class="promos__profile--other">2699元起</div>
+						</div>
+						<img class="promos__img" src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/home/promos_3.jpg" alt="">
+					</a>
+				</li>
+				<li>
+					<a class="promos__profile" href="">
+						<div class="promos__profile--layout">
+							<div class="promos__profile--type">BCD-215LSTCI</div>
+							<div class="promos__profile--description">舒适生活更自然</div>
+							<div class="promos__profile--other">1699元</div>
+						</div>
+						<img class="promos__img" src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/home/promos_4.jpg" alt="">
+					</a>
+				</li>
+				<div class="viewMoreloading"><div class="loading"></div></div>
+			</ul>
+		</div>
+		<footer class="footer">
+			<div class="footer__link">
+				<a class="btn btn-line btn-small" href="#">登录</a>
+				<a class="btn btn-line btn-small" href="#">注册</a>
+			</div>
+			<div class="footer__service">客服电话：<a href="tel:4006-999-999">4006-999 999</a></div>
+			<div class="footer__slogan">
+				<span class="icon-slogan"></span>
+			</div>
+			<div class="footer__copyright">Copyright &copy; 2014 Haier Group Leader.<span>All rights reserved 鲁ICP 09096283</span></div>
+		</footer>
+		<input type="hidden" id="homeData" />
+	</div>
+	<li>
+	<script id="dataMainRepeateTemplate" type="text/template">
+		<%_.each(data_main_bottom, function(item) {%>
+			<%if(process_main_bottom && process_main_bottom[item.sku]){%>
+				<li>
+					<a class="promos__profile" href="/mobile/product/<%=item.sku%>.html">
+						<div class="promos__profile--layout">
+							<div class="promos__profile--type"><%=process_main_bottom[item.sku].prd_name%></div>
+							<div class="promos__profile--description"><%=item.description%></div>
+							<div class="promos__profile--other">
+								<%=parseFloat(process_main_bottom[item.sku].sale_guide_price || 0).toFixed(2)%>元
+							</div>								
+						</div>
+						<img class="promos__img" src="<%=item.img_url%>" alt="" />
+					</a>
+				</li>
+			<%}%>
+		<%});%>
+	</script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/plugins/zepto.drawer.js"></script>
+	<script src="http://static.tongshuai.com/r/dev/ts_h5/v1/js/pages/home.js"></script>
+</body>
+</html>

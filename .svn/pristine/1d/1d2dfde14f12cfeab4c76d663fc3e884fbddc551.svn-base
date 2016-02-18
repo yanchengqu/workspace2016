@@ -1,0 +1,148 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.pwdt-page {
+  /* padding-bottom: 62px; */
+  background-color: #fff;
+  -webkit-user-select:none;
+}
+
+.pwdt-page
+.nav::after {
+  display: none;
+}
+
+.pwdt-page 
+.payway .item-body {
+  font-size: 0;
+}
+
+.pwdt-page 
+.payway .btn {
+  position: relative;
+  padding: 4px 14px;
+  line-height: 27px;
+  margin-right: 15px;
+  color: #6e6e6e;
+  border-color: #6e6e6e;
+  text-align: left;
+}
+
+.pwdt-page 
+.payway .btn:last-child {
+  margin-right: 0;
+}
+
+.pwdt-page .payway input:checked+label{
+  border-color: #32beff;
+  color: #32beff; 
+}
+
+.pwdt-page .payway input:checked+label::before{
+  display: inline-block;
+  overflow: hidden;
+  content: '';
+  width: 15px;
+  height: 15px;
+  margin-top: 6px;
+  margin-right: 6px;
+  vertical-align: top;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MzVFRjJENTgzQjU0MTFFNTkyQjQ4NkMyRTM1NEZCODgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MzVFRjJENTkzQjU0MTFFNTkyQjQ4NkMyRTM1NEZCODgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDozNUVGMkQ1NjNCNTQxMUU1OTJCNDg2QzJFMzU0RkI4OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDozNUVGMkQ1NzNCNTQxMUU1OTJCNDg2QzJFMzU0RkI4OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrG1c3YAAAFSSURBVHjaYvz//z/DQAAmhgECoxaPWjz8LGbBJmi8nypmMwJxFxCnA3HfWUeGBnr5uA+IS4CYF4jL6BXU7UBcgMRfSw+L64G4Aom/A4iTaW0xKEiR4xKUWoKB+BexFkcB8SEgjifB0nwg7kTiHwViHyD+RnSqBoJZQMwNxDZAzArEcwhYmgrE/Uj8U0DsjctSfD4+jZQlZgJxHB5LE6BqGKH8C0DsDsQfySlAwoD4KpKaeVAxdBAODQ2YpVeA2A2IP5Bbcr0GYlcgvg3lMwPxEiAOQFITCBVjhvJvQfW8JrvkgoLnQOwExAeBWAka1yuhloN8uAJJ/z0gdgbiFxQVmUjgCRC7QFO4DBCzQQsDRigbBB5DLX1C7UriPhA7AvEzKJ8TiDmg7GfQUHlAq9rpDpb4ew0NjTu0rhavIVl0B8q+TnbVNdq8HbV41GJqAYAAAwBQOEIKZL3awAAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  -webkit-background-size: 15px auto;
+  background-size: 15px auto;
+}
+
+
+.pwdt-page .fixed {
+    /* position: fixed; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* z-index: 10; */
+    /* width: 100%; */
+    /* background-color: #fff; */
+}
+
+.pwdt-page .item {
+  margin-bottom: -1px;
+  background-color: #fff;
+}
+
+.pwdt-page 
+.item-body {
+  padding: 15px 12px;
+}
+
+.pwdt-page 
+.time 
+.item-body {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
+.pwdt-page 
+.time 
+.select-wrapper {
+  position: relative;
+  min-width: 120px;
+  margin-right: 15px;
+  margin-bottom: 0;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  -o-flex: 1;
+  flex: 1;
+}
+
+.pwdt-page 
+.time 
+.item-body select {
+  width: 100%;
+  height: 37px;
+  line-height: 27px;
+  padding-right: 24px;
+  margin-bottom: 0;
+  color: #6e6e6e;
+  border-color: #6e6e6e;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pwdt-page 
+.time 
+.fes-chevron-down {
+  position: absolute;
+  right: 3px;
+  top: 0;
+  color: #6e6e6e;
+}
+
+.pwdt-page 
+.time 
+.fes-chevron-down::before {
+  width: 8px;
+  height: 8px;
+}
+
+.pwdt-page
+.fixed .btn {
+    display: block;
+    margin: 9px;
+    background-color: #32beff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

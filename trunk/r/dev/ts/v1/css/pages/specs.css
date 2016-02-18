@@ -1,0 +1,287 @@
+.mark-gray {
+    color: #959595;
+}
+
+.font-large {
+    font-size: 24px;
+}
+
+.font-middle {
+    font-size: 20px;
+}
+
+.detail-head {
+    margin-bottom: 40px;
+    line-height: 1.7;
+    font-size: 18px;
+}
+
+.mark-red {
+    color: #ed1b23;
+}
+
+.font-small {
+    font-size: 12px;
+}
+
+.font-base {
+    font-size: 14px;
+}
+
+.mark-silvergray {
+	color:#8b9ca8;
+}
+.section {
+    overflow: hidden;
+    padding: 55px 0 45px;
+    border-top: 1px #ccc solid;
+    width: 1000px;
+    margin: -1px auto 0;
+}
+.column {
+    float: left;
+    margin-right: 20px;
+    width: 50%;
+}
+.table-head {
+    font-size: 22px;
+    font-weight: 500;
+    width: 20%;
+    line-height: 1.8;
+}
+
+.table-body .font-large {
+    margin-top: 48px;
+    text-align: center;
+}
+
+.specs-item li {
+    width: 100%;
+    float:left;
+    line-height: 1.8;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 15px;
+}
+.specs-item li span {
+    float: left;
+    text-align: left;
+    
+}
+
+.specs-item li .labeler {
+    text-align: right;
+    width: 20%;
+    padding-right: 100px;
+    white-space: nowrap;
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+.cellular-cell {
+    float: left;
+    width: 60%;
+}
+
+.circle-color {
+    border: 2px #333 solid;
+    border-radius: 50%;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.bg-silvergray {
+    background-color: #dadbdf;
+}
+
+.bg-white {
+    background-color: #f5f5f6;
+}
+
+.bg-brown {
+    background-color: #cbb7a1;
+}
+
+.bg-plastic,.bg-plasticp {
+    background: url(http://static.tongshuai.com/r/build/ts/v1/img/pages/specs/material-bg.png) 0 0 no-repeat;
+    background-size: 25px;
+}
+.bg-plasticp {
+    background-position: 0 -50px;
+}
+
+
+
+a{
+    text-decoration:none;
+}
+
+.specspage .container {
+    width: 100%;
+}
+.specspage .header .container, 
+.specspage .footer .container {
+    width: 1000px;
+}
+.product-item .header .container,
+.product-item .footer .container {
+    width: 1000px;
+}
+.promos li img {
+    vertical-align: middle;
+    border: 0 none;
+    width: 100%;
+}
+
+.layout__promos--head {
+    width: 100%;
+    margin: 0 auto 10px;
+    /*padding: 0 10px;*/
+    background-color: #fff;
+    background: rgba(255,255,255,.95);
+    position: static;
+
+}
+.promos-data {
+    width: 1000px;
+    margin: 0 auto;
+    height: 52px;
+    line-height: 52px;
+}
+
+.promos-data-wrap {
+    width: 100%;
+    border-bottom: 1px #ccc solid;
+    background-color: #fff;
+	overflow: hidden;
+}
+.product-name {
+    float: left;
+}
+.product-name span {
+    margin-right: 10px;
+}
+.product-operate {
+    float: right;
+}
+.product-operate .price {
+    color:#000;
+    margin-right: 10px;
+}
+.product-operate .btn-important {
+    vertical-align: middle;
+}
+
+.promos-nav {
+    width: 100%;
+    /*margin-top: 27px;*/
+    text-align: center;
+    padding: 20px 0 10px;
+}
+.promos-nav a {
+    display: inline-block;
+    margin: 0 17px;
+    color: #545454;
+    width: 125px;
+   /*  padding-top: 78px;
+    background: url(http://static.tongshuai.com/r/build/ts/v1/img/pages/product_title.png) 0 0 no-repeat; */
+    text-align: center;
+    font-size: 12px;
+}
+
+.promos-nav a span {
+	display: inline-block;
+	_display: inline;
+	_zoom:1;
+	width: 100%;
+
+}
+/* .promos-nav .title-img2 {
+    background-position: 0 -111px;
+}
+
+.promos-nav .title-img3 {
+    background-position: 0 -226px;
+}
+
+.promos-nav .title-img4 {
+    background-position: 0 -340px;
+} */
+
+
+.operate--handle {
+    vertical-align: middle;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.promos--fixed {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.promos--fixed .promos-nav {
+    display: none;
+}
+
+.holder {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    font-size: 0;
+
+}
+
+
+.topbar__crumbs {
+	padding: 20px 0;
+	margin-top: 20px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.topbar__crumbs a,.topbar__crumbs span ,.product-name a{
+	color: #333;
+	font-size: 16px;
+	/* margin-right: 2px; */
+}
+
+.topbar__crumbs .mark-gray,.product-name .mark-gray {
+	color: #959595;
+}
+
+.topbar__crumbs .split-line,.product-name .split-line {
+	border-left: 1px solid #333;
+    background-color: #333;
+}
+
+.topbar__crumbs a:hover,.product-name a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,117 @@
+.service-container{
+	width:1000px;
+	margin:0 auto;
+}
+.container{
+	width:100%;
+}
+.service-page .header .container,
+.service-page .footer .container {
+	width: 1000px;
+}
+.c-red{color:#ed1b23;}
+.pro-insurance{
+	padding-bottom:67px;
+	padding-top:54px;
+}
+.insurance__block{
+	width:228px;
+	height:269px;
+	border:#ccc 1px solid;
+	border-radius:10px;
+	padding:29px 0 21px;
+	float:left;
+	margin:8px;
+}
+.insurance__info{
+	font-size:12px;
+	color:#545454;
+	margin-top:71px;
+	padding:0 17px;
+}
+.insurance__title{
+	font-size:18px;
+	font-family:'Microsoft Yahei';
+	text-align:center;
+	margin-bottom:51px;
+}
+.insurance__block dt, .insurance__block dd{
+	text-align:center;
+}
+
+.pro-service{
+	padding:40px 0 118px;
+	clear:both;
+	border-top:1px solid #ccc;
+}
+.service-title{
+	font-size:30px;
+	font-family:'Microsoft Yahei';
+	font-weight:lighter;
+	display:inline-block;
+	vertical-align:top;
+	height:60px;
+	line-height:60px;
+}
+.icon-van{margin-right:8px;}
+.service-content{margin-left:30px;}
+.dashline{
+	height: 17px;
+	line-height: 17;
+	width: 102px;
+	border-top: 2px red solid;
+	vertical-align: middle;
+	display: inline-block;
+	margin: -7px;
+}
+.service-process{margin-left:30px;}
+.service-upper-list li, .service-lower-list li{
+	float:left;
+	font-size:13px;
+	font-family:"Microsoft Yahei";
+}
+.sevice-line{
+	clear:both;
+}
+.service-upper-list li:first-child{margin-left:131px;}
+.service-upper-list li{width:240px;}
+.service-upper-list li:last-child{width:73px;}
+.service-upper-list .sevice-inner-last{width:73px;}
+.service-lower-list li{width:246px;}
+.service-lower-list .sevice-inner-last{width:73px;}
+
+
+.pro-brand{
+	clear:both;
+	padding:41px 0 50px 30px;
+	border-top:1px #ccc solid;
+}
+.title-bold,.title-thin{
+	height:42px;
+	line-height:42px;
+	display:inline-block;
+	vertical-align:top;
+	font-family:"Microsoft Yahei";
+	font-weight:lighter;
+}
+.title-bold{
+	margin-right:13px;
+	font-weight:bold;
+}
+.logo-slogan{
+	letter-spacing:8px;
+	vertical-align:top;
+	color:#8f9196;
+	font-family:"Microsoft Yahei";
+}
+.brand-slogan{
+	font-size:18px;
+	height:42px;
+	line-height:42px;
+	display:inline-block;
+	vertical-align:top;
+	margin-bottom:22px;
+}
+.brand-custom-slogan{
+	margin-top:54px;
+}

@@ -1,0 +1,111 @@
+/**
+ * @author: 
+ * @date: 2015-07-29
+ * @description:
+ * @site:
+ * @require: 
+ */
+
+.userCenter-page {
+  padding-bottom: 50px;
+  background-color: #f4f4f4;
+}
+
+.userCenter-page
+.nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  color: #fff;
+}
+.userCenter-page .nav__back {
+    background-position: -50px -50px;
+}
+.userCenter-page .menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+.user {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.user-setting,
+.user-notification {
+  position: absolute;
+  top: 10px;
+}
+
+.user-setting {
+  left: 16px;
+}
+
+.user-notification {
+  right: 16px;
+}
+
+.user-notification__tips {
+  position: absolute;
+  top: 1px;
+  right: 0;
+  width: 6px;
+  height: 6px;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  background-color: #ff6633;
+}
+
+.user-bg {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.user-info {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 80%;
+  height: 84px;
+  text-align: center;
+}
+
+.user-info__img {
+  width: 84px;
+  height: 84px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-box-shadow: 0 0 0 3px #fff;
+          box-shadow: 0 0 0 3px #fff;
+}
+
+.user-info__name {
+  color: #fff;
+  font-size: 16px;
+}
+
+.userCenter-page .list [class*="icon-"] {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+}
+.userCenter-page
+.fixed .btn {
+    display: block;
+    margin: 9px;
+    background-color: #32beff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}

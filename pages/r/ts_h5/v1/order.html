@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title></title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/public.css">
+	<link rel="stylesheet" href="http://static.tongshuai.com/r/build/ts_h5/v1/css/pages/order.css">
+	<script src="http://static.tongshuai.com/r/assets/zepto.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<header class="header">
+			<a href="" class="pull-left">
+				<i class="fes-chevron-left"></i>
+			</a>
+			<a href="" class="pull-right">
+				<i class="fes-chevron-right"></i>
+			</a>
+			<div class="text-center">
+				<a href=""><i class="icon-logo"></i></a>
+			</div>
+		</header>
+		<div class="container sliderAddrContainer">
+			
+			<!--提交订单-->
+			<article class="OrderMsg">
+				<section>
+					<h2>收货信息</h2>
+					<div class="link-box">
+						<ul>
+							<li class="Name">
+								<input type="text" data-filed="contacter" class="bdRadius bdStyle data_input" placeholder="姓名" />
+								<input type="number" data-filed="mobile" class="bdRadius bdStyle data_input" placeholder="手机号码" />
+							</li>
+							<li class="AddrSelect">
+								<span class="bdRadius bdStyle">
+									<select data-filed="provinceId" id="province_Sel" class="data_input" data-value="26">
+										<option value="0">-请选择-</option>
+									</select>
+								</span>
+								<span class="bdRadius bdStyle">
+									<select data-filed="cityId" id="city_sel" class="data_input" data-value="314">
+										<option value="0">-请选择-</option>
+									</select>
+								</span>
+								<span class="bdRadius bdStyle">
+									<select data-filed="regionId" id="area_sel" class="data_input" data-value="1180">
+										<option value="0">-请选择-</option>
+									</select>
+								</span>
+							</li>
+							<li class="Addr">
+								<input type="text" data-filed="address" class="bdRadius bdStyle data_input" placeholder="详细地址" />
+							</li>
+						</ul>
+						<div class="linkAddr">
+							<div><div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>付款方式</h2>
+					<div class="payMode">
+						<button id="codBtn" class="bdRadius" data-value="cod" data-key="货到付款">
+							<div class="icon-van"></div>&nbsp;货到付款</button>
+						<button id="alipaymobileBtn" class="bdRadius" data-value="alipaymobile" data-key="支付宝">
+							<div class="icon-alipay"></div>&nbsp;支付宝支付</button>
+						<button id="umspayBtn" class="bdRadius" data-value="umspay" data-key="银联">
+							<div class="icon-umspay"></div>&nbsp;银联</button>
+						<input type="hidden" id="paymentCode" data-filed="paymentCode" class="data_input">
+						<input type="hidden" id="paymentName" data-filed="paymentName" class="data_input">
+					</div>
+				</section>
+				<section>
+					<h2>配送时间</h2>
+					<div class="deliverTime">
+						<span class="bdRadius bdStyle">
+							<select id="reserveDateSel" data-filed="reserveDate" class="data_input">
+								<option value="0">-请选择-</option>
+							</select>
+						</span>
+						<span class="bdRadius bdStyle">
+							<select id="reserveTimePeriodSel" data-filed="reserveTimePeriod" class="data_input" >
+								<option value="0">-请选择-</option>
+							</select>
+						</span>
+					</div>
+					<div class="deliverExplain">
+						您订购的产品将于上述时间送达，请保持手机畅通
+					</div>
+				</section>
+				<section>
+					<h2>发票抬头（电子发票）</h2>
+					<div class="companyBill">
+						<input type="text" data-filed="memberInvoiceTitle" class="bdRadius bdStyle data_input" placeholder="请填写发票公司">
+					</div>
+					<div class="BillExplain">
+						电子发票是经国家税务机关认可的<samp>有效凭证</samp>，同样具有<samp>保修和财务报销</samp>的效力。
+					</div>
+				</section>
+				<section>
+					<h2>订单备注</h2>
+					<div class="companyBill">
+						<input type="text" data-filed="remark" class="bdRadius bdStyle data_input" placeholder="请填写订单备注信息">
+					</div>
+				</section>
+				<section class="lastChild">
+					<h2>商品清单</h2>
+					<div class="productList">
+						<div class="productList_part">
+							<figure>
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/sliderAddr/productList.jpg" width="70" height="70">
+							</figure>
+							<dl>
+								<dd>
+									统帅洗衣机  KFR-26GW/DY-IF(R3)
+								</dd>
+								<dd>
+									数量：<strong>2</strong>
+								</dd>
+								<dd>
+									<strong class="showPricelb" data-value='8600'></strong>
+									<span>小计：<label class="showPricelb" data-value="17200"></label></span>
+								</dd>
+							</dl>
+						</div>
+						<div class="productList_part">
+							<figure>
+								<img src="http://static.tongshuai.com/r/build/ts_h5/v1/img/pages/sliderAddr/productList.jpg" width="70" height="70">
+							</figure>
+							<dl>
+								<dd>
+									统帅洗衣机  KFR-26GW/DY-IF(R3)
+								</dd>
+								<dd>
+									数量：<strong>2</strong>
+								</dd>
+								<dd>
+									<strong class="showPricelb" data-value='8600'></strong>
+									<span>小计：<label class="showPricelb" data-value="17200"></label></span>
+								</dd>
+							</dl>
+						</div>
+						<input type="hidden"  data-filed="productId" class="data_input" value="1" >
+						<input type="hidden"  id='numberHidden' data-filed="number" class="data_input" value="2" >
+						<input type="hidden" id='sku' value="2" >
+					</div>
+				</section>
+				<section class="tCodeSection">
+					<label>优惠券：</label>
+					<input type="text" id="tCode" data-filed="tCode" class="bdRadius bdStyle data_input" placeholder="请输入优惠券">
+					<button id="checkTCode">使用</button>
+				</section>
+				<div class="tMoney-fixed">
+					<div class="tMoney-box">
+						<span class="money">
+							总计：<label id="totalPrice" class="showPricelb" data-value='1149'></label>
+						</span>
+						<button id="submitBtn">去结算</button>
+				   </div>
+				</div>
+			</article>
+			<!--收货地址-->
+			<article class="sliderAddr">
+				<section class="active" data-address='{"memberAddressId":3,"contacter":"魏甚么","provinceId":16,"cityId":184,"regionId":2083,"regionName":"北京市海淀区","address":"万泉河11号","mobile":"13111111112"}'>
+					<h3><span class="checkedOkIco"></span><label>李富华</label><label>18500239527</label></h3>
+					<p>北京北京海淀区</p>
+					<p>北京市海淀区丹棱街18号创富大厦1106室</p>	
+				</section>
+				<section  data-address='{"memberAddressId":3,"contacter":"魏甚么","provinceId":26,"cityId":314,"regionId":1180,"regionName":"北京市海淀区","address":"万泉河11号","mobile":"13111111112"}'>
+					<h3><span class="checkedOkIco"></span><label>李富华</label><label>18500239527</label></h3>
+					<p>北京北京海淀区</p>
+					<p>北京市海淀区丹棱街18号创富大厦1106室</p>	
+				</section>
+				<section>
+					<h3><span class="checkedOkIco"></span><label>李富华</label><label>18500239527</label></h3>
+					<p>北京北京海淀区</p>
+					<p>北京市海淀区丹棱街18号创富大厦1106室</p>	
+				</section>
+			</article>
+		</div>
+		<form id="dynamicForm"></form>
+	</div>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/event.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/pages/region.js"></script>
+	<script src="http://static.tongshuai.com/r/dev/ts_h5/v1/js/pages/order.js"></script>
+	<script src="http://static.tongshuai.com/r/build/ts_h5/v1/js/plugins/dialog/layer.m.js"></script>
+</body>
+</html>

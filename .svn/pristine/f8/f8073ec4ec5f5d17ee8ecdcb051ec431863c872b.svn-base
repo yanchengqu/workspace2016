@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>登录过期</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/msg.css">
+	<style>
+		.msg-page 
+		.msg__suggest {
+			width: 104px;
+			line-height: 18px;
+			margin: 0 auto;
+			text-align: left;
+			white-space: nowrap;
+		}
+	</style>
+</head>
+<body class="msg-page">
+	<!-- 头部当行  -->
+	
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<div class="nav__title"></div>
+		</div>
+	</div>
+
+	<!-- 空购物车 -->
+	
+	<div class="msg">
+		<div class="msg__img">
+			<img src="/img/pages/msg/loginExpired.png" alt="">
+		</div>
+		<div class="msg__tips"></div>
+		<div class="msg__suggest">
+			主人~ <br>
+			您登录的时间过长 <br>
+			请重新登陆吧
+		</div>
+		<div class="msg__btn-wrapper">
+			<a class="btn btn-info btn-large" id="J_login" href="javascript:;">重新登陆</a>
+		</div>
+	</div>
+	<script>
+
+		// 业务逻辑,需要引入hdk和zepto的脚本 
+		hdk.init("ehaier", function(){});
+
+		$('#J_login').bind('tap', function() {
+			if ( !hdk.user.isLogin ) {
+				hdk.user.auth(function(status, data) {
+					if ( 'SUCCESS' == status ) {
+						// location.href = "";
+					} 
+				});
+			}
+		}); 
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>购物车</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/cart.css">
+	<script src="/js/zepto.min.js"></script>
+	<script src="/js/h/src/h.js"></script>
+	<script src="/js/h/src/h.event.js"></script>
+	<script src="/js/h/src/h.common.js"></script>
+</head>
+<body class="cart-page">
+
+	<!-- 头部导航  -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<div class="nav__action">编辑</div>
+			<div class="nav__title">购物车</div>
+		</div>
+	</div>
+
+	<div class="items-total">
+		总共3件商品
+	</div>
+
+	<!-- 物品列表 -->
+	
+	<div class="item">
+		<div class="item-head">
+			<div class="item-head__inner">				
+				<span class="checkbox checkbox--checked"></span>
+				海尔isee mini 1s移动私人影院
+			</div>
+		</div>
+		<div class="item-inner-wrapper">
+			<div class="item-body">
+				<div class="item-body__aside">
+					<a href="#"><img src="/img/pages/cart/pic.png" alt=""></a>
+				</div>
+				<div class="item-body__main">
+					<div class="item-body__top">
+						<span>【满减】</span>活动时间3月23日0:00-3月27日24:00活动价仅1999元！数量有限！抓紧抢购！
+					</div>
+					<div class="item-body__hr"></div>
+					<div class="item-body__bottom">
+						<div class="pull-left">
+							<div class="quantity">
+								<div class="quantity__btn quantity__btn--decrease"></div>
+								<input class="quantity__input" type="text" name="" id="">
+								<div class="quantity__btn quantity__btn--increase"></div>		
+							</div>
+							<span class="amount">×2</span>
+						</div>
+						<div class="pull-right">
+							<span class="price" data-value="5600"></span>
+							<a href="javascript:;" class="btn btn-line">删除</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-btn cart-btn-delete J_delete"><span>删除</span></div>
+		</div>
+	</div>
+	
+	<div class="item">
+		<div class="item-head">
+			<div class="item-head__inner">				
+				<span class="checkbox"></span>
+				海尔isee mini 1s移动私人影院
+			</div>
+		</div>
+		<div class="item-inner-wrapper">
+			<div class="item-body">
+				<div class="item-body__aside">
+					<a href="#"><img src="/img/pages/cart/pic.png" alt=""></a>
+				</div>
+				<div class="item-body__main">
+					<div class="item-body__top">
+						<span>【洗衣机专场】</span>活动时间3月23日0:00-3月27日24:00活动价仅1999元！数量有限！抓紧抢购！
+					</div>
+					<div class="item-body__hr"></div>
+					<div class="item-body__bottom">
+						<div class="pull-left">
+							<div class="quantity">
+								<div class="quantity__btn quantity__btn--decrease"></div>
+								<input class="quantity__input" type="text" name="" id="">
+								<div class="quantity__btn quantity__btn--increase"></div>		
+							</div>
+							<span class="amount">×2</span>
+						</div>
+						<div class="pull-right">
+							<span class="price">&yen;5,600</span>
+							<a href="javascript:;" class="btn btn-line">删除</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-btn cart-btn-delete J_delete"><span>删除</span></div>
+		</div>
+	</div>
+
+	<div class="item">
+		<div class="item-head">
+			<div class="item-head__inner">				
+				<span class="checkbox"></span>
+				海尔isee mini 1s移动私人影院
+			</div>
+		</div>
+		<div class="item-inner-wrapper">
+			<div class="item-body">
+				<div class="item-body__aside">
+					<a href="#"><img src="/img/pages/cart/pic.png" alt=""></a>
+				</div>
+				<div class="item-body__main">
+					<div class="item-body__top">
+						<span>【冰箱专场】</span>活动时间3月23日0:00-3月27日24:00活动价仅1999元！数量有限！抓紧抢购！
+					</div>
+					<div class="item-body__hr"></div>
+					<div class="item-body__bottom">
+						<div class="pull-left">
+							<span class="amount">×2</span>
+							<div class="quantity">
+								<div class="quantity__btn quantity__btn--decrease"></div>
+								<input class="quantity__input" type="text" name="" id="">
+								<div class="quantity__btn quantity__btn--increase"></div>		
+							</div>
+						</div>
+						<div class="pull-right">
+							<span class="price">&yen;5,600</span>
+							<a href="javascript:;" class="btn btn-line">删除</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="cart-btn cart-btn-delete J_delete"><span>删除</span></div>
+		</div>
+	</div>
+	
+	<div class="fixed">
+		<!-- 底部结算工具条 -->
+		<div class="toolbar">
+			<div class="toolbar__left">
+				<div class="pull-left ">
+					<span id="J_checkall" class="checkbox"></span>
+					全选
+				</div>
+				<div class="pull-right">
+					合计：<span>&yen;32,434</span>
+				</div>
+			</div>
+			<div class="toolbar__right">
+				<a class="cart-btn cart-btn-pay" id="J_pay" href="javascript:;">结算</a>
+			</div>
+		</div>
+		<!-- 底部菜单 -->
+		<div class="menu">
+			<a class="menu__item" href="#">
+				<i class="icon-home"></i>
+				<div class="menu__title">首页</div>
+			</a>
+			<a class="menu__item" href="#">
+				<i class="icon-search"></i>
+				<div class="menu__title">分类</div>
+			</a>
+			<a class="menu__item" href="#">
+				<i class="icon-cart"></i>
+				<div class="menu__title">购物车</div>
+			</a>
+			<a class="menu__item menu__item--active" href="#">
+				<i class="icon-user"></i>
+				<div class="menu__title">我的</div>
+			</a>
+		</div>
+	</div>
+</body>
+</html>
+<script>H.Common.updatePrice('.price',true);</script>

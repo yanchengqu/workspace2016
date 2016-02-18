@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>活动通知</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/activityNotification.css">
+</head>
+<body class="activityNotification-page">
+	
+	<!-- 头部导航  -->
+	
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<div class="nav__title">优惠促销</div>
+		</div>
+	</div>
+
+	<!-- 功能列表 -->
+
+	<div class="list">
+		<a class="list__item" href="#">
+			<div class="activity">
+				<img class="activity__img" src="/img/pages/activityNotification/pic.jpg" alt="">
+				<div class="activity__name">五一家电风暴来袭！</div>
+				<div class="activity__slogan">五一家电风暴火爆开抢！年度大促！你懂的！原汁机5折！合资50液晶电视跌破3000，大匹变频空调1999元！</div>
+				<div class="activity__date">
+					<div class="pull-left">4月8号</div>
+					<div class="pull-right">查看详情<i class="fes-chevron-right"></i></div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="list">
+		<a class="list__item" href="#">
+			<div class="activity">
+				<img class="activity__img" src="/img/pages/activityNotification/pic.jpg" alt="">
+				<div class="activity__name">五一家电风暴来袭！</div>
+				<div class="activity__slogan">五一家电风暴火爆开抢！年度大促！你懂的！原汁机5折！合资50液晶电视跌破3000，大匹变频空调1999元！</div>
+				<div class="activity__date">
+					<div class="pull-left">4月8号</div>
+					<div class="pull-right">查看详情<i class="fes-chevron-right"></i></div>
+				</div>
+			</div>
+		</a>
+	</div>
+	<div class="list">
+		<a class="list__item" href="#">
+			<div class="activity">
+				<img class="activity__img" src="/img/pages/activityNotification/pic.jpg" alt="">
+				<div class="activity__name">五一家电风暴来袭！</div>
+				<div class="activity__slogan">五一家电风暴火爆开抢！年度大促！你懂的！原汁机5折！合资50液晶电视跌破3000，大匹变频空调1999元！</div>
+				<div class="activity__date">
+					<div class="pull-left">4月8号</div>
+					<div class="pull-right">查看详情<i class="fes-chevron-right"></i></div>
+				</div>
+			</div>
+		</a>
+	</div>
+</body>
+</html>

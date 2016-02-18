@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>订单列表</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" />
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="chenxiaoyong@ehaier.com">
+	<meta name="application-name" content="TS APP">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no, email=no">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="/css/public.css">
+	<link rel="stylesheet" href="/css/pages/wdOrderList.css">
+	<script src="/js/zepto.min.js"></script>
+	<script src="/js/h/src/h.js"></script>	
+	<script src="/js/h/src/h.event.js"></script>	
+</head>
+<body class="wdOrderList-page">
+
+	<!-- 头部导航  -->
+	<div class="nav">
+		<div class="nav__inner clearfix">
+			<div class="nav__back"></div>
+			<!-- <div class="nav__action"></div> -->
+			<div class="nav__title">
+				<div class="clearfix">
+					<div class="pull-left cur">我的订单</div>
+					<div class="pull-left">推广订单</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 订单量 -->
+	<div class="clearfix order-total">
+		<div class="pull-left">
+			<span>3</span>
+			<div>当日订单</div>
+		</div>
+		<div class="pull-left">
+			<span>7</span>
+			<div>订单总数</div>
+		</div>
+	</div>
+
+	<div class="list">
+		<div class="list__item">订单明细</div>
+	</div>
+
+	<ul class="statusbar">
+		<li target="#all" class="cur"><span>全部</span></li>
+		<li target="#waitPay"><span>待付款</span></li>
+		<li target="#waitSend"><span>待发货</span></li>
+		<li target="#Sended"><span>已发货</span></li>
+		<li target="#finished"><span>已完成</span></li>
+	</ul>
+
+	<!-- 订单列表 -->
+	<div id="wrapperList">
+		<div id="all" class="wrapper cur">
+			<div class="item">
+				<div class="item-head">
+					<div class="item-head__inner">
+						<div class="pull-left">订单编号：32343454656</div>
+						<div class="pull-right">已完成</div>				
+					</div>
+				</div>
+				<div class="item-body">
+					<div class="item-body__aside">
+						<a href="#"><img src="/img/pages/cart/pic.png" alt=""></a>
+					</div>
+					<div class="item-body__main">
+						<div class="item-body__top">
+							<div class="clearfix">
+								<div class="pull-left">海尔冰箱 </div>
+								<div class="pull-right">&yen;5,600</div>
+							</div>
+							<div class="clearfix">
+								<div class="pull-left">BCD-518WDGH </div>
+								<div class="pull-right">×2</div>
+							</div>
+						</div>
+						<div class="item-body__bottom">
+							收货信息：樱桃  18612318716
+							<br>
+							北京市 海淀区 丹棱街18号 创富大厦902室
+						</div>
+					</div>
+				</div>
+				<div class="total">
+					共<span>2</span>件商品&nbsp;合计：<em>&yen;5,200</em>
+				</div>
+				<div class="item-foot">
+					<div class="item-foot__inner">
+						<a class="btn btn-line delete-btn">删除订单</a>
+						<a class="btn btn-line track-btn">追踪订单</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-head">
+					<div class="item-head__inner">
+						<div class="pull-left">订单编号：32343454656</div>
+						<div class="pull-right">已完成</div>				
+					</div>
+				</div>
+				<div class="item-body">
+					<div class="item-body__aside">
+						<a href="#"><img src="/img/pages/cart/pic.png" alt=""></a>
+					</div>
+					<div class="item-body__main">
+						<div class="item-body__top">
+							<div class="clearfix">
+								<div class="pull-left">海尔冰箱 </div>
+								<div class="pull-right">&yen;5,600</div>
+							</div>
+							<div class="clearfix">
+								<div class="pull-left">BCD-518WDGH </div>
+								<div class="pull-right">×2</div>
+							</div>
+						</div>
+						<div class="item-body__bottom">
+							收货信息：樱桃  18612318716
+							<br>
+							北京市 海淀区 丹棱街18号 创富大厦902室
+						</div>
+					</div>
+				</div>
+				<div class="total">
+					共<span>2</span>件商品&nbsp;合计：<em>&yen;5,200</em>
+				</div>
+				<div class="item-foot">
+					<div class="item-foot__inner">
+						<a href="" class="btn btn-line">删除订单</a>
+						<a href="" class="btn btn-line">追踪订单</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-head">
+					<div class="item-head__inner">
+						<div class="pull-left">订单编号：32343454656</div>
+						<div class="pull-right">已完成</div>				
+					</div>
+				</div>
+				<div class="item-body">
+					<div class="item-body__aside">
+						<a href="#"><img src="/img/pages/cart/pic.png" alt=""></a>
+					</div>
+					<div class="item-body__main">
+						<div class="item-body__top">
+							<div class="clearfix">
+								<div class="pull-left">海尔冰箱 </div>
+								<div class="pull-right">&yen;5,600</div>
+							</div>
+							<div class="clearfix">
+								<div class="pull-left">BCD-518WDGH </div>
+								<div class="pull-right">×2</div>
+							</div>
+						</div>
+						<div class="item-body__bottom">
+							收货信息：樱桃  18612318716
+							<br>
+							北京市 海淀区 丹棱街18号 创富大厦902室
+						</div>
+					</div>
+				</div>
+				<div class="total">
+					共<span>2</span>件商品&nbsp;合计：<em>&yen;5,200</em>
+				</div>
+				<div class="item-foot">
+					<div class="item-foot__inner">
+						<a href="" class="btn btn-line">删除订单</a>
+						<a href="" class="btn btn-line">追踪订单</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="item-head">
+					<div class="item-head__inner">
+						<div class="pull-left">订单编号：32343454656</div>
+						<div class="pull-right">已完成</div>				
+					</div>
+				</div>
+				<div class="item-body">
+					<div class="item-body__aside">
+						<a href="#"><img src="/img/pages/cart/pic.png" alt=""></a>
+					</div>
+					<div class="item-body__main">
+						<div class="item-body__top">
+							<div class="clearfix">
+								<div class="pull-left">海尔冰箱 </div>
+								<div class="pull-right">&yen;5,600</div>
+							</div>
+							<div class="clearfix">
+								<div class="pull-left">BCD-518WDGH </div>
+								<div class="pull-right">×2</div>
+							</div>
+						</div>
+						<div class="item-body__bottom">
+							收货信息：樱桃  18612318716
+							<br>
+							北京市 海淀区 丹棱街18号 创富大厦902室
+						</div>
+					</div>
+				</div>
+				<div class="total">
+					共<span>2</span>件商品&nbsp;合计：<em>&yen;5,200</em>
+				</div>
+				<div class="item-foot">
+					<div class="item-foot__inner">
+						<a href="" class="btn btn-line">删除订单</a>
+						<a href="" class="btn btn-line">追踪订单</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="waitPay" class="wrapper">
+		</div>
+		<div id="waitSend" class="wrapper">
+		</div>
+		<div id="Sended" class="wrapper">
+		</div>
+		<div id="finished" class="wrapper">
+		</div>
+	</div>
+</body>
+</html>
+<script src="/js/pages/wdOrderList.js"></script>
